@@ -1,0 +1,12 @@
+Write one detailed visual paragraph for the action class: "{class_name}".
+
+Requirements:
+1) English only, one paragraph, 95-140 words.
+2) Use only observable visual evidence: body parts, pose transitions, trajectory, speed, rhythm, force, and contact changes.
+3) Use explicit temporal structure: beginning -> middle -> ending.
+4) Include object interaction and scene cues only when visually typical.
+5) Add at least two contrastive cues with explicit comparisons using "unlike ...".
+6) If the class implies direction/state change (left/right, up/down, in/out, on/off, open/close), state it explicitly.
+7) Avoid generic openings like "a video showing" or "someone doing".
+8) Do not mention datasets, labels, model names, or "this class".
+9) Do not output bullets, numbering, headings, quotes, or markdown.

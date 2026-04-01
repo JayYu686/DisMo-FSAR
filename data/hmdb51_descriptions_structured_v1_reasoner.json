@@ -1,0 +1,582 @@
+{
+  "brush_hair": {
+    "action_anchor": "A person uses a brush to groom their hair.",
+    "key_entities": [
+      "person",
+      "hair",
+      "brush",
+      "hand",
+      "arm"
+    ],
+    "motion_phases": [
+      "Lift brush towards hair",
+      "Stroke brush through hair",
+      "Pull brush away from hair"
+    ],
+    "disambiguation": [
+      "Brush tool in hand",
+      "Repetitive hair stroking"
+    ]
+  },
+  "catch": {
+    "action_anchor": "Person receives an object with hands.",
+    "key_entities": [
+      "person",
+      "hands",
+      "object"
+    ],
+    "motion_phases": [
+      "Hands open and track object",
+      "Hands make contact with object",
+      "Hands close around object"
+    ],
+    "disambiguation": [
+      "Object moves towards person",
+      "Hands encircle object after contact"
+    ]
+  },
+  "chew": {
+    "action_anchor": "Person moves jaw repeatedly to grind substance in mouth.",
+    "key_entities": [
+      "mouth",
+      "jaw",
+      "cheeks",
+      "food",
+      "hands",
+      "teeth"
+    ],
+    "motion_phases": [
+      "Mouth opens or food is placed in",
+      "Jaw moves rhythmically up and down",
+      "Mouth closes or swallowing occurs"
+    ],
+    "disambiguation": [
+      "Repetitive jaw motion without speech lip movements",
+      "Focus on jaw area rather than hand-to-mouth actions"
+    ]
+  },
+  "clap": {
+    "action_anchor": "Hands come together rapidly to produce a clapping sound.",
+    "key_entities": [
+      "hands",
+      "arms",
+      "person"
+    ],
+    "motion_phases": [
+      "hands separate with arms raised",
+      "hands meet with a quick impact",
+      "hands rebound apart after clap"
+    ],
+    "disambiguation": [
+      "waving shows lateral hand motion without contact",
+      "rubbing hands involves continuous sliding, not impact"
+    ]
+  },
+  "climb": {
+    "action_anchor": "A person ascends a vertical or inclined surface using limbs.",
+    "key_entities": [
+      "person",
+      "hands",
+      "feet",
+      "surface",
+      "holds",
+      "ladder"
+    ],
+    "motion_phases": [
+      "Initial grip and foothold establishment.",
+      "Upward pull or push with alternating limbs.",
+      "Stabilization in a new higher position."
+    ],
+    "disambiguation": [
+      "sustained contact with surface during ascent",
+      "vertical or inclined body orientation"
+    ]
+  },
+  "climb_stairs": {
+    "action_anchor": "Person ascends a staircase by stepping upward.",
+    "key_entities": [
+      "person",
+      "stairs",
+      "feet",
+      "legs",
+      "handrail"
+    ],
+    "motion_phases": [
+      "Foot placed on first stair",
+      "Alternating steps ascending",
+      "Body reaches higher level"
+    ],
+    "disambiguation": [
+      "Upward vertical movement on stairs",
+      "Structured steps distinguish from flat walking"
+    ]
+  },
+  "dive": {
+    "action_anchor": "A person jumps headfirst into water.",
+    "key_entities": [
+      "diver",
+      "water",
+      "diving board"
+    ],
+    "motion_phases": [
+      "Approach the edge of platform.",
+      "Spring forward and upward.",
+      "Enter water headfirst."
+    ],
+    "disambiguation": [
+      "Headfirst entry into water.",
+      "Takeoff from elevated surface."
+    ]
+  },
+  "draw_sword": {
+    "action_anchor": "A person pulls a sword from a scabbard.",
+    "key_entities": [
+      "person",
+      "sword",
+      "scabbard",
+      "hand",
+      "sword handle"
+    ],
+    "motion_phases": [
+      "Hand reaches toward sword handle on scabbard.",
+      "Hand grips handle and pulls sword upward or outward.",
+      "Sword blade fully emerges from scabbard."
+    ],
+    "disambiguation": [
+      "Scabbard is visibly attached to person's belt or body.",
+      "Motion is a controlled pull, not a swing or slash."
+    ]
+  },
+  "dribble": {
+    "action_anchor": "A person bounces a ball on the ground with their hands.",
+    "key_entities": [
+      "person",
+      "ball",
+      "hands",
+      "ground"
+    ],
+    "motion_phases": [
+      "Ball held in hands above ground",
+      "Ball pushed downward and impacts ground",
+      "Ball rebounds and is received by hands"
+    ],
+    "disambiguation": [
+      "Contact made with hands, not feet",
+      "Ball bounces back to hands after ground impact"
+    ]
+  },
+  "drink": {
+    "action_anchor": "Person lifts a drinking vessel to mouth and ingests liquid.",
+    "key_entities": [
+      "person",
+      "hand",
+      "drinking vessel",
+      "mouth",
+      "liquid"
+    ],
+    "motion_phases": [
+      "Hand grasps a vessel.",
+      "Vessel is raised toward mouth.",
+      "Head tilts as liquid is consumed."
+    ],
+    "disambiguation": [
+      "Container is used for liquid ingestion.",
+      "Motion involves tilting the vessel to mouth."
+    ]
+  },
+  "fall_floor": {
+    "action_anchor": "A person falls and impacts the floor.",
+    "key_entities": [
+      "person",
+      "floor",
+      "arms",
+      "legs",
+      "torso",
+      "head"
+    ],
+    "motion_phases": [
+      "Initial loss of balance",
+      "Rapid downward descent",
+      "Abrupt floor contact"
+    ],
+    "disambiguation": [
+      "Uncontrolled motion, not deliberate sitting",
+      "Sudden stop with limb flailing"
+    ]
+  },
+  "flic_flac": {
+    "action_anchor": "A person performs a back handspring.",
+    "key_entities": [
+      "person",
+      "hands",
+      "ground",
+      "back",
+      "legs",
+      "momentum"
+    ],
+    "motion_phases": [
+      "Backward lean from standing stance",
+      "Hands contact ground as legs swing overhead",
+      "Feet land and body returns upright"
+    ],
+    "disambiguation": [
+      "Hands support during backward rotation",
+      "Continuous backward flip with arm propulsion"
+    ]
+  },
+  "handstand": {
+    "action_anchor": "A person balances upside down on their hands.",
+    "key_entities": [
+      "hands",
+      "arms",
+      "torso",
+      "legs",
+      "ground"
+    ],
+    "motion_phases": [
+      "Hands placed on ground with feet on floor.",
+      "Legs kick upward, inverting the body.",
+      "Body held vertically with arms extended."
+    ],
+    "disambiguation": [
+      "Primary support on hands, not head or feet.",
+      "Fully inverted vertical posture."
+    ]
+  },
+  "hug": {
+    "action_anchor": "Two individuals embrace by wrapping arms around each other's torso.",
+    "key_entities": [
+      "first person",
+      "second person",
+      "arms",
+      "torso"
+    ],
+    "motion_phases": [
+      "approach with arms open",
+      "wrap arms around back",
+      "hold then separate"
+    ],
+    "disambiguation": [
+      "arms fully encircle torso",
+      "bodies are in close contact"
+    ]
+  },
+  "jump": {
+    "action_anchor": "A person propels upward from the ground.",
+    "key_entities": [
+      "person",
+      "legs",
+      "feet",
+      "ground"
+    ],
+    "motion_phases": [
+      "Knees bend in crouch preparation.",
+      "Feet push off, body becomes airborne.",
+      "Feet land back on ground."
+    ],
+    "disambiguation": [
+      "Both feet leave ground simultaneously.",
+      "Vertical motion distinguishes from horizontal runs."
+    ]
+  },
+  "kiss": {
+    "action_anchor": "Two individuals press their lips together.",
+    "key_entities": [
+      "person",
+      "face",
+      "lips",
+      "head",
+      "hands"
+    ],
+    "motion_phases": [
+      "faces approach each other",
+      "lips make contact",
+      "faces separate"
+    ],
+    "disambiguation": [
+      "lip contact",
+      "close facial proximity"
+    ]
+  },
+  "pullup": {
+    "action_anchor": "A person pulls their body upward on a horizontal bar.",
+    "key_entities": [
+      "person",
+      "pull-up bar",
+      "hands",
+      "arms",
+      "upper body",
+      "shoulders"
+    ],
+    "motion_phases": [
+      "Hanging with arms fully extended",
+      "Pulling upward until chin clears bar",
+      "Lowering to full arm extension"
+    ],
+    "disambiguation": [
+      "Overhand grip on a fixed bar",
+      "Minimal body swing during motion"
+    ]
+  },
+  "punch": {
+    "action_anchor": "A person extends arm with closed fist to strike.",
+    "key_entities": [
+      "person",
+      "arm",
+      "fist",
+      "target"
+    ],
+    "motion_phases": [
+      "Arm draws back with clenched fist.",
+      "Arm thrusts forward rapidly.",
+      "Arm retracts or follows through."
+    ],
+    "disambiguation": [
+      "Fist is closed during impact.",
+      "Motion is straight and forceful."
+    ]
+  },
+  "push": {
+    "action_anchor": "A person applies force to move an object away.",
+    "key_entities": [
+      "person's arms",
+      "object",
+      "ground support",
+      "body alignment"
+    ],
+    "motion_phases": [
+      "Approach and stance adjustment",
+      "Arm extension with forward force",
+      "Follow-through or release"
+    ],
+    "disambiguation": [
+      "Movement directed outward from the body",
+      "Lack of backward or pulling motion"
+    ]
+  },
+  "ride_bike": {
+    "action_anchor": "A person rides a bicycle.",
+    "key_entities": [
+      "bicycle",
+      "rider",
+      "handlebars",
+      "pedals",
+      "wheels",
+      "road"
+    ],
+    "motion_phases": [
+      "Mounting the bike.",
+      "Pedaling steadily.",
+      "Steering or braking."
+    ],
+    "disambiguation": [
+      "Pedaling motion visible.",
+      "Rider seated on two-wheeled vehicle."
+    ]
+  },
+  "ride_horse": {
+    "action_anchor": "Rider sits on horse and directs its motion.",
+    "key_entities": [
+      "horse",
+      "rider",
+      "saddle",
+      "reins"
+    ],
+    "motion_phases": [
+      "Rider mounts the horse",
+      "Rider sits upright holding reins",
+      "Horse walks or trots with rider"
+    ],
+    "disambiguation": [
+      "Rider maintains seated position on horse",
+      "Horse's leg movements are visible"
+    ]
+  },
+  "shake_hands": {
+    "action_anchor": "Two individuals clasp hands and move them up and down.",
+    "key_entities": [
+      "hand",
+      "forearm",
+      "person",
+      "counterpart",
+      "hand clasp"
+    ],
+    "motion_phases": [
+      "Hands extend towards each other.",
+      "Hands meet and form a firm grip.",
+      "Arms shake in a vertical motion."
+    ],
+    "disambiguation": [
+      "sustained mutual hand grip",
+      "coordinated up-down arm movement"
+    ]
+  },
+  "shoot_bow": {
+    "action_anchor": "A person shoots an arrow from a bow.",
+    "key_entities": [
+      "person",
+      "bow",
+      "arrow",
+      "bowstring",
+      "hand",
+      "arm"
+    ],
+    "motion_phases": [
+      "arrow nocked on bowstring",
+      "bowstring drawn back",
+      "bowstring released with arrow flight"
+    ],
+    "disambiguation": [
+      "bow and arrow are visibly present",
+      "drawing and releasing motion involves both hands on bow"
+    ]
+  },
+  "situp": {
+    "action_anchor": "Person lies on back and raises torso to a sitting position.",
+    "key_entities": [
+      "person",
+      "back",
+      "floor",
+      "torso",
+      "abdominal muscles"
+    ],
+    "motion_phases": [
+      "Lie flat on back with legs bent",
+      "Lift torso upward towards knees",
+      "Lower torso back to floor"
+    ],
+    "disambiguation": [
+      "Full torso lift from floor",
+      "Back lifts completely unlike in crunch"
+    ]
+  },
+  "stand": {
+    "action_anchor": "Person transitions to an upright stance.",
+    "key_entities": [
+      "person",
+      "legs",
+      "torso",
+      "floor",
+      "supporting surface"
+    ],
+    "motion_phases": [
+      "Person is in a lower position.",
+      "Person shifts weight and extends legs upward.",
+      "Person stabilizes in a full-height posture."
+    ],
+    "disambiguation": [
+      "Movement culminates in an upright, stationary pose.",
+      "Differentiated from sitting by upward torso trajectory."
+    ]
+  },
+  "sword": {
+    "action_anchor": "A person swings a sword.",
+    "key_entities": [
+      "sword",
+      "person",
+      "hand grip",
+      "arm movement",
+      "blade",
+      "body posture"
+    ],
+    "motion_phases": [
+      "Grip sword firmly",
+      "Swing or thrust blade",
+      "Return to guard position"
+    ],
+    "disambiguation": [
+      "Long metallic blade visible",
+      "No ball or bat in scene"
+    ]
+  },
+  "sword_exercise": {
+    "action_anchor": "A person practices controlled sword movements.",
+    "key_entities": [
+      "person",
+      "sword",
+      "hands",
+      "arms",
+      "torso"
+    ],
+    "motion_phases": [
+      "Assume a starting stance with sword",
+      "Swing sword in deliberate arcs",
+      "Return to a stable position"
+    ],
+    "disambiguation": [
+      "Solo exercise without opponent",
+      "Structured, repetitive motions"
+    ]
+  },
+  "throw": {
+    "action_anchor": "A person swings their arm to propel an object forward.",
+    "key_entities": [
+      "person",
+      "arm",
+      "object"
+    ],
+    "motion_phases": [
+      "arm draws backward",
+      "arm accelerates forward and releases object",
+      "arm continues forward after release"
+    ],
+    "disambiguation": [
+      "object leaves hand mid-air",
+      "arm moves in an arc"
+    ]
+  },
+  "turn": {
+    "action_anchor": "A person rotates their body to change facing direction.",
+    "key_entities": [
+      "person",
+      "torso",
+      "hips",
+      "feet"
+    ],
+    "motion_phases": [
+      "Body faces initial direction in stable stance.",
+      "Weight shifts as torso and hips pivot.",
+      "Feet realign to settle facing new direction."
+    ],
+    "disambiguation": [
+      "Slower, controlled rotation unlike rapid spins.",
+      "Full body involvement distinguishes from head-only turns."
+    ]
+  },
+  "walk": {
+    "action_anchor": "A person moves forward by alternating steps with one foot always on the ground.",
+    "key_entities": [
+      "person",
+      "feet",
+      "legs",
+      "ground"
+    ],
+    "motion_phases": [
+      "heel contacts ground",
+      "weight shifts over foot",
+      "toe pushes off"
+    ],
+    "disambiguation": [
+      "at least one foot grounded",
+      "symmetrical step rhythm"
+    ]
+  },
+  "wave": {
+    "action_anchor": "Hand moves side to side in a repetitive gesture.",
+    "key_entities": [
+      "hand",
+      "arm",
+      "shoulder",
+      "torso"
+    ],
+    "motion_phases": [
+      "Arm lifts and extends",
+      "Hand oscillates laterally",
+      "Arm lowers or returns"
+    ],
+    "disambiguation": [
+      "Lateral motion without contact",
+      "Repetitive back-and-forth movement"
+    ]
+  }
+}

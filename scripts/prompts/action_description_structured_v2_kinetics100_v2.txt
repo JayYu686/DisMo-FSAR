@@ -1,0 +1,31 @@
+Generate one JSON object for the action class "{class_name}".
+
+Return JSON only. No markdown fences. No extra prose.
+
+Schema:
+{
+  "label_text": "canonical short class phrase",
+  "action_anchor": "one short visual sentence",
+  "entity_priors": ["entity 1", "entity 2"],
+  "scene_priors": ["scene cue 1", "scene cue 2"],
+  "attribute_cues": ["attribute cue 1", "attribute cue 2"],
+  "phase_cues": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "confusion_cues": ["easy confusion 1", "easy confusion 2"]
+}
+
+Requirements:
+1) English only.
+2) Keep the description centered on the action itself, not on broad scene narration.
+3) label_text must be a short stable action phrase.
+4) action_anchor must be one short visually grounded sentence.
+5) entity_priors: at most 4 key objects, tools, or participants.
+6) scene_priors: at most 2 scene cues, and only if the class strongly depends on a stable venue such as basketball court, swimming pool, ski slope, tennis court, ring, or rink.
+7) Do not use generic background cues such as stage, stadium, open area, indoor space, home environment, concert venue, or competition venue.
+8) attribute_cues should emphasize interaction pattern or action family, such as tool use, vehicle riding, instrument playing, water interaction, ball interaction, board riding, climb ascent, or impact.
+9) phase_cues must be exactly {num_phases} short cues in temporal order, but keep them broad and action-focused rather than state-machine style.
+10) confusion_cues: at most 2 short cues for same-family confusions such as instruments, riding actions, combat, or ball sports.
+11) Avoid encyclopedia-style explanations and rich background prose.

@@ -1,0 +1,25 @@
+Generate one JSON object for the Something-Something V2 action class "{class_name}".
+
+Return JSON only. Do not add markdown fences, comments, or extra prose.
+
+Required schema:
+{{
+  "action_anchor": "one concise canonical sentence",
+  "key_entities": ["entity 1", "entity 2"],
+  "motion_phases": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "disambiguation": ["not similar action a", "not similar action b"]
+}}
+
+Requirements:
+1) English only.
+2) Preserve placeholders like [something], [part], [number of], [somewhere] exactly as written.
+3) Focus on direction, contact changes, support state, containment state, and temporal order.
+4) action_anchor must be one short sentence.
+5) key_entities must contain at most 6 short visual noun phrases.
+6) motion_phases must contain exactly {num_phases} short cues in temporal order.
+7) disambiguation must contain at most 2 short cues for reversed or visually similar interactions.
+8) Avoid generic filler, markdown, or references to labels/datasets.

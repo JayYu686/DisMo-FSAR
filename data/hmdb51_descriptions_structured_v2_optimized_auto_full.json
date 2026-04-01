@@ -1,0 +1,1054 @@
+{
+  "brush hair": {
+    "label_text": "brush hair",
+    "action_anchor": "A person holds a brush and moves it through their hair.",
+    "entity_priors": [
+      "hair",
+      "hair brush",
+      "hand"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "repetitive strokes",
+      "object contact",
+      "upward strokes",
+      "hand gripping brush"
+    ],
+    "phase_cues": [
+      "reach for brush with hand",
+      "position brush at hair roots",
+      "stroke brush through hair length"
+    ],
+    "confusion_cues": [
+      "comb hair",
+      "style hair with hands"
+    ]
+  },
+  "catch": {
+    "label_text": "catch a ball",
+    "action_anchor": "A person extends arms to receive and grasp a thrown object.",
+    "entity_priors": [
+      "ball",
+      "glove",
+      "hands"
+    ],
+    "scene_priors": [
+      "outdoor field"
+    ],
+    "attribute_cues": [
+      "hands forward",
+      "eyes tracking",
+      "object in air",
+      "grasping contact"
+    ],
+    "phase_cues": [
+      "object approaches in air",
+      "arms reach toward object",
+      "hands close around object"
+    ],
+    "confusion_cues": [
+      "throw",
+      "drop"
+    ]
+  },
+  "chew": {
+    "label_text": "chewing food",
+    "action_anchor": "A person's jaw moves rhythmically while holding food in their mouth.",
+    "entity_priors": [
+      "chew",
+      "food",
+      "mouth"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "jaw up-down motion",
+      "cheek bulging",
+      "mouth closed",
+      "rhythmic pattern"
+    ],
+    "phase_cues": [
+      "food placed in mouth",
+      "jaw begins rhythmic motion",
+      "swallowing or pause"
+    ],
+    "confusion_cues": [
+      "talking",
+      "yawning"
+    ]
+  },
+  "clap": {
+    "label_text": "clap hands",
+    "action_anchor": "A person brings both palms together repeatedly.",
+    "entity_priors": [
+      "clap",
+      "hands",
+      "palms"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "symmetric motion",
+      "contact sound",
+      "rhythmic timing",
+      "forward movement"
+    ],
+    "phase_cues": [
+      "arms raise to chest level",
+      "palms meet with force",
+      "hands separate briefly"
+    ],
+    "confusion_cues": [
+      "high five",
+      "praying hands"
+    ]
+  },
+  "climb": {
+    "label_text": "climb a ladder",
+    "action_anchor": "A person ascends using hands and feet on rungs.",
+    "entity_priors": [
+      "climb",
+      "ladder",
+      "rungs"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "upward motion",
+      "alternating limbs",
+      "gripping contact",
+      "body tension"
+    ],
+    "phase_cues": [
+      "reaching for next rung",
+      "pulling body upward",
+      "securing footing"
+    ],
+    "confusion_cues": [
+      "ascend stairs",
+      "scale a wall"
+    ]
+  },
+  "climb stairs": {
+    "label_text": "climb stairs",
+    "action_anchor": "A person ascends steps by lifting feet alternately.",
+    "entity_priors": [
+      "climb",
+      "stairs",
+      "steps"
+    ],
+    "scene_priors": [
+      "staircase"
+    ],
+    "attribute_cues": [
+      "upward motion",
+      "alternating steps",
+      "alternating foot placement",
+      "hand contact optional"
+    ],
+    "phase_cues": [
+      "foot lifts onto first step",
+      "weight shifts as other foot follows",
+      "repeating pattern continues upward"
+    ],
+    "confusion_cues": [
+      "walk on flat ground",
+      "descend stairs"
+    ]
+  },
+  "dive": {
+    "label_text": "dive into water",
+    "action_anchor": "A person leaps headfirst into a body of water.",
+    "entity_priors": [
+      "dive",
+      "water",
+      "pool"
+    ],
+    "scene_priors": [
+      "swimming pool"
+    ],
+    "attribute_cues": [
+      "headfirst descent",
+      "arms extended forward",
+      "body streamlined",
+      "splash on entry"
+    ],
+    "phase_cues": [
+      "crouch or run-up preparation",
+      "jump with arms leading",
+      "submerge into water"
+    ],
+    "confusion_cues": [
+      "jump feet-first",
+      "falling accidentally"
+    ]
+  },
+  "draw_sword": {
+    "label_text": "draw sword",
+    "action_anchor": "A person pulls a sword from its sheath with one hand.",
+    "entity_priors": [
+      "draw",
+      "sword",
+      "sheath"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "body rotation",
+      "object contact",
+      "upward motion",
+      "grip contact"
+    ],
+    "phase_cues": [
+      "hand reaches toward sword hilt",
+      "sword slides out of sheath",
+      "sword held ready in hand"
+    ],
+    "confusion_cues": [
+      "sheathing sword",
+      "wielding sword"
+    ]
+  },
+  "dribble": {
+    "label_text": "basketball dribbling",
+    "action_anchor": "A player bounces a basketball repeatedly with one hand while moving.",
+    "entity_priors": [
+      "dribble",
+      "basketball",
+      "player"
+    ],
+    "scene_priors": [
+      "basketball court"
+    ],
+    "attribute_cues": [
+      "ball contact",
+      "rhythmic motion",
+      "forward movement",
+      "hand control"
+    ],
+    "phase_cues": [
+      "hand pushes ball downward",
+      "ball bounces off floor",
+      "hand meets ball on return"
+    ],
+    "confusion_cues": [
+      "bouncing ball without movement",
+      "dribbling soccer ball"
+    ]
+  },
+  "drink": {
+    "label_text": "drink from container",
+    "action_anchor": "A person lifts a container to their mouth and swallows liquid.",
+    "entity_priors": [
+      "drink",
+      "cup",
+      "glass"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand-to-mouth motion",
+      "head tilted back",
+      "liquid visible",
+      "container contact"
+    ],
+    "phase_cues": [
+      "hand grasps container near mouth",
+      "container tilts toward face",
+      "throat movement indicates swallowing"
+    ],
+    "confusion_cues": [
+      "eating solid food",
+      "pouring liquid"
+    ]
+  },
+  "fall floor": {
+    "label_text": "fall to floor",
+    "action_anchor": "A person loses balance and collapses onto a floor surface.",
+    "entity_priors": [
+      "fall",
+      "floor",
+      "ground"
+    ],
+    "scene_priors": [
+      "staircase"
+    ],
+    "attribute_cues": [
+      "sudden descent",
+      "loss of balance",
+      "body contact with floor",
+      "uncontrolled motion"
+    ],
+    "phase_cues": [
+      "person wobbling or stumbling",
+      "body dropping toward floor",
+      "body lying on floor surface"
+    ],
+    "confusion_cues": [
+      "sitting down",
+      "lying down intentionally"
+    ]
+  },
+  "flic flac": {
+    "label_text": "flic flac",
+    "action_anchor": "A person performs a backward handspring with hands and feet touching the ground in.",
+    "entity_priors": [
+      "flic",
+      "flac",
+      "hands"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "backward motion",
+      "arched body",
+      "hand contact",
+      "feet contact"
+    ],
+    "phase_cues": [
+      "Start with hands raised and body leaning",
+      "Push off with feet and swing legs",
+      "Land on hands then feet in a"
+    ],
+    "confusion_cues": [
+      "backward roll",
+      "handstand"
+    ]
+  },
+  "handstand": {
+    "label_text": "handstand pose",
+    "action_anchor": "A person balances upside down on their hands with legs extended upward.",
+    "entity_priors": [
+      "handstand",
+      "hands",
+      "arms"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "ground contact",
+      "vertical inversion",
+      "hand-floor contact",
+      "extended legs"
+    ],
+    "phase_cues": [
+      "initial hand placement on ground",
+      "legs lift upward to vertical",
+      "balanced inverted hold"
+    ],
+    "confusion_cues": [
+      "headstand",
+      "cartwheel"
+    ]
+  },
+  "hug": {
+    "label_text": "hugging someone",
+    "action_anchor": "Two people wrap arms around each other's upper body.",
+    "entity_priors": [
+      "hug",
+      "arms",
+      "upper body"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "two-person contact",
+      "facing each other",
+      "upper body contact",
+      "arms encircling"
+    ],
+    "phase_cues": [
+      "arms begin to extend forward",
+      "arms wrap around upper torso",
+      "brief hold with upper body contact"
+    ],
+    "confusion_cues": [
+      "handshake",
+      "pat on back"
+    ]
+  },
+  "jump": {
+    "label_text": "person jumping",
+    "action_anchor": "A person propels upward off the ground with both feet leaving the surface.",
+    "entity_priors": [
+      "jump",
+      "feet",
+      "ground"
+    ],
+    "scene_priors": [
+      "sports court"
+    ],
+    "attribute_cues": [
+      "upward motion",
+      "both feet off ground",
+      "brief airborne moment",
+      "landing contact"
+    ],
+    "phase_cues": [
+      "bending knees and preparing to push off",
+      "feet leaving ground with body in air",
+      "landing with feet making contact"
+    ],
+    "confusion_cues": [
+      "falling down",
+      "running stride"
+    ]
+  },
+  "kiss": {
+    "label_text": "kissing action",
+    "action_anchor": "Two people press their lips together briefly.",
+    "entity_priors": [
+      "kiss",
+      "face",
+      "lips"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "two-person contact",
+      "forward lean",
+      "eye contact",
+      "lip contact"
+    ],
+    "phase_cues": [
+      "Heads tilt toward each other",
+      "Lips make soft contact",
+      "Heads pull back slightly"
+    ],
+    "confusion_cues": [
+      "whispering",
+      "cheek touch"
+    ]
+  },
+  "pullup": {
+    "label_text": "pull-up exercise",
+    "action_anchor": "A person grips an overhead bar and pulls their body upward until their chin.",
+    "entity_priors": [
+      "pullup",
+      "hands",
+      "arms"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "ground contact",
+      "vertical upward motion",
+      "grip contact with bar",
+      "chin above bar"
+    ],
+    "phase_cues": [
+      "initial hanging position with arms extended",
+      "pulling upward with elbow flexion",
+      "chin clearing bar at peak position"
+    ],
+    "confusion_cues": [
+      "chin-up exercise",
+      "lat pulldown machine exercise"
+    ]
+  },
+  "punch": {
+    "label_text": "throwing a punch",
+    "action_anchor": "A person's fist moves rapidly forward to strike a target.",
+    "entity_priors": [
+      "punch",
+      "fist",
+      "arm"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "punch motion",
+      "forward motion",
+      "arm extension",
+      "fist contact"
+    ],
+    "phase_cues": [
+      "arm draws back with fist clenched",
+      "torso rotates as arm accelerates forward",
+      "fist makes impact with target"
+    ],
+    "confusion_cues": [
+      "pushing motion",
+      "slapping motion"
+    ]
+  },
+  "push": {
+    "label_text": "push object",
+    "action_anchor": "A person extends arms to move an object away from their body.",
+    "entity_priors": [
+      "push",
+      "hands",
+      "arms"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "forward motion",
+      "contact maintained",
+      "arms extended",
+      "body leaning"
+    ],
+    "phase_cues": [
+      "arms bend close to body",
+      "hands make contact with object",
+      "arms extend pushing object forward"
+    ],
+    "confusion_cues": [
+      "pull object",
+      "lift object"
+    ]
+  },
+  "ride_bike": {
+    "label_text": "ride bicycle",
+    "action_anchor": "A person sits on a bicycle seat, pedaling with both feet while holding handlebars.",
+    "entity_priors": [
+      "ride",
+      "bike",
+      "bicycle"
+    ],
+    "scene_priors": [
+      "bike lane"
+    ],
+    "attribute_cues": [
+      "mounted posture",
+      "forward motion",
+      "upright posture",
+      "feet on pedals"
+    ],
+    "phase_cues": [
+      "mounting bicycle and placing feet on pedals",
+      "pedaling with alternating leg motion",
+      "steering with handlebars while maintaining balance"
+    ],
+    "confusion_cues": [
+      "walking with bicycle",
+      "standing next to bicycle"
+    ]
+  },
+  "ride horse": {
+    "label_text": "ride horse",
+    "action_anchor": "A person sits on a horse, holding reins while moving.",
+    "entity_priors": [
+      "ride",
+      "horse",
+      "saddle"
+    ],
+    "scene_priors": [
+      "riding arena"
+    ],
+    "attribute_cues": [
+      "mounted posture",
+      "upright posture",
+      "forward motion",
+      "legs gripping"
+    ],
+    "phase_cues": [
+      "mounting horse from side",
+      "riding with steady gait",
+      "dismounting by swinging leg over"
+    ],
+    "confusion_cues": [
+      "horse grooming",
+      "horse feeding"
+    ]
+  },
+  "shake_hands": {
+    "label_text": "shake hands",
+    "action_anchor": "Two people grasp each other's right hands and move them up and down.",
+    "entity_priors": [
+      "shake",
+      "hands",
+      "hand"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "two-person contact",
+      "right hand dominant",
+      "reciprocal motion",
+      "brief contact"
+    ],
+    "phase_cues": [
+      "arms extend forward with palms open",
+      "hands clasp with firm grip",
+      "hands pump up and down 1-3 times"
+    ],
+    "confusion_cues": [
+      "high five",
+      "hand wave"
+    ]
+  },
+  "shoot_bow": {
+    "label_text": "shoot bow",
+    "action_anchor": "A person draws and releases a bowstring to propel an arrow.",
+    "entity_priors": [
+      "shoot",
+      "bow",
+      "arrow"
+    ],
+    "scene_priors": [
+      "archery field"
+    ],
+    "attribute_cues": [
+      "two-handed grip",
+      "arm extended forward",
+      "eye alignment",
+      "string tension"
+    ],
+    "phase_cues": [
+      "nocking arrow on string",
+      "drawing bowstring back",
+      "releasing arrow forward"
+    ],
+    "confusion_cues": [
+      "throwing spear",
+      "firing crossbow"
+    ]
+  },
+  "situp": {
+    "label_text": "sit up",
+    "action_anchor": "A person lies on their back and raises their torso to a seated position.",
+    "entity_priors": [
+      "situp",
+      "floor",
+      "mat"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "ground contact",
+      "back on ground",
+      "torso vertical",
+      "hands near head"
+    ],
+    "phase_cues": [
+      "lying supine with knees bent",
+      "curling torso upward using abdominal muscles",
+      "reaching seated position with torso upright"
+    ],
+    "confusion_cues": [
+      "crunch",
+      "lying down"
+    ]
+  },
+  "stand": {
+    "label_text": "standing upright",
+    "action_anchor": "A person's body is vertical with feet on the ground and no other support.",
+    "entity_priors": [
+      "stand",
+      "feet",
+      "ground"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "vertical posture",
+      "feet contact",
+      "stable balance",
+      "upright orientation"
+    ],
+    "phase_cues": [
+      "feet planted on surface",
+      "body rises to vertical",
+      "maintains upright stillness"
+    ],
+    "confusion_cues": [
+      "sitting",
+      "walking"
+    ]
+  },
+  "sword": {
+    "label_text": "sword fighting",
+    "action_anchor": "A person swings a sword through the air.",
+    "entity_priors": [
+      "sword",
+      "hand",
+      "arm"
+    ],
+    "scene_priors": [
+      "battlefield"
+    ],
+    "attribute_cues": [
+      "body rotation",
+      "object contact",
+      "two-handed grip",
+      "forward thrust"
+    ],
+    "phase_cues": [
+      "raising sword above shoulder",
+      "swinging blade in arc",
+      "following through with momentum"
+    ],
+    "confusion_cues": [
+      "knife fighting",
+      "fencing"
+    ]
+  },
+  "sword exercise": {
+    "label_text": "sword practice drill",
+    "action_anchor": "A person swings a sword through deliberate, controlled motions.",
+    "entity_priors": [
+      "sword",
+      "exercise",
+      "training uniform"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "body rotation",
+      "object contact",
+      "two-handed grip",
+      "forward stance"
+    ],
+    "phase_cues": [
+      "starting stance with sword raised",
+      "executing a downward or horizontal cut",
+      "returning to guard position"
+    ],
+    "confusion_cues": [
+      "sword fighting",
+      "sword cleaning"
+    ]
+  },
+  "throw": {
+    "label_text": "throw object",
+    "action_anchor": "Arm swings back then forward, releasing object into air.",
+    "entity_priors": [
+      "throw",
+      "ball",
+      "rock"
+    ],
+    "scene_priors": [
+      "outdoor field"
+    ],
+    "attribute_cues": [
+      "overhand motion",
+      "forward trajectory",
+      "hand release",
+      "arm extension"
+    ],
+    "phase_cues": [
+      "arm draws back behind body",
+      "arm accelerates forward",
+      "object releases from hand"
+    ],
+    "confusion_cues": [
+      "catch",
+      "toss"
+    ]
+  },
+  "turn": {
+    "label_text": "turn body",
+    "action_anchor": "A person rotates their torso and shoulders to change facing direction.",
+    "entity_priors": [
+      "turn",
+      "torso",
+      "shoulders"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "rotational motion",
+      "upper body twist",
+      "weight shift",
+      "direction change"
+    ],
+    "phase_cues": [
+      "initial facing forward stance",
+      "torso rotation with shoulder alignment",
+      "complete facing new direction"
+    ],
+    "confusion_cues": [
+      "spin (full 360° rotation)",
+      "lean (tilt without rotation)"
+    ]
+  },
+  "walk": {
+    "label_text": "person walking",
+    "action_anchor": "A person moves forward by alternating leg strides.",
+    "entity_priors": [
+      "walk",
+      "legs",
+      "feet"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "forward motion",
+      "upright posture",
+      "arm swing",
+      "foot contact"
+    ],
+    "phase_cues": [
+      "leg lifts off ground",
+      "leg swings forward",
+      "foot lands ahead"
+    ],
+    "confusion_cues": [
+      "running",
+      "standing"
+    ]
+  },
+  "wave": {
+    "label_text": "wave hand",
+    "action_anchor": "A person moves their hand side-to-side with palm facing outward.",
+    "entity_priors": [
+      "wave",
+      "hand",
+      "arm"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "side-to-side motion",
+      "palm outward",
+      "arm extended",
+      "repetitive"
+    ],
+    "phase_cues": [
+      "arm raises with hand open",
+      "hand sweeps horizontally",
+      "arm lowers to rest"
+    ],
+    "confusion_cues": [
+      "beckon gesture",
+      "wipe surface"
+    ]
+  },
+  "fencing": {
+    "label_text": "fencing with foil",
+    "action_anchor": "Two opponents lunge and parry with thin swords while wearing protective gear.",
+    "entity_priors": [
+      "fencer",
+      "foil sword",
+      "mask"
+    ],
+    "scene_priors": [
+      "fencing piste"
+    ],
+    "attribute_cues": [
+      "forward lunge",
+      "blade contact",
+      "en garde stance",
+      "rapid footwork"
+    ],
+    "phase_cues": [
+      "en garde stance with sword raised",
+      "lunge forward with arm extended",
+      "parry opponent's blade with circular motion"
+    ],
+    "confusion_cues": [
+      "sword fighting in historical",
+      "kendo with bamboo swords"
+    ]
+  },
+  "kick": {
+    "label_text": "kick a ball",
+    "action_anchor": "A person swings their leg forward to strike an object with their foot.",
+    "entity_priors": [
+      "kick",
+      "foot",
+      "ball"
+    ],
+    "scene_priors": [
+      "sports field"
+    ],
+    "attribute_cues": [
+      "kick motion",
+      "forward swing",
+      "foot contact",
+      "leg extension"
+    ],
+    "phase_cues": [
+      "Leg lifts backward with knee bent",
+      "Leg swings forward rapidly toward object",
+      "Foot makes contact, propelling object away"
+    ],
+    "confusion_cues": [
+      "punt (similar motion but",
+      "stomp (downward foot motion"
+    ]
+  },
+  "kick ball": {
+    "label_text": "kick ball",
+    "action_anchor": "A person swings their leg to strike a ball with their foot.",
+    "entity_priors": [
+      "kick",
+      "ball",
+      "foot"
+    ],
+    "scene_priors": [
+      "grass field"
+    ],
+    "attribute_cues": [
+      "kick motion",
+      "forward swing",
+      "foot contact",
+      "ball propulsion"
+    ],
+    "phase_cues": [
+      "leg draws back in preparation",
+      "foot makes contact with ball",
+      "leg follows through after impact"
+    ],
+    "confusion_cues": [
+      "throw ball",
+      "dribble ball"
+    ]
+  },
+  "pick": {
+    "label_text": "pick up object",
+    "action_anchor": "A hand reaches toward and grasps an object, lifting it from a surface.",
+    "entity_priors": [
+      "pick",
+      "hand",
+      "fingers"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward reach",
+      "grip contact",
+      "upward lift",
+      "object separation"
+    ],
+    "phase_cues": [
+      "hand extends toward object",
+      "fingers close around object",
+      "object lifts from surface"
+    ],
+    "confusion_cues": [
+      "place down",
+      "push aside"
+    ]
+  },
+  "pour": {
+    "label_text": "pour liquid",
+    "action_anchor": "A person tilts a container to transfer liquid into another vessel.",
+    "entity_priors": [
+      "pour",
+      "hand",
+      "container"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "tilting motion",
+      "liquid flow",
+      "hand grip"
+    ],
+    "phase_cues": [
+      "hand grasps container",
+      "container tilts and liquid pours",
+      "container returns upright"
+    ],
+    "confusion_cues": [
+      "stirring",
+      "spilling"
+    ]
+  },
+  "pushup": {
+    "label_text": "pushup exercise",
+    "action_anchor": "A person lowers and raises their body using their arms while keeping their body.",
+    "entity_priors": [
+      "pushup",
+      "floor",
+      "hands"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "ground contact",
+      "body straight",
+      "elbows bending",
+      "chest lowering"
+    ],
+    "phase_cues": [
+      "starting in plank position with arms extended",
+      "lowering body until chest nears the floor",
+      "pushing back up to starting position"
+    ],
+    "confusion_cues": [
+      "plank hold",
+      "burpee"
+    ]
+  },
+  "run": {
+    "label_text": "person running",
+    "action_anchor": "A person moves rapidly with alternating leg strides and arm swings.",
+    "entity_priors": [
+      "run",
+      "athlete",
+      "runner"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "forward motion",
+      "bouncing gait",
+      "rapid pace",
+      "body leaning"
+    ],
+    "phase_cues": [
+      "legs push off ground",
+      "mid-air stride with opposite leg forward",
+      "foot lands and prepares next push"
+    ],
+    "confusion_cues": [
+      "jogging",
+      "walking fast"
+    ]
+  },
+  "sit": {
+    "label_text": "sit down",
+    "action_anchor": "A person bends their knees and lowers their torso onto a surface.",
+    "entity_priors": [
+      "sit",
+      "chair",
+      "bench"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward motion",
+      "bent knees",
+      "torso contact",
+      "upright posture"
+    ],
+    "phase_cues": [
+      "person standing upright",
+      "person bending knees and leaning back",
+      "person's torso resting on surface with legs"
+    ],
+    "confusion_cues": [
+      "crouch",
+      "kneel"
+    ]
+  },
+  "smoke": {
+    "label_text": "smoking a cigarette",
+    "action_anchor": "A person holds a cigarette to their mouth and inhales smoke.",
+    "entity_priors": [
+      "smoke",
+      "cigarette",
+      "lighter"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand to mouth",
+      "inhaling motion",
+      "smoke exhale",
+      "holding cigarette"
+    ],
+    "phase_cues": [
+      "hand brings cigarette to mouth",
+      "inhales with lips on cigarette",
+      "exhales smoke cloud from mouth"
+    ],
+    "confusion_cues": [
+      "blowing out candles",
+      "drinking from straw"
+    ]
+  },
+  "talk": {
+    "label_text": "talk to someone",
+    "action_anchor": "A person faces another with mouth moving and gestures.",
+    "entity_priors": [
+      "talk",
+      "mouth",
+      "hands"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "facing forward",
+      "mouth open",
+      "hand gestures",
+      "eye contact"
+    ],
+    "phase_cues": [
+      "person turns toward another",
+      "mouth moves with speech sounds",
+      "hands gesture while speaking"
+    ],
+    "confusion_cues": [
+      "singing",
+      "whispering"
+    ]
+  }
+}

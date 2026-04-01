@@ -1,0 +1,13 @@
+Write one detailed visual paragraph for the UCF101-style action class: "{class_name}".
+
+Requirements:
+1) English only, one paragraph, 100-150 words.
+2) Describe visible motion of key body parts and object/tool interactions with precise verbs.
+3) Use explicit temporal structure: setup -> execution -> follow-through.
+4) For sports actions, include stance, acceleration/deceleration, swing/throw/kick phase, and recovery posture.
+5) For daily actions, include hand trajectory, contact changes, and repeated micro-patterns if present.
+6) Include scene cues only when they are visually typical and discriminative (court, pool, gym, kitchen, etc.).
+7) Add at least two contrastive cues with explicit comparisons using "unlike ...", targeting near classes.
+8) Avoid abstract goals or intent; keep language strictly visual.
+9) Do not mention datasets, labels, model names, or "this class".
+10) Do not output bullets, numbering, headings, quotes, or markdown.

@@ -1,0 +1,13 @@
+Write one detailed visual paragraph for the Kinetics-style action class: "{class_name}".
+
+Requirements:
+1) English only, one paragraph, 100-150 words.
+2) Describe only observable visual evidence: body motion, object interaction, spatial relation changes, and temporal progression.
+3) Use explicit temporal structure: beginning -> middle -> ending, with clear transitions.
+4) Include interaction context (person-person, person-object, person-environment) only when visually typical.
+5) Emphasize discriminative cues: motion axis, amplitude, rhythm, contact timing, and repeated pattern.
+6) Add at least two contrastive cues with explicit comparisons using "unlike ...", especially for semantically similar classes.
+7) If direction or state change is implied (left/right, in/out, up/down, on/off, open/close), state it explicitly.
+8) Avoid generic openings, abstract intention, and non-visual inference.
+9) Do not mention datasets, labels, model names, or "this class".
+10) Do not output bullets, numbering, headings, quotes, or markdown.

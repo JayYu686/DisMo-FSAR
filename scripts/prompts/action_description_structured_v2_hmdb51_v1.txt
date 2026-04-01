@@ -1,0 +1,30 @@
+Generate one JSON object for the action class "{class_name}".
+
+Return JSON only. No markdown fences. No extra prose.
+
+Schema:
+{
+  "label_text": "canonical short class phrase",
+  "action_anchor": "one short visual sentence",
+  "entity_priors": ["entity 1", "entity 2"],
+  "scene_priors": ["scene cue 1", "scene cue 2"],
+  "attribute_cues": ["attribute cue 1", "attribute cue 2"],
+  "phase_cues": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "confusion_cues": ["easy confusion 1", "easy confusion 2"]
+}
+
+Requirements:
+1) English only.
+2) Focus on body pose, limb motion, short object interaction, and compact scene cues.
+3) label_text must be 2-6 words and should look like a canonical class phrase.
+4) action_anchor must be one short visually grounded sentence.
+5) entity_priors: at most 6 short noun phrases.
+6) scene_priors: at most 4 compact scene cues.
+7) attribute_cues: at most 4 short direction/state/contact cues.
+8) phase_cues: exactly {num_phases} short cues in clear temporal order.
+9) confusion_cues: at most 2 short cues for easy confusions.
+10) Avoid long narrative descriptions, dataset references, and caption-style openings.

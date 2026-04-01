@@ -1,0 +1,398 @@
+[
+  {
+    "class_name": "Twisting (wringing) [something] wet until water comes out",
+    "old_attribute_cues": [
+      "hands in contact",
+      "object compressed",
+      "water out",
+      "twisting motion"
+    ],
+    "new_attribute_cues": [
+      "wet object",
+      "two-hand twist",
+      "compression",
+      "water out"
+    ],
+    "old_phase_cues": [
+      "hands grip wet object",
+      "twist object tightly",
+      "water drips from object"
+    ],
+    "new_phase_cues": [
+      "hands grip wet object",
+      "hands twist and squeeze",
+      "water leaves object"
+    ],
+    "old_confusion_cues": [
+      "wringing dry object",
+      "squeezing without twist"
+    ],
+    "new_confusion_cues": [
+      "Twisting [something]",
+      "Pushing [something] off of [something]"
+    ]
+  },
+  {
+    "class_name": "Poking a hole into [something soft]",
+    "old_attribute_cues": [
+      "inward motion",
+      "contact point",
+      "surface deformation",
+      "downward pressure"
+    ],
+    "new_attribute_cues": [
+      "soft solid",
+      "elastic deformation",
+      "puncture in soft body",
+      "shape mostly stays"
+    ],
+    "old_phase_cues": [
+      "finger approaches soft surface",
+      "finger presses into surface, forming a dent",
+      "finger withdraws, leaving a hole"
+    ],
+    "new_phase_cues": [
+      "tip nears soft solid",
+      "surface deforms around tip",
+      "puncture remains in soft body"
+    ],
+    "old_confusion_cues": [
+      "tapping surface",
+      "pressing without piercing"
+    ],
+    "new_confusion_cues": [
+      "Poking a hole into [some substance]",
+      "pressing without piercing"
+    ]
+  },
+  {
+    "class_name": "Pretending to take [something] from [somewhere]",
+    "old_attribute_cues": [
+      "hand open",
+      "no contact",
+      "hand moving toward",
+      "gaze toward [something]"
+    ],
+    "new_attribute_cues": [
+      "pretend",
+      "no contact",
+      "hand withdraws empty",
+      "target unchanged"
+    ],
+    "old_phase_cues": [
+      "hand approaches [something]",
+      "hand hovers near [something]",
+      "hand withdraws without contact"
+    ],
+    "new_phase_cues": [
+      "hand moves toward target",
+      "hand hovers without touching",
+      "hand leaves empty and target stays"
+    ],
+    "old_confusion_cues": [
+      "actually taking",
+      "pointing at"
+    ],
+    "new_confusion_cues": [
+      "Taking [something] out of [something]",
+      "Poking a stack of [something] so the stack collapses"
+    ]
+  },
+  {
+    "class_name": "Putting [something] upright on the table",
+    "old_attribute_cues": [
+      "vertical orientation",
+      "contact with surface",
+      "stable support",
+      "upright position"
+    ],
+    "new_attribute_cues": [
+      "upright",
+      "base contact",
+      "supported",
+      "stable"
+    ],
+    "old_phase_cues": [
+      "hand holding object horizontally",
+      "hand moving object toward table",
+      "object standing vertically on table"
+    ],
+    "new_phase_cues": [
+      "object held above table",
+      "base touches table first",
+      "object remains upright on surface"
+    ],
+    "old_confusion_cues": [
+      "laying object flat on table",
+      "placing object in container on table"
+    ],
+    "new_confusion_cues": [
+      "Dropping [something] into [something]",
+      "Putting [something] on the edge of [something] so it is not supported and falls down"
+    ]
+  },
+  {
+    "class_name": "Poking a hole into [some substance]",
+    "old_attribute_cues": [
+      "inward motion",
+      "contact point",
+      "surface deformation",
+      "tool tip visible"
+    ],
+    "new_attribute_cues": [
+      "material mass",
+      "tool enters material",
+      "cavity in substance",
+      "material yields around tip"
+    ],
+    "old_phase_cues": [
+      "tool approaches substance surface",
+      "tool penetrates substance, forming a cavity",
+      "tool retracts, leaving a hole"
+    ],
+    "new_phase_cues": [
+      "tip nears material mass",
+      "tool enters yielding material",
+      "cavity remains in substance"
+    ],
+    "old_confusion_cues": [
+      "pressing without penetration",
+      "scratching surface"
+    ],
+    "new_confusion_cues": [
+      "Poking a hole into [something soft]",
+      "stirring material"
+    ]
+  },
+  {
+    "class_name": "Rolling [something] on a flat surface",
+    "old_attribute_cues": [
+      "contact with surface",
+      "forward direction",
+      "rotational motion",
+      "horizontal orientation"
+    ],
+    "new_attribute_cues": [
+      "continuous rotation",
+      "flat support",
+      "no lifting",
+      "forward roll"
+    ],
+    "old_phase_cues": [
+      "hand makes contact with object side",
+      "object begins rotating while sliding",
+      "object continues rolling away from hand"
+    ],
+    "new_phase_cues": [
+      "object starts on flat surface",
+      "object rolls forward while supported",
+      "object stays on surface farther away"
+    ],
+    "old_confusion_cues": [
+      "sliding without rotation",
+      "picking up and placing"
+    ],
+    "new_confusion_cues": [
+      "Poking a stack of [something] so the stack collapses",
+      "Pretending to take [something] from [somewhere]"
+    ]
+  },
+  {
+    "class_name": "Poking a stack of [something] so the stack collapses",
+    "old_attribute_cues": [
+      "contact from side",
+      "support loss",
+      "downward motion",
+      "scattered arrangement"
+    ],
+    "new_attribute_cues": [
+      "side contact",
+      "stack instability",
+      "collapse",
+      "scatter"
+    ],
+    "old_phase_cues": [
+      "finger approaches stack side",
+      "finger makes contact, stack tilts",
+      "stack falls, items scatter"
+    ],
+    "new_phase_cues": [
+      "stack stands upright",
+      "side poke makes stack unstable",
+      "stack no longer upright and items scatter"
+    ],
+    "old_confusion_cues": [
+      "building a stack",
+      "tapping stack top"
+    ],
+    "new_confusion_cues": [
+      "Rolling [something] on a flat surface",
+      "Pretending to take [something] from [somewhere]"
+    ]
+  },
+  {
+    "class_name": "Twisting [something]",
+    "old_attribute_cues": [
+      "clockwise rotation",
+      "counterclockwise rotation",
+      "hand contact",
+      "object deformation"
+    ],
+    "new_attribute_cues": [
+      "rotation around axis",
+      "hand contact",
+      "in-place turn",
+      "object stays held"
+    ],
+    "old_phase_cues": [
+      "hand grasps object",
+      "wrist rotates object",
+      "object turns position"
+    ],
+    "new_phase_cues": [
+      "hand grasps object",
+      "object turns around axis",
+      "object stays twisted in hand"
+    ],
+    "old_confusion_cues": [
+      "turning [something]",
+      "unscrewing [something]"
+    ],
+    "new_confusion_cues": [
+      "Twisting (wringing) [something] wet until water comes out",
+      "Poking a hole into [something soft]"
+    ]
+  },
+  {
+    "class_name": "[Something] falling like a feather or paper",
+    "old_attribute_cues": [
+      "downward motion",
+      "no rotation",
+      "fluttering",
+      "light contact with air"
+    ],
+    "new_attribute_cues": [
+      "slow descent",
+      "air-drift",
+      "fluttering",
+      "light object"
+    ],
+    "old_phase_cues": [
+      "object released from support",
+      "object drifts downward erratically",
+      "object lands softly on surface"
+    ],
+    "new_phase_cues": [
+      "light object is released",
+      "object drifts and flutters downward",
+      "object lands lightly"
+    ],
+    "old_confusion_cues": [
+      "falling fast like a rock",
+      "floating upward like a balloon"
+    ],
+    "new_confusion_cues": [
+      "Dropping [something] into [something]",
+      "Putting [something] on the edge of [something] so it is not supported and falls down"
+    ]
+  },
+  {
+    "class_name": "Putting [something] on the edge of [something] so it is not supported and falls down",
+    "old_attribute_cues": [
+      "contact with edge only",
+      "no support underneath",
+      "gravity direction",
+      "falling motion"
+    ],
+    "new_attribute_cues": [
+      "edge placement",
+      "unsupported",
+      "balance loss",
+      "falling"
+    ],
+    "old_phase_cues": [
+      "hand holding object near edge",
+      "object placed on edge with partial contact",
+      "object loses balance and falls"
+    ],
+    "new_phase_cues": [
+      "object held near edge",
+      "only part of object is supported",
+      "object loses support and falls"
+    ],
+    "old_confusion_cues": [
+      "placing object on stable surface",
+      "balancing object carefully"
+    ],
+    "new_confusion_cues": [
+      "Putting [something] upright on the table",
+      "Pushing [something] off of [something]"
+    ]
+  },
+  {
+    "class_name": "Pushing [something] off of [something]",
+    "old_attribute_cues": [
+      "contact with object",
+      "force direction away",
+      "support loss",
+      "object displacement"
+    ],
+    "new_attribute_cues": [
+      "side push",
+      "support loss",
+      "edge departure",
+      "fall off"
+    ],
+    "old_phase_cues": [
+      "Hands make contact with object on surface.",
+      "Force is applied, object starts moving away.",
+      "Object separates and falls or moves off."
+    ],
+    "new_phase_cues": [
+      "object rests on support",
+      "side push moves object off edge",
+      "object is no longer supported"
+    ],
+    "old_confusion_cues": [
+      "pulling object toward",
+      "sliding object along"
+    ],
+    "new_confusion_cues": [
+      "Twisting (wringing) [something] wet until water comes out",
+      "Putting [something] on the edge of [something] so it is not supported and falls down"
+    ]
+  },
+  {
+    "class_name": "Dropping [something] into [something]",
+    "old_attribute_cues": [
+      "downward motion",
+      "release contact",
+      "into container",
+      "gravity fall"
+    ],
+    "new_attribute_cues": [
+      "release",
+      "into",
+      "contained",
+      "falling"
+    ],
+    "old_phase_cues": [
+      "hand holding object above container",
+      "object released and falling",
+      "object lands inside container"
+    ],
+    "new_phase_cues": [
+      "object is held above container",
+      "release sends object downward",
+      "object ends inside container"
+    ],
+    "old_confusion_cues": [
+      "throwing",
+      "placing gently"
+    ],
+    "new_confusion_cues": [
+      "Putting [something] upright on the table",
+      "Dropping [something] onto [something]"
+    ]
+  }
+]

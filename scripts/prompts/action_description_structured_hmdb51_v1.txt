@@ -1,0 +1,24 @@
+Generate one JSON object for the HMDB51 action class "{class_name}".
+
+Return JSON only. Do not add markdown fences, comments, or extra prose.
+
+Required schema:
+{{
+  "action_anchor": "one concise canonical sentence",
+  "key_entities": ["entity 1", "entity 2"],
+  "motion_phases": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "disambiguation": ["not similar action a", "not similar action b"]
+}}
+
+Requirements:
+1) English only.
+2) Focus on directly observable body parts, pose transitions, contact changes, and motion trajectory.
+3) action_anchor must be one short sentence.
+4) key_entities must contain at most 6 short visual noun phrases.
+5) motion_phases must contain exactly {num_phases} short cues in temporal order.
+6) disambiguation must contain at most 2 short cues that separate the action from visually similar actions.
+7) Avoid dataset names, model names, or generic phrases like "a video showing".

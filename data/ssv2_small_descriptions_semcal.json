@@ -1,0 +1,1448 @@
+{
+  "Pouring [something] into [something]": {
+    "global_description": "A hand tilts a source container so its contents flow into a target container.",
+    "local_description": "Objects: liquid, source container, target container, hand, table, counter Cues: tilt angle, liquid flow, into container, source above target, contained State change: source is held above target container; source tilts and contents flow into target; contents settle inside the target container",
+    "objects": [
+      "liquid",
+      "source container",
+      "target container",
+      "hand",
+      "table",
+      "counter"
+    ],
+    "state_change": [
+      "source is held above target container",
+      "source tilts and contents flow into target",
+      "contents settle inside the target container"
+    ]
+  },
+  "Poking a stack of [something] without the stack collapsing": {
+    "global_description": "A finger pushes into a vertical stack without toppling it.",
+    "local_description": "Objects: finger, stack of objects, table surface, hand Cues: gentle contact, vertical stability, minimal displacement, controlled force State change: hand approaches stack; finger makes contact with side; stack wobbles but remains upright",
+    "objects": [
+      "finger",
+      "stack of objects",
+      "table surface",
+      "hand"
+    ],
+    "state_change": [
+      "hand approaches stack",
+      "finger makes contact with side",
+      "stack wobbles but remains upright"
+    ]
+  },
+  "Pretending to poke [something]": {
+    "global_description": "A finger moves toward the target and stops short without touching it.",
+    "local_description": "Objects: person, finger, object, hand, arm Cues: finger extended, forward motion, no contact, pretend, target unchanged State change: finger points toward target; hand moves closer without touching; hand stops and withdraws with target unchanged",
+    "objects": [
+      "person",
+      "finger",
+      "object",
+      "hand",
+      "arm"
+    ],
+    "state_change": [
+      "finger points toward target",
+      "hand moves closer without touching",
+      "hand stops and withdraws with target unchanged"
+    ]
+  },
+  "Lifting up one end of [something] without letting it drop down": {
+    "global_description": "A person raises one end of an object while the other end remains supported.",
+    "local_description": "Objects: person, object, floor, table, hands, furniture Cues: one end up, other end down, contact maintained, support change State change: hands grip object near one end; one end lifts upward; object tilts with opposite end grounded",
+    "objects": [
+      "person",
+      "object",
+      "floor",
+      "table",
+      "hands",
+      "furniture"
+    ],
+    "state_change": [
+      "hands grip object near one end",
+      "one end lifts upward",
+      "object tilts with opposite end grounded"
+    ]
+  },
+  "Moving [part] of [something]": {
+    "global_description": "A hand or tool shifts a component of an object.",
+    "local_description": "Objects: hand, tool, object, component, lever, knob Cues: left/right, up/down, in/out, contact change State change: hand approaches the part; part is grasped and moved; part reaches new position",
+    "objects": [
+      "hand",
+      "tool",
+      "object",
+      "component",
+      "lever",
+      "knob"
+    ],
+    "state_change": [
+      "hand approaches the part",
+      "part is grasped and moved",
+      "part reaches new position"
+    ]
+  },
+  "Moving [something] and [something] away from each other": {
+    "global_description": "A person pulls two objects away from each other.",
+    "local_description": "Objects: person, object, hands, surface Cues: left/right separation, contact breaks, support changes, distance increases State change: Hands grasp two objects close together.; Objects are pulled in opposite directions.; Objects are separated with visible gap.",
+    "objects": [
+      "person",
+      "object",
+      "hands",
+      "surface"
+    ],
+    "state_change": [
+      "Hands grasp two objects close together.",
+      "Objects are pulled in opposite directions.",
+      "Objects are separated with visible gap."
+    ]
+  },
+  "Removing [something], revealing [something] behind": {
+    "global_description": "A hand pulls away a covering object to expose what was hidden behind.",
+    "local_description": "Objects: hand, covering object, hidden object, surface Cues: hand moves away from body, covering object separates from hidden object, hidden object becomes visible, support surface remains stationary, behind, revealed State change: hand grasps covering object; covering object lifts away from hidden object; hidden object fully visible behind",
+    "objects": [
+      "hand",
+      "covering object",
+      "hidden object",
+      "surface"
+    ],
+    "state_change": [
+      "hand grasps covering object",
+      "covering object lifts away from hidden object",
+      "hidden object fully visible behind"
+    ]
+  },
+  "Plugging [something] into [something]": {
+    "global_description": "A hand aligns a plug with an opening and inserts it until it stays inside.",
+    "local_description": "Objects: plug, socket, cord, hand, wall, outlet Cues: alignment, insertion, into opening, contained, fully inserted State change: hand holds plug near opening; plug tip aligns and enters the opening; plug remains inserted inside the opening",
+    "objects": [
+      "plug",
+      "socket",
+      "cord",
+      "hand",
+      "wall",
+      "outlet"
+    ],
+    "state_change": [
+      "hand holds plug near opening",
+      "plug tip aligns and enters the opening",
+      "plug remains inserted inside the opening"
+    ]
+  },
+  "Tipping [something] with [something in it] over, so [something in it] falls out": {
+    "global_description": "A hand tips a container until its contents fall out of it.",
+    "local_description": "Objects: hand, container, liquid, solid object, table, floor Cues: tilt angle, contents shift, out of container, not contained, support loss State change: container starts upright with contents inside; container tips and contents move toward the opening; contents fall out and no longer remain contained",
+    "objects": [
+      "hand",
+      "container",
+      "liquid",
+      "solid object",
+      "table",
+      "floor"
+    ],
+    "state_change": [
+      "container starts upright with contents inside",
+      "container tips and contents move toward the opening",
+      "contents fall out and no longer remain contained"
+    ]
+  },
+  "Stacking [number of] [something]": {
+    "global_description": "A person places one [something] on top of another to form a vertical pile.",
+    "local_description": "Objects: person, hands, [something], surface Cues: upward movement, contact between objects, vertical alignment, support from below State change: person picks up a [something]; person moves [something] above another; [something] rests on top of the pile",
+    "objects": [
+      "person",
+      "hands",
+      "[something]",
+      "surface"
+    ],
+    "state_change": [
+      "person picks up a [something]",
+      "person moves [something] above another",
+      "[something] rests on top of the pile"
+    ]
+  },
+  "Putting [something] onto a slanted surface but it doesn't glide down": {
+    "global_description": "A hand places an object on a slope and it stays in place instead of sliding.",
+    "local_description": "Objects: person, hand, object, slanted surface, friction point Cues: slanted support, contact maintained, static friction, no downward slide, still supported State change: hand brings object to the slanted surface; object is placed onto the slope; object remains on the slope without gliding down",
+    "objects": [
+      "person",
+      "hand",
+      "object",
+      "slanted surface",
+      "friction point"
+    ],
+    "state_change": [
+      "hand brings object to the slanted surface",
+      "object is placed onto the slope",
+      "object remains on the slope without gliding down"
+    ]
+  },
+  "Moving [something] across a surface until it falls down": {
+    "global_description": "A hand pushes an object across a surface until it leaves support and falls.",
+    "local_description": "Objects: hand, object, table, edge, floor, surface Cues: horizontal motion, surface contact, edge departure, loss of support, falls down State change: object starts supported on the surface; object is pushed across the surface toward an edge; object leaves the surface and falls down",
+    "objects": [
+      "hand",
+      "object",
+      "table",
+      "edge",
+      "floor",
+      "surface"
+    ],
+    "state_change": [
+      "object starts supported on the surface",
+      "object is pushed across the surface toward an edge",
+      "object leaves the surface and falls down"
+    ]
+  },
+  "Throwing [something] in the air and catching it": {
+    "global_description": "A person throws an object upward and catches it with their hands.",
+    "local_description": "Objects: person, ball, fruit, toy, hand, object Cues: upward motion, hand contact, object in air, downward catch State change: object held in hand; object thrown upward; object caught in hand",
+    "objects": [
+      "person",
+      "ball",
+      "fruit",
+      "toy",
+      "hand",
+      "object"
+    ],
+    "state_change": [
+      "object held in hand",
+      "object thrown upward",
+      "object caught in hand"
+    ]
+  },
+  "Putting [something that cannot actually stand upright] upright on the table, so it falls on its side": {
+    "global_description": "A hand tries to stand an unstable object upright on the table, but it tips onto its side.",
+    "local_description": "Objects: person, object, table, hand Cues: upright attempt, unstable base, sideways fall, loss of stable support, sideways State change: hand positions object upright on table; hand releases object while it briefly stands; object tips over and ends on its side",
+    "objects": [
+      "person",
+      "object",
+      "table",
+      "hand"
+    ],
+    "state_change": [
+      "hand positions object upright on table",
+      "hand releases object while it briefly stands",
+      "object tips over and ends on its side"
+    ]
+  },
+  "Holding [something] next to [something]": {
+    "global_description": "A person holds an object close to another object without touching it.",
+    "local_description": "Objects: person, hand, held object, target object, arm, fingers Cues: left/right positioning, close proximity, no contact, support from below State change: hand approaches object to pick up; object lifted and moved near target; object held steady next to target",
+    "objects": [
+      "person",
+      "hand",
+      "held object",
+      "target object",
+      "arm",
+      "fingers"
+    ],
+    "state_change": [
+      "hand approaches object to pick up",
+      "object lifted and moved near target",
+      "object held steady next to target"
+    ]
+  },
+  "Pretending to put [something] underneath [something]": {
+    "global_description": "A hand moves an object toward the space below another object, but does not place it there.",
+    "local_description": "Objects: hand, small object, table, chair, box, shelf Cues: toward underside, no contact, pretend, target unchanged, hand withdraws empty State change: hand approaches the space under target; object moves toward the underside without placement; hand withdraws and nothing remains underneath",
+    "objects": [
+      "hand",
+      "small object",
+      "table",
+      "chair",
+      "box",
+      "shelf"
+    ],
+    "state_change": [
+      "hand approaches the space under target",
+      "object moves toward the underside without placement",
+      "hand withdraws and nothing remains underneath"
+    ]
+  },
+  "Poking [something] so lightly that it doesn't or almost doesn't move": {
+    "global_description": "A finger or object gently touches [something] with minimal displacement.",
+    "local_description": "Objects: finger, stick, pen, hand, object Cues: light contact, minimal movement, gentle pressure, no displacement State change: approach finger or object toward [something]; make brief, soft contact with [something]; retract with [something] nearly unmoved",
+    "objects": [
+      "finger",
+      "stick",
+      "pen",
+      "hand",
+      "object"
+    ],
+    "state_change": [
+      "approach finger or object toward [something]",
+      "make brief, soft contact with [something]",
+      "retract with [something] nearly unmoved"
+    ]
+  },
+  "Approaching [something] with your camera": {
+    "global_description": "The camera moves toward the target so it grows larger in view.",
+    "local_description": "Objects: camera, person holding camera, target object, background, hands, viewfinder Cues: towards, camera translation, closer distance, larger in frame, target unchanged State change: camera starts at a distance from target; camera moves forward toward target; camera stops closer with target larger in frame",
+    "objects": [
+      "camera",
+      "person holding camera",
+      "target object",
+      "background",
+      "hands",
+      "viewfinder"
+    ],
+    "state_change": [
+      "camera starts at a distance from target",
+      "camera moves forward toward target",
+      "camera stops closer with target larger in frame"
+    ]
+  },
+  "Poking [something] so that it spins around": {
+    "global_description": "A finger or object makes contact with [something], causing it to rotate around its axis.",
+    "local_description": "Objects: finger, stick, pen, spinning top, fidget spinner, plate Cues: contact point visible, rotational motion, support surface, left/right spin direction State change: approach and contact with object; initial push causing rotation; object spinning freely",
+    "objects": [
+      "finger",
+      "stick",
+      "pen",
+      "spinning top",
+      "fidget spinner",
+      "plate"
+    ],
+    "state_change": [
+      "approach and contact with object",
+      "initial push causing rotation",
+      "object spinning freely"
+    ]
+  },
+  "Pushing [something] so that it falls off the table": {
+    "global_description": "A hand pushes an object across the table until it falls off the edge.",
+    "local_description": "Objects: hand, object, table, floor Cues: horizontal push, table support, edge departure, loss of support, fall off State change: object rests on table; hand pushes object toward the table edge; object leaves the table and falls off",
+    "objects": [
+      "hand",
+      "object",
+      "table",
+      "floor"
+    ],
+    "state_change": [
+      "object rests on table",
+      "hand pushes object toward the table edge",
+      "object leaves the table and falls off"
+    ]
+  },
+  "Spilling [something] next to [something]": {
+    "global_description": "A hand spills material so it lands next to another object on the surface.",
+    "local_description": "Objects: liquid, container, surface, adjacent object Cues: out of container, next to object, surface contact, not contained, side placement State change: container is held near another object; material pours out beside that object; material ends on the surface next to the object",
+    "objects": [
+      "liquid",
+      "container",
+      "surface",
+      "adjacent object"
+    ],
+    "state_change": [
+      "container is held near another object",
+      "material pours out beside that object",
+      "material ends on the surface next to the object"
+    ]
+  },
+  "Pretending or trying and failing to twist [something]": {
+    "global_description": "A hand attempts to twist an object, but the object does not turn.",
+    "local_description": "Objects: person, hands, object, wrist, fingers, forearm Cues: grip contact, torsion attempt, no rotation change, pretend, fail State change: hand grasps object; hand applies twisting force with visible effort; object remains unturned after the attempt",
+    "objects": [
+      "person",
+      "hands",
+      "object",
+      "wrist",
+      "fingers",
+      "forearm"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "hand applies twisting force with visible effort",
+      "object remains unturned after the attempt"
+    ]
+  },
+  "Pulling two ends of [something] so that it separates into two pieces": {
+    "global_description": "A person pulls two ends of [something] in opposite directions until it separates.",
+    "local_description": "Objects: person, hands, object, two ends, separated pieces Cues: hands gripping ends, opposite pulling directions, tension in object, separation point visible, contained, separating State change: hands grip two ends of object; hands pull ends apart with tension; object separates into two pieces",
+    "objects": [
+      "person",
+      "hands",
+      "object",
+      "two ends",
+      "separated pieces"
+    ],
+    "state_change": [
+      "hands grip two ends of object",
+      "hands pull ends apart with tension",
+      "object separates into two pieces"
+    ]
+  },
+  "Lifting up one end of [something], then letting it drop down": {
+    "global_description": "A person lifts one end of an object upward, then releases it to fall back down.",
+    "local_description": "Objects: person, object, hand, floor, table, ground Cues: upward motion, downward fall, contact release, gravity effect State change: hand grasps one end of object; arm lifts end upward; hand releases causing drop",
+    "objects": [
+      "person",
+      "object",
+      "hand",
+      "floor",
+      "table",
+      "ground"
+    ],
+    "state_change": [
+      "hand grasps one end of object",
+      "arm lifts end upward",
+      "hand releases causing drop"
+    ]
+  },
+  "Tilting [something] with [something] on it slightly so it doesn't fall down": {
+    "global_description": "A person tilts [something] with [something] on it slightly to prevent falling.",
+    "local_description": "Objects: person, object, item, hand, surface, support Cues: slight tilt, prevent falling, controlled angle, support contact State change: hand approaches object; object tilts slightly; item remains stable",
+    "objects": [
+      "person",
+      "object",
+      "item",
+      "hand",
+      "surface",
+      "support"
+    ],
+    "state_change": [
+      "hand approaches object",
+      "object tilts slightly",
+      "item remains stable"
+    ]
+  },
+  "Spreading [something] onto [something]": {
+    "global_description": "A hand moves a tool or object across a surface, leaving a layer behind.",
+    "local_description": "Objects: hand, spreading tool, spreadable substance, surface, container Cues: left/right motion, contact with surface, support from hand, out from container State change: hand picks up tool or substance; tool contacts surface and moves laterally; substance is deposited evenly",
+    "objects": [
+      "hand",
+      "spreading tool",
+      "spreadable substance",
+      "surface",
+      "container"
+    ],
+    "state_change": [
+      "hand picks up tool or substance",
+      "tool contacts surface and moves laterally",
+      "substance is deposited evenly"
+    ]
+  },
+  "Touching (without moving) [part] of [something]": {
+    "global_description": "A hand or finger makes contact with a specific part of an object without moving it.",
+    "local_description": "Objects: hand, finger, object, surface, body part, tool Cues: contact point, left/right hand, static position, no displacement State change: hand approaches the part of the object; finger or hand touches the part without sliding; contact is maintained briefly without movement",
+    "objects": [
+      "hand",
+      "finger",
+      "object",
+      "surface",
+      "body part",
+      "tool"
+    ],
+    "state_change": [
+      "hand approaches the part of the object",
+      "finger or hand touches the part without sliding",
+      "contact is maintained briefly without movement"
+    ]
+  },
+  "Turning the camera left while filming [something]": {
+    "global_description": "A camera rotates horizontally to the left while recording.",
+    "local_description": "Objects: camera, person, hand, tripod, smartphone Cues: leftward rotation, horizontal pan, hand contact, steady support, left State change: camera held steady facing forward; camera begins rotating leftward; camera stops with leftward view",
+    "objects": [
+      "camera",
+      "person",
+      "hand",
+      "tripod",
+      "smartphone"
+    ],
+    "state_change": [
+      "camera held steady facing forward",
+      "camera begins rotating leftward",
+      "camera stops with leftward view"
+    ]
+  },
+  "Pushing [something] so that it slightly moves": {
+    "global_description": "A hand contacts an object and applies force, causing small visible displacement.",
+    "local_description": "Objects: hand, fingertips, object, surface Cues: contact maintained, small displacement, forward direction, brief duration State change: hand approaches object; contact and force application; object moves short distance",
+    "objects": [
+      "hand",
+      "fingertips",
+      "object",
+      "surface"
+    ],
+    "state_change": [
+      "hand approaches object",
+      "contact and force application",
+      "object moves short distance"
+    ]
+  },
+  "Uncovering [something]": {
+    "global_description": "A hand lifts a cover to reveal an object underneath.",
+    "local_description": "Objects: hand, cover, object, cloth, lid, surface Cues: upward motion, contact with cover, support from surface, outward direction, uncovered State change: hand approaches and grasps cover; cover is lifted upward; object becomes visible underneath",
+    "objects": [
+      "hand",
+      "cover",
+      "object",
+      "cloth",
+      "lid",
+      "surface"
+    ],
+    "state_change": [
+      "hand approaches and grasps cover",
+      "cover is lifted upward",
+      "object becomes visible underneath"
+    ]
+  },
+  "Moving [something] across a surface without it falling down": {
+    "global_description": "A hand pushes an object across a surface and it stays supported.",
+    "local_description": "Objects: hand, object, flat surface, table, counter, floor Cues: horizontal motion, surface contact, still supported, no edge departure, no fall State change: object starts supported on the surface; object is pushed across the surface; object stops while remaining supported on the surface",
+    "objects": [
+      "hand",
+      "object",
+      "flat surface",
+      "table",
+      "counter",
+      "floor"
+    ],
+    "state_change": [
+      "object starts supported on the surface",
+      "object is pushed across the surface",
+      "object stops while remaining supported on the surface"
+    ]
+  },
+  "Putting [something] behind [something]": {
+    "global_description": "A hand moves an object to a position where it's visually occluded by another object.",
+    "local_description": "Objects: hand, object, occluding object, table, shelf, wall Cues: hand-object contact, occlusion change, position change, behind relation, behind State change: hand reaches for object; hand moves object behind occluder; object becomes partially/fully hidden",
+    "objects": [
+      "hand",
+      "object",
+      "occluding object",
+      "table",
+      "shelf",
+      "wall"
+    ],
+    "state_change": [
+      "hand reaches for object",
+      "hand moves object behind occluder",
+      "object becomes partially/fully hidden"
+    ]
+  },
+  "Attaching [something] to [something]": {
+    "global_description": "A person brings two objects together until they make contact and connect.",
+    "local_description": "Objects: person, first object, second object, hands, attachment point, fastener Cues: contact established, support change, in/out motion, left/right alignment State change: person holds first object near second object; person aligns objects at attachment point; objects connect and remain joined",
+    "objects": [
+      "person",
+      "first object",
+      "second object",
+      "hands",
+      "attachment point",
+      "fastener"
+    ],
+    "state_change": [
+      "person holds first object near second object",
+      "person aligns objects at attachment point",
+      "objects connect and remain joined"
+    ]
+  },
+  "Pulling [something] onto [something]": {
+    "global_description": "A person pulls [something] onto [something] with visible tension.",
+    "local_description": "Objects: person, object, surface, hands, rope, handle Cues: left/right hand contact, upward/downward motion, support change, contact established State change: hand grasps object; object lifts off original surface; object contacts target surface",
+    "objects": [
+      "person",
+      "object",
+      "surface",
+      "hands",
+      "rope",
+      "handle"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "object lifts off original surface",
+      "object contacts target surface"
+    ]
+  },
+  "Burying [something] in [something]": {
+    "global_description": "A person pushes an object into soil with hands or a tool.",
+    "local_description": "Objects: person, shovel, dirt, hole, object, gloves Cues: downward motion, contact with soil, object inside hole, hands or tool in State change: person digs a hole in ground; person places object into hole; person covers hole with soil",
+    "objects": [
+      "person",
+      "shovel",
+      "dirt",
+      "hole",
+      "object",
+      "gloves"
+    ],
+    "state_change": [
+      "person digs a hole in ground",
+      "person places object into hole",
+      "person covers hole with soil"
+    ]
+  },
+  "Putting [number of] [something] onto [something]": {
+    "global_description": "A hand places [number of] [something] onto the surface of [something].",
+    "local_description": "Objects: hand, object being placed, target surface, table, counter, shelf Cues: hand moves downward, object contacts surface, object supported by surface, hand releases object State change: hand grasps object; hand moves object toward surface; object contacts and rests on surface",
+    "objects": [
+      "hand",
+      "object being placed",
+      "target surface",
+      "table",
+      "counter",
+      "shelf"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "hand moves object toward surface",
+      "object contacts and rests on surface"
+    ]
+  },
+  "Letting [something] roll along a flat surface": {
+    "global_description": "A hand releases an object and it rolls forward while staying on a flat surface.",
+    "local_description": "Objects: person's hand, round object, flat surface, floor, table, ball Cues: hand releases contact, continuous rotation, flat support, forward roll, no lifting State change: hand positions object on flat surface; hand releases and object begins rolling forward; object remains on the flat surface farther away",
+    "objects": [
+      "person's hand",
+      "round object",
+      "flat surface",
+      "floor",
+      "table",
+      "ball"
+    ],
+    "state_change": [
+      "hand positions object on flat surface",
+      "hand releases and object begins rolling forward",
+      "object remains on the flat surface farther away"
+    ]
+  },
+  "Bending [something] until it breaks": {
+    "global_description": "A person bends [something] until it snaps.",
+    "local_description": "Objects: person, hands, object, fragments Cues: hands in contact, object deforms, support changes, fragments separate State change: hands grip object; object bends under pressure; object snaps into pieces",
+    "objects": [
+      "person",
+      "hands",
+      "object",
+      "fragments"
+    ],
+    "state_change": [
+      "hands grip object",
+      "object bends under pressure",
+      "object snaps into pieces"
+    ]
+  },
+  "Showing [something] behind [something]": {
+    "global_description": "A person reveals something by moving it from behind another object into view.",
+    "local_description": "Objects: person, hand, object being shown, occluding object, table, shelf Cues: behind to in front, hidden to visible, hand contact, lateral movement, behind, revealed State change: hand reaches behind occluding object; hand grasps and pulls object forward; object becomes fully visible in front",
+    "objects": [
+      "person",
+      "hand",
+      "object being shown",
+      "occluding object",
+      "table",
+      "shelf"
+    ],
+    "state_change": [
+      "hand reaches behind occluding object",
+      "hand grasps and pulls object forward",
+      "object becomes fully visible in front"
+    ]
+  },
+  "Pretending to open [something] without actually opening it": {
+    "global_description": "A hand mimics opening a closure, but the object stays closed.",
+    "local_description": "Objects: hand, fingers, closed container, closed door, closed drawer, closed lid Cues: grasp at opening point, closed state unchanged, no gap created, pretend, fail State change: hand reaches closure point; hand performs an opening motion; object remains closed with no opening created",
+    "objects": [
+      "hand",
+      "fingers",
+      "closed container",
+      "closed door",
+      "closed drawer",
+      "closed lid"
+    ],
+    "state_change": [
+      "hand reaches closure point",
+      "hand performs an opening motion",
+      "object remains closed with no opening created"
+    ]
+  },
+  "Pretending to put [something] onto [something]": {
+    "global_description": "A hand mimics placing an object onto a target without making contact.",
+    "local_description": "Objects: person, hand, object, surface, table, shelf Cues: downward motion, hovering over target, no contact, pretend, target unchanged State change: hand carries object toward target; object hovers just above target; hand pulls away and the target remains unchanged",
+    "objects": [
+      "person",
+      "hand",
+      "object",
+      "surface",
+      "table",
+      "shelf"
+    ],
+    "state_change": [
+      "hand carries object toward target",
+      "object hovers just above target",
+      "hand pulls away and the target remains unchanged"
+    ]
+  },
+  "Moving away from [something] with your camera": {
+    "global_description": "The camera moves backward so the target becomes smaller in view.",
+    "local_description": "Objects: camera, person, object, vehicle, animal, building Cues: away, camera translation, increasing distance, smaller in frame, target unchanged State change: camera starts close to target; camera moves backward away from target; camera stops farther away with target smaller in frame",
+    "objects": [
+      "camera",
+      "person",
+      "object",
+      "vehicle",
+      "animal",
+      "building"
+    ],
+    "state_change": [
+      "camera starts close to target",
+      "camera moves backward away from target",
+      "camera stops farther away with target smaller in frame"
+    ]
+  },
+  "Wiping [something] off of [something]": {
+    "global_description": "A hand moves a cloth across a surface to remove debris.",
+    "local_description": "Objects: hand, cloth, surface, debris Cues: left to right motion, contact with surface State change: hand grasps cloth near debris; cloth sweeps across surface; cloth lifts away with debris",
+    "objects": [
+      "hand",
+      "cloth",
+      "surface",
+      "debris"
+    ],
+    "state_change": [
+      "hand grasps cloth near debris",
+      "cloth sweeps across surface",
+      "cloth lifts away with debris"
+    ]
+  },
+  "Pretending to spread air onto [something]": {
+    "global_description": "Open hands fan air toward a target without touching or changing it.",
+    "local_description": "Objects: person, hands, object, air, surface Cues: open hands, air motion, no contact, pretend, target unchanged State change: hands position above target; hands fan air toward the target; hands withdraw while the target remains unchanged",
+    "objects": [
+      "person",
+      "hands",
+      "object",
+      "air",
+      "surface"
+    ],
+    "state_change": [
+      "hands position above target",
+      "hands fan air toward the target",
+      "hands withdraw while the target remains unchanged"
+    ]
+  },
+  "Holding [something] over [something]": {
+    "global_description": "A hand holds an object above another object without contact.",
+    "local_description": "Objects: hand, held object, target object, arm, fingers, wrist Cues: up/down, support/contact, left/right, in/out State change: Hand grasps object; Arm lifts object upward; Object positioned above target",
+    "objects": [
+      "hand",
+      "held object",
+      "target object",
+      "arm",
+      "fingers",
+      "wrist"
+    ],
+    "state_change": [
+      "Hand grasps object",
+      "Arm lifts object upward",
+      "Object positioned above target"
+    ]
+  },
+  "Pretending or failing to wipe [something] off of [something]": {
+    "global_description": "A hand or cloth moves across a surface, but nothing is removed from it.",
+    "local_description": "Objects: hand, cloth, surface, object, person, finger Cues: swipe motion, surface contact, no residue change, pretend, fail State change: hand approaches marked surface; wiping motion moves across the surface; surface remains unchanged after wiping",
+    "objects": [
+      "hand",
+      "cloth",
+      "surface",
+      "object",
+      "person",
+      "finger"
+    ],
+    "state_change": [
+      "hand approaches marked surface",
+      "wiping motion moves across the surface",
+      "surface remains unchanged after wiping"
+    ]
+  },
+  "Pretending to put [something] on a surface": {
+    "global_description": "A hand mimics setting an object down but leaves the surface untouched.",
+    "local_description": "Objects: person, hand, object, surface, table, counter Cues: downward motion, hovering above surface, no contact, pretend, target unchanged State change: hand holds object above the surface; hand lowers object toward the surface; hand withdraws before contact and nothing is placed",
+    "objects": [
+      "person",
+      "hand",
+      "object",
+      "surface",
+      "table",
+      "counter"
+    ],
+    "state_change": [
+      "hand holds object above the surface",
+      "hand lowers object toward the surface",
+      "hand withdraws before contact and nothing is placed"
+    ]
+  },
+  "Moving [something] and [something] so they collide with each other": {
+    "global_description": "A person moves two objects until they make contact.",
+    "local_description": "Objects: person, hand, object, table, floor, tool Cues: left/right movement, toward each other, contact point, support change, collision State change: person grasps two separate objects; person moves objects toward each other; objects make visible contact",
+    "objects": [
+      "person",
+      "hand",
+      "object",
+      "table",
+      "floor",
+      "tool"
+    ],
+    "state_change": [
+      "person grasps two separate objects",
+      "person moves objects toward each other",
+      "objects make visible contact"
+    ]
+  },
+  "Pretending to turn [something] upside down": {
+    "global_description": "A hand mimics inverting an object, but no true upside-down end state is reached.",
+    "local_description": "Objects: person, object, hands, arms Cues: rotation attempt, hand contact, pretend, no completed inversion, target unchanged State change: hand grasps object; hand starts an inversion motion; object is not left upside down after the motion",
+    "objects": [
+      "person",
+      "object",
+      "hands",
+      "arms"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "hand starts an inversion motion",
+      "object is not left upside down after the motion"
+    ]
+  },
+  "Showing [something] to the camera": {
+    "global_description": "A person holds an object toward the camera lens.",
+    "local_description": "Objects: person, hand, object, camera, arm, face Cues: object in hand, hand toward camera, object visible to lens, arm extended State change: person picks up object; person lifts object toward camera; object held steady facing lens",
+    "objects": [
+      "person",
+      "hand",
+      "object",
+      "camera",
+      "arm",
+      "face"
+    ],
+    "state_change": [
+      "person picks up object",
+      "person lifts object toward camera",
+      "object held steady facing lens"
+    ]
+  },
+  "Dropping [something] onto [something]": {
+    "global_description": "An object falls from a hand and lands on a surface below.",
+    "local_description": "Objects: hand, object, surface, floor, table, ground Cues: downward motion, loss of support, contact with surface, gravity effect State change: hand holds object above surface; object released and falls downward; object makes contact with surface",
+    "objects": [
+      "hand",
+      "object",
+      "surface",
+      "floor",
+      "table",
+      "ground"
+    ],
+    "state_change": [
+      "hand holds object above surface",
+      "object released and falls downward",
+      "object makes contact with surface"
+    ]
+  },
+  "Pushing [something] so that it almost falls off but doesn't": {
+    "global_description": "A hand pushes an object to the edge but it remains supported and does not fall.",
+    "local_description": "Objects: hand, object, table, counter, ledge, shelf Cues: horizontal push, near edge, still supported, balanced, no fall State change: object rests on the surface; hand pushes object toward the edge; object stops near the edge without falling off",
+    "objects": [
+      "hand",
+      "object",
+      "table",
+      "counter",
+      "ledge",
+      "shelf"
+    ],
+    "state_change": [
+      "object rests on the surface",
+      "hand pushes object toward the edge",
+      "object stops near the edge without falling off"
+    ]
+  },
+  "Piling [something] up": {
+    "global_description": "A person stacks multiple objects vertically into a heap.",
+    "local_description": "Objects: person, stackable objects, hands, ground, table, pile Cues: upward movement, contact between objects, support from below, increasing height State change: person picks up an object; person places object on top of existing stack; objects form a tall, stable pile",
+    "objects": [
+      "person",
+      "stackable objects",
+      "hands",
+      "ground",
+      "table",
+      "pile"
+    ],
+    "state_change": [
+      "person picks up an object",
+      "person places object on top of existing stack",
+      "objects form a tall, stable pile"
+    ]
+  },
+  "Taking [one of many similar things on the table]": {
+    "global_description": "A hand reaches toward and grasps one item from a group of similar items on a table.",
+    "local_description": "Objects: hand, object, table, other objects Cues: hand moves toward object, fingers close around object, object lifts from surface, object separates from group State change: hand approaches object among similar items; fingers make contact and grip object; object lifts away leaving others behind",
+    "objects": [
+      "hand",
+      "object",
+      "table",
+      "other objects"
+    ],
+    "state_change": [
+      "hand approaches object among similar items",
+      "fingers make contact and grip object",
+      "object lifts away leaving others behind"
+    ]
+  },
+  "Putting [something] in front of [something]": {
+    "global_description": "A hand moves an object to a position directly ahead of another object.",
+    "local_description": "Objects: hand, object, target object, table, surface, support Cues: left/right alignment, front/back position, contact with surface, support change State change: hand grasps object; object moves forward; object placed ahead of target",
+    "objects": [
+      "hand",
+      "object",
+      "target object",
+      "table",
+      "surface",
+      "support"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "object moves forward",
+      "object placed ahead of target"
+    ]
+  },
+  "Laying [something] on the table on its side, not upright": {
+    "global_description": "A hand places an object on the table so it rests on its side.",
+    "local_description": "Objects: person, object, table, hand, surface Cues: horizontal orientation, side contact, table support, sideways, not upright State change: hand carries object above table; object is lowered with its side toward the table; object rests sideways on the table surface",
+    "objects": [
+      "person",
+      "object",
+      "table",
+      "hand",
+      "surface"
+    ],
+    "state_change": [
+      "hand carries object above table",
+      "object is lowered with its side toward the table",
+      "object rests sideways on the table surface"
+    ]
+  },
+  "Lifting a surface with [something] on it until it starts sliding down": {
+    "global_description": "A person lifts a flat object with an item on top until the item begins sliding downward.",
+    "local_description": "Objects: person, flat surface, object on surface, hands Cues: upward motion, contact with surface, support change, downward slide start State change: surface is level with object resting on top; surface is tilted upward by lifting; object loses grip and slides down surface",
+    "objects": [
+      "person",
+      "flat surface",
+      "object on surface",
+      "hands"
+    ],
+    "state_change": [
+      "surface is level with object resting on top",
+      "surface is tilted upward by lifting",
+      "object loses grip and slides down surface"
+    ]
+  },
+  "Poking [something] so it slightly moves": {
+    "global_description": "A finger or object makes brief contact with an item, causing it to shift position minimally.",
+    "local_description": "Objects: finger, stick, pen, object, small item, surface Cues: brief contact, slight movement, left/right shift, minimal displacement State change: Approach finger or object toward target; Make brief contact with target; Target shifts slightly from original position",
+    "objects": [
+      "finger",
+      "stick",
+      "pen",
+      "object",
+      "small item",
+      "surface"
+    ],
+    "state_change": [
+      "Approach finger or object toward target",
+      "Make brief contact with target",
+      "Target shifts slightly from original position"
+    ]
+  },
+  "Putting [something] into [something]": {
+    "global_description": "A hand moves an object through an opening so it ends up inside a container.",
+    "local_description": "Objects: hand, object, container, lid, table, shelf Cues: downward motion, entry through opening, into container, contained, inside end state State change: hand holds object near container opening; object moves through the opening; object ends inside the container",
+    "objects": [
+      "hand",
+      "object",
+      "container",
+      "lid",
+      "table",
+      "shelf"
+    ],
+    "state_change": [
+      "hand holds object near container opening",
+      "object moves through the opening",
+      "object ends inside the container"
+    ]
+  },
+  "Pulling [something] from right to left": {
+    "global_description": "A person pulls [something] horizontally from their right side toward their left side.",
+    "local_description": "Objects: person, hand, object, handle, rope, cart Cues: right to left, horizontal motion, hand contact, tension visible State change: Hand reaches toward object on right side; Hand grasps object and begins pulling leftward; Object moves leftward with visible tension",
+    "objects": [
+      "person",
+      "hand",
+      "object",
+      "handle",
+      "rope",
+      "cart"
+    ],
+    "state_change": [
+      "Hand reaches toward object on right side",
+      "Hand grasps object and begins pulling leftward",
+      "Object moves leftward with visible tension"
+    ]
+  },
+  "Showing that [something] is empty": {
+    "global_description": "A hand tilts a container to reveal that nothing is inside it.",
+    "local_description": "Objects: person, container, hands, empty space Cues: tilted container, open interior, empty, no contents visible, inside visible State change: container starts upright in hand; container tilts toward the viewer; interior is visible and clearly empty",
+    "objects": [
+      "person",
+      "container",
+      "hands",
+      "empty space"
+    ],
+    "state_change": [
+      "container starts upright in hand",
+      "container tilts toward the viewer",
+      "interior is visible and clearly empty"
+    ]
+  },
+  "Spilling [something] behind [something]": {
+    "global_description": "A hand spills material so it lands behind another object rather than inside it.",
+    "local_description": "Objects: person, liquid, container, object behind, floor, surface Cues: out of container, behind object, surface contact, not contained, backward placement State change: container is held near another object; material pours out and travels behind that object; material ends on the surface behind the object",
+    "objects": [
+      "person",
+      "liquid",
+      "container",
+      "object behind",
+      "floor",
+      "surface"
+    ],
+    "state_change": [
+      "container is held near another object",
+      "material pours out and travels behind that object",
+      "material ends on the surface behind the object"
+    ]
+  },
+  "Letting [something] roll down a slanted surface": {
+    "global_description": "A hand releases an object and it rolls downward along a slope.",
+    "local_description": "Objects: hand, object, slanted surface, ground Cues: downward direction, continuous rotation, slanted support, gravity-driven, no lifting State change: hand places object on upper part of slope; hand releases object and it rolls downhill; object reaches a lower point after rolling down slope",
+    "objects": [
+      "hand",
+      "object",
+      "slanted surface",
+      "ground"
+    ],
+    "state_change": [
+      "hand places object on upper part of slope",
+      "hand releases object and it rolls downhill",
+      "object reaches a lower point after rolling down slope"
+    ]
+  },
+  "Holding [something] behind [something]": {
+    "global_description": "A person holds an object concealed behind another object.",
+    "local_description": "Objects: person, hand, held object, concealing object, arm, fingers Cues: behind, concealed, hand contact, partial visibility State change: person grasps object with hand; person moves object behind another object; object remains positioned behind concealing object",
+    "objects": [
+      "person",
+      "hand",
+      "held object",
+      "concealing object",
+      "arm",
+      "fingers"
+    ],
+    "state_change": [
+      "person grasps object with hand",
+      "person moves object behind another object",
+      "object remains positioned behind concealing object"
+    ]
+  },
+  "Twisting (wringing) [something] wet until water comes out": {
+    "global_description": "A person twists a wet object with both hands until water drips out.",
+    "local_description": "Objects: wet cloth, towel, sponge, garment, hands, water Cues: hands in contact, object compressed, water out, twisting motion, wet object, two-hand twist State change: hands grip wet object; twist object tightly with two-hand squeeze; water drips from wet object",
+    "objects": [
+      "wet cloth",
+      "towel",
+      "sponge",
+      "garment",
+      "hands",
+      "water"
+    ],
+    "state_change": [
+      "hands grip wet object",
+      "twist object tightly with two-hand squeeze",
+      "water drips from wet object"
+    ]
+  },
+  "Poking a hole into [something soft]": {
+    "global_description": "A finger pushes into a soft surface, creating a depression.",
+    "local_description": "Objects: finger, soft surface, tool, hand, object Cues: inward motion, contact point, surface deformation, downward pressure, soft solid, elastic deformation State change: finger approaches soft surface; finger presses into soft surface, forming an elastic dent; finger withdraws, leaving a hole in soft body",
+    "objects": [
+      "finger",
+      "soft surface",
+      "tool",
+      "hand",
+      "object"
+    ],
+    "state_change": [
+      "finger approaches soft surface",
+      "finger presses into soft surface, forming an elastic dent",
+      "finger withdraws, leaving a hole in soft body"
+    ]
+  },
+  "Pretending to take [something] from [somewhere]": {
+    "global_description": "A person's hand moves toward [something] in [somewhere] without making contact.",
+    "local_description": "Objects: person, hand, [something], [somewhere] Cues: hand open, no contact, hand moving toward, gaze toward [something], pretend, hand withdraws empty State change: hand approaches [something]; hand hovers near [something] without touching; hand withdraws empty while target stays in place",
+    "objects": [
+      "person",
+      "hand",
+      "[something]",
+      "[somewhere]"
+    ],
+    "state_change": [
+      "hand approaches [something]",
+      "hand hovers near [something] without touching",
+      "hand withdraws empty while target stays in place"
+    ]
+  },
+  "Putting [something] upright on the table": {
+    "global_description": "A hand sets an object on a table so it stays upright.",
+    "local_description": "Objects: hand, object, table, table surface Cues: vertical orientation, contact with surface, stable support, upright position, base contact, supported State change: hand carries object toward table; object base touches table before the hand lets go; object remains upright on the table surface",
+    "objects": [
+      "hand",
+      "object",
+      "table",
+      "table surface"
+    ],
+    "state_change": [
+      "hand carries object toward table",
+      "object base touches table before the hand lets go",
+      "object remains upright on the table surface"
+    ]
+  },
+  "Poking a hole into [some substance]": {
+    "global_description": "A finger or tool pushes into a material mass and leaves a cavity.",
+    "local_description": "Objects: finger, stick, pen, soft material, paper, clay Cues: inward motion, contact point, surface deformation, material mass, material yields around tip, cavity remains in substance State change: tool approaches material mass; tool enters yielding substance and opens a cavity; tool retracts, leaving a cavity in the material mass",
+    "objects": [
+      "finger",
+      "stick",
+      "pen",
+      "soft material",
+      "paper",
+      "clay"
+    ],
+    "state_change": [
+      "tool approaches material mass",
+      "tool enters yielding substance and opens a cavity",
+      "tool retracts, leaving a cavity in the material mass"
+    ]
+  },
+  "Rolling [something] on a flat surface": {
+    "global_description": "A hand pushes a cylindrical object forward, causing it to rotate while maintaining contact with a flat plane.",
+    "local_description": "Objects: hand, fingers, cylindrical object, flat surface, palm, forearm Cues: contact with surface, forward direction, rotational motion, horizontal orientation, continuous rotation, flat support State change: hand makes contact with object side; object begins rotating while staying supported on the flat surface; object continues rolling away while staying on flat surface",
+    "objects": [
+      "hand",
+      "fingers",
+      "cylindrical object",
+      "flat surface",
+      "palm",
+      "forearm"
+    ],
+    "state_change": [
+      "hand makes contact with object side",
+      "object begins rotating while staying supported on the flat surface",
+      "object continues rolling away while staying on flat surface"
+    ]
+  },
+  "Poking a stack of [something] so the stack collapses": {
+    "global_description": "A finger pushes the side of a stack, causing it to fall over.",
+    "local_description": "Objects: finger, stack of [something], table, floor Cues: contact from side, support loss, downward motion, scattered arrangement, stack instability, collapse State change: finger approaches stack side; finger makes side contact and the stack loses stability; stack falls and items scatter",
+    "objects": [
+      "finger",
+      "stack of [something]",
+      "table",
+      "floor"
+    ],
+    "state_change": [
+      "finger approaches stack side",
+      "finger makes side contact and the stack loses stability",
+      "stack falls and items scatter"
+    ]
+  },
+  "Twisting [something]": {
+    "global_description": "A hand twists an object in place while continuously holding it.",
+    "local_description": "Objects: hand, wrist, object, lid, knob, bottle Cues: clockwise rotation, counterclockwise rotation, hand contact, rotation around axis, in-place turn, continuous torsion State change: hand grasps object; wrist twists object back and forth in place; object remains held after turning with no puncture",
+    "objects": [
+      "hand",
+      "wrist",
+      "object",
+      "lid",
+      "knob",
+      "bottle"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "wrist twists object back and forth in place",
+      "object remains held after turning with no puncture"
+    ]
+  },
+  "[Something] falling like a feather or paper": {
+    "global_description": "A light object is released and drifts downward through the air.",
+    "local_description": "Objects: paper, feather, leaf, light fabric, small plastic bag, tissue Cues: downward motion, fluttering, light object, air-drift, slow descent, no hand contact State change: object released into open air; light object drifts downward with fluttering motion; object lands lightly after slow descent",
+    "objects": [
+      "paper",
+      "feather",
+      "leaf",
+      "light fabric",
+      "small plastic bag",
+      "tissue"
+    ],
+    "state_change": [
+      "object released into open air",
+      "light object drifts downward with fluttering motion",
+      "object lands lightly after slow descent"
+    ]
+  },
+  "Putting [something] on the edge of [something] so it is not supported and falls down": {
+    "global_description": "A person puts [something] on the edge of [something] so it is not supported and falls down.",
+    "local_description": "Objects: person, object, surface, edge Cues: contact with edge only, no support underneath, gravity direction, falling motion, edge placement, balance loss State change: hand holding object near edge; object placed on edge with partial contact; object loses balance, is not supported, and falls",
+    "objects": [
+      "person",
+      "object",
+      "surface",
+      "edge"
+    ],
+    "state_change": [
+      "hand holding object near edge",
+      "object placed on edge with partial contact",
+      "object loses balance, is not supported, and falls"
+    ]
+  },
+  "Pushing [something] off of [something]": {
+    "global_description": "A person uses hands to apply force, moving an object away from a surface or another object.",
+    "local_description": "Objects: person, hands, object, surface, table, shelf Cues: contact with object, force direction away, support loss, object displacement, side push, edge departure State change: hands make contact with object on surface; force is applied from the side and object moves off the edge; object separates, leaves support, and falls off",
+    "objects": [
+      "person",
+      "hands",
+      "object",
+      "surface",
+      "table",
+      "shelf"
+    ],
+    "state_change": [
+      "hands make contact with object on surface",
+      "force is applied from the side and object moves off the edge",
+      "object separates, leaves support, and falls off"
+    ]
+  },
+  "Dropping [something] into [something]": {
+    "global_description": "A hand releases an object above a container and lets it fall inside.",
+    "local_description": "Objects: hand, object, container, table, floor, liquid Cues: downward motion, release contact, into container, gravity fall, contained, no stable support State change: hand holding object above container; hand releases object and it falls freely downward; object ends inside container without upright placement",
+    "objects": [
+      "hand",
+      "object",
+      "container",
+      "table",
+      "floor",
+      "liquid"
+    ],
+    "state_change": [
+      "hand holding object above container",
+      "hand releases object and it falls freely downward",
+      "object ends inside container without upright placement"
+    ]
+  },
+  "Letting [something] roll up a slanted surface, so it rolls back down": {
+    "global_description": "An object rolls up an incline then reverses direction downward.",
+    "local_description": "Objects: ball, cylinder, wheel, toy car, round object, rolling object Cues: upward motion, downward motion, gravity reversal, momentum change State change: object placed on slanted surface; object rolls upward against gravity; object reaches peak and rolls back down",
+    "objects": [
+      "ball",
+      "cylinder",
+      "wheel",
+      "toy car",
+      "round object",
+      "rolling object"
+    ],
+    "state_change": [
+      "object placed on slanted surface",
+      "object rolls upward against gravity",
+      "object reaches peak and rolls back down"
+    ]
+  },
+  "Pushing [something] with [something]": {
+    "global_description": "A person uses an object to apply force against another object, moving it away.",
+    "local_description": "Objects: person, tool, cart, box, door, lever Cues: contact between objects, force direction away from person, support change, object displacement State change: person grasps pushing object; object contacts target object; target object moves away",
+    "objects": [
+      "person",
+      "tool",
+      "cart",
+      "box",
+      "door",
+      "lever"
+    ],
+    "state_change": [
+      "person grasps pushing object",
+      "object contacts target object",
+      "target object moves away"
+    ]
+  },
+  "Opening [something]": {
+    "global_description": "A hand moves to grasp and pull open a [something].",
+    "local_description": "Objects: hand, fingers, door handle, lid, container, drawer Cues: hand contact, pull motion, gap appears, hinge rotation State change: hand approaches object; grasp and initial pull; object opens fully",
+    "objects": [
+      "hand",
+      "fingers",
+      "door handle",
+      "lid",
+      "container",
+      "drawer"
+    ],
+    "state_change": [
+      "hand approaches object",
+      "grasp and initial pull",
+      "object opens fully"
+    ]
+  },
+  "Putting [something] on a surface": {
+    "global_description": "A hand moves an object downward until it rests on a flat support.",
+    "local_description": "Objects: hand, object, table, counter, plate, book Cues: downward motion, contact established, support change, object release State change: hand grasps object; object moves downward toward surface; object rests on surface with hand release",
+    "objects": [
+      "hand",
+      "object",
+      "table",
+      "counter",
+      "plate",
+      "book"
+    ],
+    "state_change": [
+      "hand grasps object",
+      "object moves downward toward surface",
+      "object rests on surface with hand release"
+    ]
+  },
+  "Taking [something] out of [something]": {
+    "global_description": "A hand grasps an object and lifts it out of a container.",
+    "local_description": "Objects: hand, object, container, lid, table, shelf Cues: hand in contact with object, object moves out of container, container may be open, object lifted upward State change: Hand reaches toward object inside container.; Hand grasps object and begins lifting.; Object is fully removed from container.",
+    "objects": [
+      "hand",
+      "object",
+      "container",
+      "lid",
+      "table",
+      "shelf"
+    ],
+    "state_change": [
+      "Hand reaches toward object inside container.",
+      "Hand grasps object and begins lifting.",
+      "Object is fully removed from container."
+    ]
+  },
+  "Spinning [something] that quickly stops spinning": {
+    "global_description": "A person spins an object that quickly halts its rotation.",
+    "local_description": "Objects: person, spinning top, coin, bottle, fidget spinner, plate Cues: clockwise rotation, counterclockwise rotation, contact with surface, sudden stop State change: Object begins spinning on a surface or in hand.; Rotation reaches a steady, fast pace.; Object abruptly stops spinning and becomes still.",
+    "objects": [
+      "person",
+      "spinning top",
+      "coin",
+      "bottle",
+      "fidget spinner",
+      "plate"
+    ],
+    "state_change": [
+      "Object begins spinning on a surface or in hand.",
+      "Rotation reaches a steady, fast pace.",
+      "Object abruptly stops spinning and becomes still."
+    ]
+  },
+  "Unfolding [something]": {
+    "global_description": "A person's hands pull apart a folded object to reveal its full shape.",
+    "local_description": "Objects: person, hands, folded object, flat surface, fabric, paper Cues: folded to flat, crease lines visible, hands in contact, outward motion State change: Hands grasp the folded object at its edges.; Hands pull outward, flattening the object gradually.; Object lies fully extended, creases smoothing out.",
+    "objects": [
+      "person",
+      "hands",
+      "folded object",
+      "flat surface",
+      "fabric",
+      "paper"
+    ],
+    "state_change": [
+      "Hands grasp the folded object at its edges.",
+      "Hands pull outward, flattening the object gradually.",
+      "Object lies fully extended, creases smoothing out."
+    ]
+  },
+  "Moving [something] towards the camera": {
+    "global_description": "An object moves closer to the viewer's perspective.",
+    "local_description": "Objects: hand, arm, object, tool, vehicle, animal Cues: closer to camera, increasing size, forward motion, directed at viewer State change: Object is distant from camera.; Object moves forward in frame.; Object fills more of the frame.",
+    "objects": [
+      "hand",
+      "arm",
+      "object",
+      "tool",
+      "vehicle",
+      "animal"
+    ],
+    "state_change": [
+      "Object is distant from camera.",
+      "Object moves forward in frame.",
+      "Object fills more of the frame."
+    ]
+  },
+  "Putting [something] next to [something]": {
+    "global_description": "A hand moves an object to rest beside another object without touching it.",
+    "local_description": "Objects: hand, object, target object, surface Cues: left/right, contact/support, proximity, orientation State change: Hand grasps an object.; Hand moves object horizontally toward target.; Object placed adjacent to target on surface.",
+    "objects": [
+      "hand",
+      "object",
+      "target object",
+      "surface"
+    ],
+    "state_change": [
+      "Hand grasps an object.",
+      "Hand moves object horizontally toward target.",
+      "Object placed adjacent to target on surface."
+    ]
+  },
+  "Scooping [something] up with [something]": {
+    "global_description": "A hand holds a tool that lifts material from a surface.",
+    "local_description": "Objects: hand, scoop tool, material, container, surface Cues: tool in contact with material, material lifted upward, material contained in tool, hand supports tool State change: Tool positioned above material; Tool contacts and lifts material; Tool holds material above surface",
+    "objects": [
+      "hand",
+      "scoop tool",
+      "material",
+      "container",
+      "surface"
+    ],
+    "state_change": [
+      "Tool positioned above material",
+      "Tool contacts and lifts material",
+      "Tool holds material above surface"
+    ]
+  },
+  "Squeezing [something]": {
+    "global_description": "A hand compresses an object inward.",
+    "local_description": "Objects: hand, fingers, object, bottle, sponge, tube Cues: inward pressure, contact maintained, object deforms, grip tightens State change: hand approaches object; fingers press inward on object; object compresses and releases",
+    "objects": [
+      "hand",
+      "fingers",
+      "object",
+      "bottle",
+      "sponge",
+      "tube"
+    ],
+    "state_change": [
+      "hand approaches object",
+      "fingers press inward on object",
+      "object compresses and releases"
+    ]
+  },
+  "Failing to put [something] into [something] because [something] does not fit": {
+    "global_description": "A person tries to insert an object into a container but it does not fit.",
+    "local_description": "Objects: person, object, container, hands, opening, surface Cues: object too large, container opening too small, in/out motion, contact with edges State change: person holds object near container opening; person attempts to push object into opening; object stops at opening edges",
+    "objects": [
+      "person",
+      "object",
+      "container",
+      "hands",
+      "opening",
+      "surface"
+    ],
+    "state_change": [
+      "person holds object near container opening",
+      "person attempts to push object into opening",
+      "object stops at opening edges"
+    ]
+  }
+}

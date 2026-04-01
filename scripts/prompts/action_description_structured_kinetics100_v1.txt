@@ -1,0 +1,24 @@
+Generate one JSON object for the Kinetics100 action class "{class_name}".
+
+Return JSON only. Do not add markdown fences, comments, or extra prose.
+
+Required schema:
+{{
+  "action_anchor": "one concise canonical sentence",
+  "key_entities": ["entity 1", "entity 2"],
+  "motion_phases": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "disambiguation": ["not similar action a", "not similar action b"]
+}}
+
+Requirements:
+1) English only.
+2) Keep the description visually grounded and broad enough for natural video variation.
+3) action_anchor must be one short sentence.
+4) key_entities must contain at most 6 short visual noun phrases.
+5) motion_phases must contain exactly {num_phases} short cues in temporal order.
+6) disambiguation must contain at most 2 short cues for the strongest confusions.
+7) Avoid commentary, markdown, and non-visual background knowledge.

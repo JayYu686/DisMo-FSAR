@@ -1,0 +1,845 @@
+{
+  "ApplyEyeMakeup": {
+    "action_anchor": "A video showing a person performing the action of applyeyemakeup",
+    "key_entities": [
+      "eye",
+      "makeup"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of applyeyemakeup",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with applyeyemakeup"
+    ],
+    "disambiguation": []
+  },
+  "Archery": {
+    "action_anchor": "A video showing a person performing the action of archery",
+    "key_entities": [
+      "archery"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of archery",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with archery"
+    ],
+    "disambiguation": []
+  },
+  "BabyCrawling": {
+    "action_anchor": "A video showing a person performing the action of babycrawling",
+    "key_entities": [
+      "baby"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of babycrawling",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with babycrawling"
+    ],
+    "disambiguation": []
+  },
+  "BalanceBeam": {
+    "action_anchor": "A video showing a person performing the action of balancebeam",
+    "key_entities": [
+      "balance",
+      "beam"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of balancebeam",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with balancebeam"
+    ],
+    "disambiguation": []
+  },
+  "BandMarching": {
+    "action_anchor": "A video showing a person performing the action of bandmarching",
+    "key_entities": [
+      "band"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of bandmarching",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with bandmarching"
+    ],
+    "disambiguation": []
+  },
+  "BaseballPitch": {
+    "action_anchor": "A video showing a person performing the action of baseballpitch",
+    "key_entities": [
+      "baseball",
+      "pitch"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of baseballpitch",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with baseballpitch"
+    ],
+    "disambiguation": []
+  },
+  "Basketball": {
+    "action_anchor": "A video showing a person performing the action of basketball",
+    "key_entities": [
+      "basketball"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of basketball",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with basketball"
+    ],
+    "disambiguation": []
+  },
+  "BasketballDunk": {
+    "action_anchor": "A video showing a person performing the action of basketballdunk",
+    "key_entities": [
+      "basketball",
+      "dunk"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of basketballdunk",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with basketballdunk"
+    ],
+    "disambiguation": []
+  },
+  "BenchPress": {
+    "action_anchor": "A video showing a person performing the action of benchpress",
+    "key_entities": [
+      "bench",
+      "press"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of benchpress",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with benchpress"
+    ],
+    "disambiguation": []
+  },
+  "Biking": {
+    "action_anchor": "A video showing a person performing the action of biking",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of biking",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with biking"
+    ],
+    "disambiguation": []
+  },
+  "Billiards": {
+    "action_anchor": "A video showing a person performing the action of billiards",
+    "key_entities": [
+      "billiards"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of billiards",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with billiards"
+    ],
+    "disambiguation": []
+  },
+  "BlowDryHair": {
+    "action_anchor": "A video showing a person performing the action of blowdryhair",
+    "key_entities": [
+      "blow",
+      "dry",
+      "hair"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of blowdryhair",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with blowdryhair"
+    ],
+    "disambiguation": []
+  },
+  "BodyWeightSquats": {
+    "action_anchor": "A video showing a person performing the action of bodyweightsquats",
+    "key_entities": [
+      "body",
+      "weight",
+      "squats"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of bodyweightsquats",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with bodyweightsquats"
+    ],
+    "disambiguation": []
+  },
+  "Bowling": {
+    "action_anchor": "A video showing a person performing the action of bowling",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of bowling",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with bowling"
+    ],
+    "disambiguation": []
+  },
+  "BoxingPunchingBag": {
+    "action_anchor": "A video showing a person performing the action of boxingpunchingbag",
+    "key_entities": [
+      "bag"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of boxingpunchingbag",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with boxingpunchingbag"
+    ],
+    "disambiguation": []
+  },
+  "BoxingSpeedBag": {
+    "action_anchor": "A video showing a person performing the action of boxingspeedbag",
+    "key_entities": [
+      "bag"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of boxingspeedbag",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with boxingspeedbag"
+    ],
+    "disambiguation": []
+  },
+  "BreastStroke": {
+    "action_anchor": "A video showing a person performing the action of breaststroke",
+    "key_entities": [
+      "breast",
+      "stroke"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of breaststroke",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with breaststroke"
+    ],
+    "disambiguation": []
+  },
+  "BrushingTeeth": {
+    "action_anchor": "A video showing a person performing the action of brushingteeth",
+    "key_entities": [
+      "teeth"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of brushingteeth",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with brushingteeth"
+    ],
+    "disambiguation": []
+  },
+  "CricketBowling": {
+    "action_anchor": "A video showing a person performing the action of cricketbowling",
+    "key_entities": [
+      "cricket"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of cricketbowling",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with cricketbowling"
+    ],
+    "disambiguation": []
+  },
+  "Drumming": {
+    "action_anchor": "A video showing a person performing the action of drumming",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of drumming",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with drumming"
+    ],
+    "disambiguation": []
+  },
+  "Fencing": {
+    "action_anchor": "A video showing a person performing the action of fencing",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of fencing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with fencing"
+    ],
+    "disambiguation": []
+  },
+  "FieldHockeyPenalty": {
+    "action_anchor": "A video showing a person performing the action of fieldhockeypenalty",
+    "key_entities": [
+      "field",
+      "hockey",
+      "penalty"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of fieldhockeypenalty",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with fieldhockeypenalty"
+    ],
+    "disambiguation": []
+  },
+  "FrisbeeCatch": {
+    "action_anchor": "A video showing a person performing the action of frisbeecatch",
+    "key_entities": [
+      "frisbee"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of frisbeecatch",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with frisbeecatch"
+    ],
+    "disambiguation": []
+  },
+  "FrontCrawl": {
+    "action_anchor": "A video showing a person performing the action of frontcrawl",
+    "key_entities": [
+      "front",
+      "crawl"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of frontcrawl",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with frontcrawl"
+    ],
+    "disambiguation": []
+  },
+  "Haircut": {
+    "action_anchor": "A video showing a person performing the action of haircut",
+    "key_entities": [
+      "haircut"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of haircut",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with haircut"
+    ],
+    "disambiguation": []
+  },
+  "Hammering": {
+    "action_anchor": "A video showing a person performing the action of hammering",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of hammering",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with hammering"
+    ],
+    "disambiguation": []
+  },
+  "HeadMassage": {
+    "action_anchor": "A video showing a person performing the action of headmassage",
+    "key_entities": [
+      "head",
+      "massage"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of headmassage",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with headmassage"
+    ],
+    "disambiguation": []
+  },
+  "HulaHoop": {
+    "action_anchor": "A video showing a person performing the action of hulahoop",
+    "key_entities": [
+      "hula",
+      "hoop"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of hulahoop",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with hulahoop"
+    ],
+    "disambiguation": []
+  },
+  "JavelinThrow": {
+    "action_anchor": "A video showing a person performing the action of javelinthrow",
+    "key_entities": [
+      "javelin",
+      "throw"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of javelinthrow",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with javelinthrow"
+    ],
+    "disambiguation": []
+  },
+  "JugglingBalls": {
+    "action_anchor": "A video showing a person performing the action of jugglingballs",
+    "key_entities": [
+      "balls"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of jugglingballs",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with jugglingballs"
+    ],
+    "disambiguation": []
+  },
+  "JumpingJack": {
+    "action_anchor": "A video showing a person performing the action of jumpingjack",
+    "key_entities": [
+      "jack"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of jumpingjack",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with jumpingjack"
+    ],
+    "disambiguation": []
+  },
+  "Kayaking": {
+    "action_anchor": "A video showing a person performing the action of kayaking",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of kayaking",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with kayaking"
+    ],
+    "disambiguation": []
+  },
+  "Knitting": {
+    "action_anchor": "A video showing a person performing the action of knitting",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of knitting",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with knitting"
+    ],
+    "disambiguation": []
+  },
+  "LongJump": {
+    "action_anchor": "A video showing a person performing the action of longjump",
+    "key_entities": [
+      "long",
+      "jump"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of longjump",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with longjump"
+    ],
+    "disambiguation": []
+  },
+  "Lunges": {
+    "action_anchor": "A video showing a person performing the action of lunges",
+    "key_entities": [
+      "lunges"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of lunges",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with lunges"
+    ],
+    "disambiguation": []
+  },
+  "MilitaryParade": {
+    "action_anchor": "A video showing a person performing the action of militaryparade",
+    "key_entities": [
+      "military",
+      "parade"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of militaryparade",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with militaryparade"
+    ],
+    "disambiguation": []
+  },
+  "Mixing": {
+    "action_anchor": "A video showing a person performing the action of mixing",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of mixing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with mixing"
+    ],
+    "disambiguation": []
+  },
+  "MoppingFloor": {
+    "action_anchor": "A video showing a person performing the action of moppingfloor",
+    "key_entities": [
+      "floor"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of moppingfloor",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with moppingfloor"
+    ],
+    "disambiguation": []
+  },
+  "Nunchucks": {
+    "action_anchor": "A video showing a person performing the action of nunchucks",
+    "key_entities": [
+      "nunchucks"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of nunchucks",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with nunchucks"
+    ],
+    "disambiguation": []
+  },
+  "ParallelBars": {
+    "action_anchor": "A video showing a person performing the action of parallelbars",
+    "key_entities": [
+      "parallel",
+      "bars"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of parallelbars",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with parallelbars"
+    ],
+    "disambiguation": []
+  },
+  "PizzaTossing": {
+    "action_anchor": "A video showing a person performing the action of pizzatossing",
+    "key_entities": [
+      "pizza"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of pizzatossing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with pizzatossing"
+    ],
+    "disambiguation": []
+  },
+  "PlayingCello": {
+    "action_anchor": "A video showing a person performing the action of playingcello",
+    "key_entities": [
+      "cello"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingcello",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingcello"
+    ],
+    "disambiguation": []
+  },
+  "PlayingDhol": {
+    "action_anchor": "A video showing a person performing the action of playingdhol",
+    "key_entities": [
+      "dhol"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingdhol",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingdhol"
+    ],
+    "disambiguation": []
+  },
+  "PlayingFlute": {
+    "action_anchor": "A video showing a person performing the action of playingflute",
+    "key_entities": [
+      "flute"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingflute",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingflute"
+    ],
+    "disambiguation": []
+  },
+  "PlayingPiano": {
+    "action_anchor": "A video showing a person performing the action of playingpiano",
+    "key_entities": [
+      "piano"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingpiano",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingpiano"
+    ],
+    "disambiguation": []
+  },
+  "PlayingSitar": {
+    "action_anchor": "A video showing a person performing the action of playingsitar",
+    "key_entities": [
+      "sitar"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingsitar",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingsitar"
+    ],
+    "disambiguation": []
+  },
+  "PlayingTabla": {
+    "action_anchor": "A video showing a person performing the action of playingtabla",
+    "key_entities": [
+      "tabla"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingtabla",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingtabla"
+    ],
+    "disambiguation": []
+  },
+  "PlayingViolin": {
+    "action_anchor": "A video showing a person performing the action of playingviolin",
+    "key_entities": [
+      "violin"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of playingviolin",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with playingviolin"
+    ],
+    "disambiguation": []
+  },
+  "PoleVault": {
+    "action_anchor": "A video showing a person performing the action of polevault",
+    "key_entities": [
+      "pole",
+      "vault"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of polevault",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with polevault"
+    ],
+    "disambiguation": []
+  },
+  "PullUps": {
+    "action_anchor": "A video showing a person performing the action of pullups",
+    "key_entities": [
+      "pull",
+      "ups"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of pullups",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with pullups"
+    ],
+    "disambiguation": []
+  },
+  "PushUps": {
+    "action_anchor": "A video showing a person performing the action of pushups",
+    "key_entities": [
+      "push",
+      "ups"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of pushups",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with pushups"
+    ],
+    "disambiguation": []
+  },
+  "Rafting": {
+    "action_anchor": "A video showing a person performing the action of rafting",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of rafting",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with rafting"
+    ],
+    "disambiguation": []
+  },
+  "RopeClimbing": {
+    "action_anchor": "A video showing a person performing the action of ropeclimbing",
+    "key_entities": [
+      "rope"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of ropeclimbing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with ropeclimbing"
+    ],
+    "disambiguation": []
+  },
+  "Rowing": {
+    "action_anchor": "A video showing a person performing the action of rowing",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of rowing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with rowing"
+    ],
+    "disambiguation": []
+  },
+  "ShavingBeard": {
+    "action_anchor": "A video showing a person performing the action of shavingbeard",
+    "key_entities": [
+      "beard"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of shavingbeard",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with shavingbeard"
+    ],
+    "disambiguation": []
+  },
+  "Skijet": {
+    "action_anchor": "A video showing a person performing the action of skijet",
+    "key_entities": [
+      "skijet"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of skijet",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with skijet"
+    ],
+    "disambiguation": []
+  },
+  "SoccerJuggling": {
+    "action_anchor": "A video showing a person performing the action of soccerjuggling",
+    "key_entities": [
+      "soccer"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of soccerjuggling",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with soccerjuggling"
+    ],
+    "disambiguation": []
+  },
+  "SoccerPenalty": {
+    "action_anchor": "A video showing a person performing the action of soccerpenalty",
+    "key_entities": [
+      "soccer",
+      "penalty"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of soccerpenalty",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with soccerpenalty"
+    ],
+    "disambiguation": []
+  },
+  "SumoWrestling": {
+    "action_anchor": "A video showing a person performing the action of sumowrestling",
+    "key_entities": [
+      "sumo"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of sumowrestling",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with sumowrestling"
+    ],
+    "disambiguation": []
+  },
+  "Swing": {
+    "action_anchor": "A video showing a person performing the action of swing",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of swing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with swing"
+    ],
+    "disambiguation": []
+  },
+  "TableTennisShot": {
+    "action_anchor": "A video showing a person performing the action of tabletennisshot",
+    "key_entities": [
+      "table",
+      "tennis",
+      "shot"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of tabletennisshot",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with tabletennisshot"
+    ],
+    "disambiguation": []
+  },
+  "TaiChi": {
+    "action_anchor": "A video showing a person performing the action of taichi",
+    "key_entities": [
+      "tai",
+      "chi"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of taichi",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with taichi"
+    ],
+    "disambiguation": []
+  },
+  "ThrowDiscus": {
+    "action_anchor": "A video showing a person performing the action of throwdiscus",
+    "key_entities": [
+      "throw",
+      "discus"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of throwdiscus",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with throwdiscus"
+    ],
+    "disambiguation": []
+  },
+  "TrampolineJumping": {
+    "action_anchor": "A video showing a person performing the action of trampolinejumping",
+    "key_entities": [
+      "trampoline"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of trampolinejumping",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with trampolinejumping"
+    ],
+    "disambiguation": []
+  },
+  "Typing": {
+    "action_anchor": "A video showing a person performing the action of typing",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of typing",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with typing"
+    ],
+    "disambiguation": []
+  },
+  "UnevenBars": {
+    "action_anchor": "A video showing a person performing the action of unevenbars",
+    "key_entities": [
+      "uneven",
+      "bars"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of unevenbars",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with unevenbars"
+    ],
+    "disambiguation": []
+  },
+  "WalkingWithDog": {
+    "action_anchor": "A video showing a person performing the action of walkingwithdog",
+    "key_entities": [
+      "dog"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of walkingwithdog",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with walkingwithdog"
+    ],
+    "disambiguation": []
+  },
+  "WallPushups": {
+    "action_anchor": "A video showing a person performing the action of wallpushups",
+    "key_entities": [
+      "wall",
+      "pushups"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of wallpushups",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with wallpushups"
+    ],
+    "disambiguation": []
+  },
+  "WritingOnBoard": {
+    "action_anchor": "A video showing a person performing the action of writingonboard",
+    "key_entities": [
+      "board"
+    ],
+    "motion_phases": [
+      "A video showing a person performing the action of writingonboard",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with writingonboard"
+    ],
+    "disambiguation": []
+  },
+  "YoYo": {
+    "action_anchor": "A video showing a person performing the action of yoyo",
+    "key_entities": [],
+    "motion_phases": [
+      "A video showing a person performing the action of yoyo",
+      "The action involves specific body movements and may include interaction with objects or other people",
+      "Key visual features include the motion patterns and poses associated with yoyo"
+    ],
+    "disambiguation": []
+  }
+}

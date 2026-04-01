@@ -1,0 +1,33 @@
+name: dismo
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch>=2.0.0
+  - torchvision>=0.15.0
+  - pytorch-cuda=11.8
+  - torchaudio>=2.0.0
+  - pip
+  - numpy>=1.22
+  - pandas
+  - pyyaml
+  - tqdm
+  - scipy
+  - pip:
+    - einops
+    - sentence-transformers
+    - decord>=0.6.0
+    - simplejson
+    - psutil
+    - tensorboard
+    - opencv-python
+    - scikit-learn
+    - ftfy
+    - regex
+    - openai
+    - termcolor
+    - yacs
+    - av
+    - oss2

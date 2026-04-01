@@ -1,0 +1,692 @@
+{
+  "Blowing Candles": {
+    "label_text": "blowing out candles",
+    "action_anchor": "A person leans forward and exhales toward lit candles on a cake.",
+    "entity_priors": [
+      "person",
+      "birthday cake",
+      "candles",
+      "flame",
+      "mouth",
+      "hands"
+    ],
+    "scene_priors": [
+      "birthday party",
+      "dining table",
+      "dim lighting",
+      "celebratory setting"
+    ],
+    "attribute_cues": [
+      "leaning forward",
+      "pursed lips",
+      "directed airflow",
+      "flame extinguishing"
+    ],
+    "phase_cues": [
+      "person positioning face near candles",
+      "forceful exhalation toward flames",
+      "candle flames flicker and go out"
+    ],
+    "confusion_cues": [
+      "blowing on hot food",
+      "blowing bubbles"
+    ]
+  },
+  "Clean And Jerk": {
+    "label_text": "clean and jerk",
+    "action_anchor": "A weightlifter lifts a barbell from the floor to overhead in two distinct motions.",
+    "entity_priors": [
+      "weightlifter",
+      "barbell",
+      "weight plates",
+      "lifting platform",
+      "gym",
+      "competition venue"
+    ],
+    "scene_priors": [
+      "weightlifting platform",
+      "gym with rubber flooring",
+      "competition stage",
+      "weightlifting rack"
+    ],
+    "attribute_cues": [
+      "explosive upward motion",
+      "barbell overhead",
+      "feet repositioning",
+      "full body extension"
+    ],
+    "phase_cues": [
+      "barbell pulled from floor to shoulders",
+      "athlete dips and drives under barbell",
+      "barbell pressed overhead with locked arms"
+    ],
+    "confusion_cues": [
+      "snatch (single continuous motion)",
+      "overhead press (no clean phase)"
+    ]
+  },
+  "Cliff Diving": {
+    "label_text": "cliff diving",
+    "action_anchor": "A person leaps from a high cliff into water below.",
+    "entity_priors": [
+      "diver",
+      "cliff",
+      "water",
+      "swimwear",
+      "rocky coastline",
+      "outdoor setting"
+    ],
+    "scene_priors": [
+      "coastal cliff",
+      "deep water",
+      "natural rock formation",
+      "open air"
+    ],
+    "attribute_cues": [
+      "downward trajectory",
+      "arms extended",
+      "body straight",
+      "splash entry"
+    ],
+    "phase_cues": [
+      "climbing or standing at cliff edge",
+      "jumping with arms spread",
+      "entering water with splash"
+    ],
+    "confusion_cues": [
+      "high diving from platform",
+      "cliff jumping without form"
+    ]
+  },
+  "Cutting in Kitchen": {
+    "label_text": "cutting vegetables",
+    "action_anchor": "A person slices vegetables on a cutting board with a knife.",
+    "entity_priors": [
+      "person",
+      "knife",
+      "cutting board",
+      "vegetables",
+      "kitchen counter"
+    ],
+    "scene_priors": [
+      "kitchen",
+      "countertop",
+      "sink nearby",
+      "cabinets"
+    ],
+    "attribute_cues": [
+      "hand holding knife",
+      "downward slicing motion",
+      "vegetables on board",
+      "knife contact"
+    ],
+    "phase_cues": [
+      "holding knife above vegetables",
+      "knife slicing through vegetables",
+      "cut pieces separated on board"
+    ],
+    "confusion_cues": [
+      "chopping meat",
+      "slicing bread"
+    ]
+  },
+  "Diving": {
+    "label_text": "person diving into water",
+    "action_anchor": "A person leaps from a platform or springboard into a body of water.",
+    "entity_priors": [
+      "diver",
+      "swimming pool",
+      "diving board",
+      "water",
+      "swimsuit",
+      "goggles"
+    ],
+    "scene_priors": [
+      "indoor/outdoor swimming pool",
+      "diving platform",
+      "clear water",
+      "pool deck"
+    ],
+    "attribute_cues": [
+      "upward jump",
+      "body streamlined",
+      "headfirst entry",
+      "splash upon impact"
+    ],
+    "phase_cues": [
+      "approach and takeoff from platform",
+      "mid-air tuck or pike position",
+      "entry into water with minimal splash"
+    ],
+    "confusion_cues": [
+      "jumping into water",
+      "swimming underwater"
+    ]
+  },
+  "Floor Gymnastics": {
+    "label_text": "floor gymnastics routine",
+    "action_anchor": "A gymnast performs acrobatic movements on a padded floor mat.",
+    "entity_priors": [
+      "gymnast",
+      "floor mat",
+      "leotard",
+      "chalk",
+      "judges",
+      "spotter"
+    ],
+    "scene_priors": [
+      "gymnastics arena",
+      "padded floor area",
+      "competition setting",
+      "bright lighting"
+    ],
+    "attribute_cues": [
+      "dynamic body rotations",
+      "balanced landings",
+      "synchronized with music",
+      "controlled momentum"
+    ],
+    "phase_cues": [
+      "starting pose at mat corner",
+      "executing tumbling passes across mat",
+      "final pose holding position"
+    ],
+    "confusion_cues": [
+      "rhythmic gymnastics with apparatus",
+      "tumbling on spring floor"
+    ]
+  },
+  "Golf Swing": {
+    "label_text": "golf swing",
+    "action_anchor": "A golfer swings a club to strike a golf ball.",
+    "entity_priors": [
+      "golfer",
+      "golf club",
+      "golf ball",
+      "tee",
+      "golf glove",
+      "golf shoes"
+    ],
+    "scene_priors": [
+      "golf course",
+      "driving range",
+      "putting green",
+      "golf tee box"
+    ],
+    "attribute_cues": [
+      "rotating torso",
+      "club head speed",
+      "ball contact",
+      "follow-through"
+    ],
+    "phase_cues": [
+      "backswing with club raised",
+      "downswing toward ball",
+      "follow-through after impact"
+    ],
+    "confusion_cues": [
+      "baseball swing",
+      "tennis serve"
+    ]
+  },
+  "Handstand Walking": {
+    "label_text": "handstand walking",
+    "action_anchor": "A person walks forward while balanced upside down on their hands.",
+    "entity_priors": [
+      "gymnast",
+      "acrobat",
+      "athlete",
+      "hands",
+      "floor",
+      "gym mat"
+    ],
+    "scene_priors": [
+      "gymnasium",
+      "performance stage",
+      "outdoor pavement",
+      "training facility"
+    ],
+    "attribute_cues": [
+      "upside down",
+      "vertical torso",
+      "alternating hand contact",
+      "forward progression"
+    ],
+    "phase_cues": [
+      "initial handstand balance",
+      "alternating hand steps forward",
+      "controlled forward movement"
+    ],
+    "confusion_cues": [
+      "handstand (stationary)",
+      "cartwheel (sideways rotation)"
+    ]
+  },
+  "Horse Race": {
+    "label_text": "horse racing",
+    "action_anchor": "Multiple horses with jockeys sprint along a track.",
+    "entity_priors": [
+      "horse",
+      "jockey",
+      "saddle",
+      "bridle",
+      "starting gate",
+      "race track"
+    ],
+    "scene_priors": [
+      "racetrack",
+      "grandstand",
+      "finish line",
+      "starting gate area"
+    ],
+    "attribute_cues": [
+      "forward sprinting",
+      "side-by-side competition",
+      "jockey leaning forward",
+      "dirt track surface"
+    ],
+    "phase_cues": [
+      "horses lined up in starting gates",
+      "horses accelerating out of gates",
+      "horses sprinting toward finish line"
+    ],
+    "confusion_cues": [
+      "horseback riding",
+      "horse jumping"
+    ]
+  },
+  "Ice Dancing": {
+    "label_text": "ice dancing",
+    "action_anchor": "Two skaters perform synchronized choreography on ice.",
+    "entity_priors": [
+      "figure skaters",
+      "ice skates",
+      "partner",
+      "costumes",
+      "ice rink",
+      "music"
+    ],
+    "scene_priors": [
+      "indoor ice rink",
+      "competition setting",
+      "audience seating",
+      "spotlights"
+    ],
+    "attribute_cues": [
+      "synchronized movement",
+      "fluid gliding",
+      "close partner contact",
+      "rhythmic to music"
+    ],
+    "phase_cues": [
+      "Partners take starting positions on ice.",
+      "They execute choreographed sequences in unison.",
+      "They conclude with final pose and exit."
+    ],
+    "confusion_cues": [
+      "figure skating jumps",
+      "ice hockey skating"
+    ]
+  },
+  "Jump Rope": {
+    "label_text": "jumping rope",
+    "action_anchor": "A person swings a rope overhead and jumps over it as it passes underfoot.",
+    "entity_priors": [
+      "person",
+      "jump rope",
+      "hands",
+      "feet",
+      "ground",
+      "sports shoes"
+    ],
+    "scene_priors": [
+      "gymnasium",
+      "playground",
+      "outdoor pavement",
+      "fitness studio"
+    ],
+    "attribute_cues": [
+      "vertical jump",
+      "rhythmic motion",
+      "rope contact",
+      "bouncing stance"
+    ],
+    "phase_cues": [
+      "rope swings upward behind the person",
+      "person jumps as rope arcs overhead",
+      "rope passes under feet and swings back"
+    ],
+    "confusion_cues": [
+      "jumping jacks",
+      "skipping"
+    ]
+  },
+  "Pommel Horse": {
+    "label_text": "pommel horse routine",
+    "action_anchor": "A gymnast swings their body around a pommel horse apparatus.",
+    "entity_priors": [
+      "gymnast",
+      "pommel horse",
+      "hands",
+      "legs",
+      "gymnastics mat"
+    ],
+    "scene_priors": [
+      "gymnastics arena",
+      "competition floor",
+      "indoor sports hall"
+    ],
+    "attribute_cues": [
+      "circular swinging motion",
+      "hand contact maintained",
+      "legs extended",
+      "body elevated"
+    ],
+    "phase_cues": [
+      "mounting the pommel horse",
+      "executing circular swings",
+      "dismounting with controlled landing"
+    ],
+    "confusion_cues": [
+      "parallel bars routine",
+      "still rings routine"
+    ]
+  },
+  "Punch": {
+    "label_text": "punching a person",
+    "action_anchor": "A person's fist makes forceful contact with another person's body.",
+    "entity_priors": [
+      "person",
+      "fist",
+      "boxing glove",
+      "heavy bag",
+      "opponent",
+      "face"
+    ],
+    "scene_priors": [
+      "boxing ring",
+      "martial arts gym",
+      "street fight",
+      "training area"
+    ],
+    "attribute_cues": [
+      "forward thrust",
+      "impact moment",
+      "arm extended",
+      "body torque"
+    ],
+    "phase_cues": [
+      "arm draws back in preparation",
+      "fist accelerates forward toward target",
+      "fist impacts with visible force"
+    ],
+    "confusion_cues": [
+      "slapping with open hand",
+      "pushing with palm"
+    ]
+  },
+  "Rock Climbing Indoor": {
+    "label_text": "indoor rock climbing",
+    "action_anchor": "A person ascends an artificial climbing wall using handholds and footholds.",
+    "entity_priors": [
+      "climber",
+      "climbing wall",
+      "climbing holds",
+      "harness",
+      "climbing shoes",
+      "chalk bag"
+    ],
+    "scene_priors": [
+      "indoor climbing gym",
+      "artificial climbing wall",
+      "safety mats below",
+      "ropes and anchors"
+    ],
+    "attribute_cues": [
+      "vertical ascent",
+      "gripping holds",
+      "body tension",
+      "controlled movement"
+    ],
+    "phase_cues": [
+      "reaching for next handhold",
+      "transferring weight to foothold",
+      "securing position before next move"
+    ],
+    "confusion_cues": [
+      "bouldering",
+      "outdoor rock climbing"
+    ]
+  },
+  "Salsa Spin": {
+    "label_text": "Salsa spin turn",
+    "action_anchor": "A dancer rotates their body while maintaining salsa footwork and posture.",
+    "entity_priors": [
+      "salsa dancer",
+      "dance partner",
+      "dance shoes",
+      "dance floor",
+      "music",
+      "dance attire"
+    ],
+    "scene_priors": [
+      "dance studio",
+      "social dance venue",
+      "wooden dance floor",
+      "dim lighting"
+    ],
+    "attribute_cues": [
+      "rotational movement",
+      "upright posture",
+      "weight transfer",
+      "arm positioning"
+    ],
+    "phase_cues": [
+      "prepares with weight on one foot and arms positioned",
+      "initiates rotation with hip movement and foot pivot",
+      "completes turn with controlled stop and weight redistribution"
+    ],
+    "confusion_cues": [
+      "ballroom spin",
+      "figure skating spin"
+    ]
+  },
+  "Skiing": {
+    "label_text": "skiing down slope",
+    "action_anchor": "A person glides down a snowy mountain on skis.",
+    "entity_priors": [
+      "skier",
+      "skis",
+      "ski poles",
+      "snow",
+      "mountain",
+      "goggles"
+    ],
+    "scene_priors": [
+      "snowy mountain",
+      "ski resort",
+      "alpine landscape",
+      "ski lift visible"
+    ],
+    "attribute_cues": [
+      "downward motion",
+      "balanced stance",
+      "snow contact",
+      "cold environment"
+    ],
+    "phase_cues": [
+      "standing at slope top with skis parallel",
+      "leaning forward to initiate descent",
+      "carving turns while maintaining speed"
+    ],
+    "confusion_cues": [
+      "snowboarding",
+      "cross-country skiing"
+    ]
+  },
+  "Sky Diving": {
+    "label_text": "sky diving",
+    "action_anchor": "A person jumps from an aircraft and falls through the air with a parachute.",
+    "entity_priors": [
+      "skydiver",
+      "parachute",
+      "aircraft",
+      "altimeter",
+      "helmet",
+      "jumpsuit"
+    ],
+    "scene_priors": [
+      "open sky",
+      "airplane door",
+      "clouds below",
+      "distant ground"
+    ],
+    "attribute_cues": [
+      "falling downward",
+      "freefall posture",
+      "parachute deployed",
+      "floating descent"
+    ],
+    "phase_cues": [
+      "jumping from aircraft door",
+      "freefalling in spread position",
+      "parachute open and gliding"
+    ],
+    "confusion_cues": [
+      "paragliding",
+      "base jumping"
+    ]
+  },
+  "Still Rings": {
+    "label_text": "Still Rings Routine",
+    "action_anchor": "A gymnast performs strength holds and swings on two suspended rings.",
+    "entity_priors": [
+      "gymnast",
+      "still rings",
+      "rings straps",
+      "gymnastics mat",
+      "gymnastics apparatus",
+      "gymnastics uniform"
+    ],
+    "scene_priors": [
+      "gymnastics arena",
+      "high ceiling",
+      "suspended apparatus",
+      "competition setting"
+    ],
+    "attribute_cues": [
+      "body tension",
+      "controlled motion",
+      "rings stationary",
+      "straight arms"
+    ],
+    "phase_cues": [
+      "starting position hanging from rings",
+      "executing strength elements like iron cross",
+      "dismounting with controlled landing"
+    ],
+    "confusion_cues": [
+      "parallel bars routine",
+      "uneven bars swinging"
+    ]
+  },
+  "Surfing": {
+    "label_text": "surfing on waves",
+    "action_anchor": "A person rides a surfboard on ocean waves.",
+    "entity_priors": [
+      "surfer",
+      "surfboard",
+      "ocean waves",
+      "wetsuit",
+      "leash",
+      "wax"
+    ],
+    "scene_priors": [
+      "ocean coastline",
+      "breaking waves",
+      "beach background",
+      "sunny weather"
+    ],
+    "attribute_cues": [
+      "standing on board",
+      "balancing on wave",
+      "facing shore",
+      "arms extended"
+    ],
+    "phase_cues": [
+      "paddling out through waves",
+      "catching a wave and popping up",
+      "riding along the wave face"
+    ],
+    "confusion_cues": [
+      "windsurfing",
+      "bodyboarding"
+    ]
+  },
+  "Tennis Swing": {
+    "label_text": "tennis swing",
+    "action_anchor": "A player swings a tennis racket to hit a ball.",
+    "entity_priors": [
+      "tennis player",
+      "tennis racket",
+      "tennis ball",
+      "court surface",
+      "net",
+      "opponent"
+    ],
+    "scene_priors": [
+      "tennis court",
+      "outdoor or indoor arena",
+      "marked lines",
+      "net dividing court"
+    ],
+    "attribute_cues": [
+      "sideways body rotation",
+      "racket forward motion",
+      "ball contact point",
+      "follow-through arc"
+    ],
+    "phase_cues": [
+      "backswing with racket raised behind",
+      "forward swing contacting ball",
+      "follow-through across body"
+    ],
+    "confusion_cues": [
+      "baseball swing",
+      "golf swing"
+    ]
+  },
+  "Volleyball Spiking": {
+    "label_text": "volleyball spiking",
+    "action_anchor": "A player jumps and forcefully hits the volleyball downward over the net.",
+    "entity_priors": [
+      "volleyball player",
+      "volleyball",
+      "net",
+      "court",
+      "opponent blockers",
+      "teammates"
+    ],
+    "scene_priors": [
+      "indoor volleyball court",
+      "outdoor beach court",
+      "net dividing court",
+      "crowded sidelines"
+    ],
+    "attribute_cues": [
+      "downward trajectory",
+      "powerful arm swing",
+      "jumping motion",
+      "ball contact above net"
+    ],
+    "phase_cues": [
+      "player approaches and jumps upward",
+      "arm swings back then forward to contact ball",
+      "ball travels sharply downward across net"
+    ],
+    "confusion_cues": [
+      "volleyball setting",
+      "volleyball serving"
+    ]
+  }
+}

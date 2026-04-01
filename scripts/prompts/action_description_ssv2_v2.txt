@@ -1,0 +1,11 @@
+Write one detailed visual paragraph for the action template: "{class_name}".
+
+Requirements:
+1) English only, one paragraph, 85-130 words.
+2) Focus on hand-object interaction and visible state transition (before -> during -> after).
+3) Explicitly describe direction and relative position changes (left/right, up/down, in/out, toward/away).
+4) Explicitly describe contact changes (touching, grasping, releasing, inserting, removing, covering, uncovering).
+5) Add at least two contrastive cues with explicit comparisons using "unlike ...", especially against opposite-direction or inverse actions.
+6) Keep wording concrete and visual; avoid abstract intention or emotion.
+7) Do not mention datasets, labels, model names, or "this class".
+8) Do not output bullets, numbering, headings, quotes, or markdown.

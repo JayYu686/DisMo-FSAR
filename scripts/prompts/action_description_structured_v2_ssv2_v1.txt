@@ -1,0 +1,40 @@
+Generate one JSON object for the action class "{class_name}".
+
+Return JSON only. No markdown fences. No extra prose.
+
+Schema:
+{
+  "label_text": "canonical short class phrase",
+  "action_anchor": "one short visual sentence",
+  "entity_priors": ["entity 1", "entity 2"],
+  "scene_priors": ["scene cue 1"],
+  "attribute_cues": ["attribute cue 1", "attribute cue 2"],
+  "phase_cues": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "confusion_cues": ["easy confusion 1", "easy confusion 2"]
+}
+
+Requirements:
+1) English only.
+2) Preserve placeholders like [something], [part], [number of], [somewhere] exactly.
+3) This dataset is driven by state changes, spatial relations, direction, contact, support, containment, and success/failure. Prioritize those cues over background details.
+4) label_text must be a short canonical phrase. Keep key relation words such as into, out of, behind, in front of, left, right, upright, empty.
+5) action_anchor must be one short visually grounded sentence, 8-14 words if possible.
+6) entity_priors: at most 2 short noun phrases. Prefer hand, object, container, surface, camera, stack. Do not list many objects.
+7) scene_priors: default to []. Only use one cue if the scene relation is truly essential, such as slanted surface, flat surface, or camera view.
+8) Never add generic background cues such as kitchen, room, indoor, dining area, counter, tabletop, home, office.
+9) attribute_cues are the most important field. Use 2-4 short canonical cues from observable categories like:
+   left, right, towards, away, up, down, into, out of, behind, in front of, over, under,
+   contact, no contact, release, grasp, touch, collision,
+   supported, unsupported, contained, not contained, balanced, tilted,
+   open, closed, covered, uncovered, empty, full, upright, sideways, broken, intact,
+   rolling, spinning, sliding, falling, lifting, dropping, twisting, separating,
+   pretend, fail, almost no motion, revealed, hidden.
+10) phase_cues must be exactly {num_phases} short cues in strict temporal order:
+    state before -> key change -> state after.
+11) Each phase cue must be short, observable, and specific. Avoid narrative sentences, intent words, and scene/background details.
+12) For pretend or failing actions, make the final phase explicitly show that the intended result is not achieved.
+13) confusion_cues: at most 2 short cues for the most likely opposite or near-confusing actions.

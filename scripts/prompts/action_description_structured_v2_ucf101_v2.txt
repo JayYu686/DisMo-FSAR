@@ -1,0 +1,31 @@
+Generate one JSON object for the action class "{class_name}".
+
+Return JSON only. No markdown fences. No extra prose.
+
+Schema:
+{
+  "label_text": "canonical short class phrase",
+  "action_anchor": "one short visual sentence",
+  "entity_priors": ["entity 1", "entity 2"],
+  "scene_priors": ["scene cue 1", "scene cue 2"],
+  "attribute_cues": ["attribute cue 1", "attribute cue 2"],
+  "phase_cues": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "confusion_cues": ["easy confusion 1", "easy confusion 2"]
+}
+
+Requirements:
+1) English only.
+2) Emphasize stable equipment, sports tools, and venue cues only when they are genuinely discriminative.
+3) label_text must be a short canonical action phrase with spaces, not CamelCase.
+4) action_anchor must be one short visually grounded sentence, ideally 8-14 words.
+5) entity_priors: at most 4 compact items, prioritizing ball, racket, bar, horse, instrument, rope, dog, water, or board.
+6) scene_priors: at most 2 stable venue cues such as basketball court, swimming pool, archery range, gym bar, balance beam, pommel horse, or diving board.
+7) Do not use generic background cues such as sports arena, crowded stands, competition venue, outdoor field, living room floor, or dressing room.
+8) attribute_cues should emphasize equipment interaction and motion pattern, such as ball control, bar support, racket swing, instrument playing, jump, rotation, water contact, or vehicle riding.
+9) phase_cues must be exactly {num_phases} short cues in strict temporal order: ready stance -> main action -> result posture or outcome.
+10) confusion_cues: at most 2 short near-confusion cues, especially for visually similar sports or gymnastics classes.
+11) Avoid long sports-caption narratives.

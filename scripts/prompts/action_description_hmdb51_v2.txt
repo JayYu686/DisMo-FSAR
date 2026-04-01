@@ -1,0 +1,13 @@
+Write one detailed visual paragraph for the HMDB-style action class: "{class_name}".
+
+Requirements:
+1) English only, one paragraph, 95-140 words.
+2) Describe only observable visual evidence: body parts, pose changes, motion trajectory, speed, rhythm, and force.
+3) Use explicit temporal structure: beginning -> middle -> ending.
+4) If objects are typically involved, describe the object interaction and contact transitions clearly.
+5) Include camera-view and scene cues only when they are visually common for this action.
+6) Add at least two contrastive cues with explicit comparisons using "unlike ...", focusing on confusing fine-grained actions.
+7) Prefer concrete motion verbs; avoid abstract intention, emotion, or social interpretation.
+8) Avoid generic openings like "a video showing" or "someone doing".
+9) Do not mention datasets, labels, model names, or "this class".
+10) Do not output bullets, numbering, headings, quotes, or markdown.

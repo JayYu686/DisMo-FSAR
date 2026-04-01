@@ -1,0 +1,2300 @@
+{
+  "Apply Eye Makeup": {
+    "label_text": "apply eye makeup",
+    "action_anchor": "A person uses makeup tools near their eyes.",
+    "entity_priors": [
+      "person",
+      "eyeliner",
+      "mascara",
+      "eyeshadow",
+      "makeup brush",
+      "mirror"
+    ],
+    "scene_priors": [
+      "bathroom vanity",
+      "dressing room",
+      "well-lit mirror",
+      "makeup table"
+    ],
+    "attribute_cues": [
+      "close to face",
+      "hand precision",
+      "looking at mirror",
+      "small tools"
+    ],
+    "phase_cues": [
+      "preparing tools near mirror",
+      "applying product to eyelid or lash",
+      "blending or finishing eye area"
+    ],
+    "confusion_cues": [
+      "applying face makeup",
+      "removing eye makeup"
+    ]
+  },
+  "Archery": {
+    "label_text": "shooting a bow",
+    "action_anchor": "A person draws and releases an arrow from a bow.",
+    "entity_priors": [
+      "archer",
+      "bow",
+      "arrow",
+      "target",
+      "quiver",
+      "arm guard"
+    ],
+    "scene_priors": [
+      "archery range",
+      "outdoor field",
+      "indoor shooting lane",
+      "competition venue"
+    ],
+    "attribute_cues": [
+      "bow drawn back",
+      "arrow nocked",
+      "aiming stance",
+      "arrow released"
+    ],
+    "phase_cues": [
+      "nocking arrow on bowstring",
+      "drawing bow with tension",
+      "releasing arrow toward target"
+    ],
+    "confusion_cues": [
+      "throwing a javelin",
+      "firing a crossbow"
+    ]
+  },
+  "Baby Crawling": {
+    "label_text": "baby crawling",
+    "action_anchor": "An infant moves forward on hands and knees across a floor.",
+    "entity_priors": [
+      "infant",
+      "baby",
+      "toddler",
+      "floor",
+      "carpet",
+      "play mat"
+    ],
+    "scene_priors": [
+      "living room floor",
+      "nursery",
+      "play area",
+      "carpeted surface"
+    ],
+    "attribute_cues": [
+      "forward movement",
+      "hands and knees contact",
+      "alternating limb motion",
+      "low to ground"
+    ],
+    "phase_cues": [
+      "baby gets on hands and knees",
+      "baby lifts one hand and opposite knee",
+      "baby moves forward and repeats with other limbs"
+    ],
+    "confusion_cues": [
+      "baby rolling",
+      "baby sitting and scooting"
+    ]
+  },
+  "Balance Beam": {
+    "label_text": "balance beam routine",
+    "action_anchor": "A gymnast performs acrobatic moves on a narrow elevated beam.",
+    "entity_priors": [
+      "gymnast",
+      "balance beam",
+      "gymnastics mat",
+      "gymnastics leotard",
+      "gymnastics shoes",
+      "judges"
+    ],
+    "scene_priors": [
+      "gymnastics arena",
+      "competition floor",
+      "spotter nearby",
+      "audience seating"
+    ],
+    "attribute_cues": [
+      "upright posture",
+      "precise foot placement",
+      "arms extended for balance",
+      "controlled movements"
+    ],
+    "phase_cues": [
+      "mounting the beam with controlled steps",
+      "performing turns and leaps in center",
+      "dismounting with aerial flip to mat"
+    ],
+    "confusion_cues": [
+      "floor exercise without beam",
+      "parallel bars apparatus"
+    ]
+  },
+  "Band Marching": {
+    "label_text": "marching band performing",
+    "action_anchor": "Musicians in uniform march in formation while playing instruments.",
+    "entity_priors": [
+      "marching band members",
+      "brass instruments",
+      "percussion instruments",
+      "woodwind instruments",
+      "uniforms",
+      "conductor"
+    ],
+    "scene_priors": [
+      "football field",
+      "parade route",
+      "stadium",
+      "outdoor arena"
+    ],
+    "attribute_cues": [
+      "synchronized movement",
+      "forward marching",
+      "instrument playing",
+      "uniform attire"
+    ],
+    "phase_cues": [
+      "band members line up in formation",
+      "conductor signals start and musicians begin marching",
+      "band moves in coordinated patterns while playing music"
+    ],
+    "confusion_cues": [
+      "military parade marching",
+      "color guard performance"
+    ]
+  },
+  "Baseball Pitch": {
+    "label_text": "Baseball pitch",
+    "action_anchor": "A pitcher winds up and throws a baseball toward home plate.",
+    "entity_priors": [
+      "pitcher",
+      "baseball",
+      "glove",
+      "mound",
+      "catcher",
+      "uniform"
+    ],
+    "scene_priors": [
+      "baseball diamond",
+      "pitcher's mound",
+      "stadium",
+      "grass field"
+    ],
+    "attribute_cues": [
+      "overhand motion",
+      "arm extension",
+      "ball release",
+      "follow-through"
+    ],
+    "phase_cues": [
+      "Wind-up with leg lift",
+      "Arm cocking and stride",
+      "Ball release and follow-through"
+    ],
+    "confusion_cues": [
+      "Softball pitch",
+      "Cricket bowling"
+    ]
+  },
+  "Basketball": {
+    "label_text": "playing basketball",
+    "action_anchor": "A person dribbles and shoots a basketball toward a hoop.",
+    "entity_priors": [
+      "basketball player",
+      "basketball",
+      "hoop",
+      "backboard",
+      "court",
+      "sneakers"
+    ],
+    "scene_priors": [
+      "indoor/outdoor basketball court",
+      "wooden or asphalt surface",
+      "marked lines",
+      "crowded stands"
+    ],
+    "attribute_cues": [
+      "bouncing ball",
+      "upward arm motion",
+      "jumping",
+      "team coordination"
+    ],
+    "phase_cues": [
+      "dribbling the ball while moving",
+      "aiming and jumping for a shot",
+      "ball arcing toward or through hoop"
+    ],
+    "confusion_cues": [
+      "volleyball spike",
+      "netball shot"
+    ]
+  },
+  "Basketball Dunk": {
+    "label_text": "basketball dunk",
+    "action_anchor": "A player jumps and forcefully puts the basketball through the hoop.",
+    "entity_priors": [
+      "basketball player",
+      "basketball",
+      "hoop",
+      "backboard",
+      "court",
+      "sneakers"
+    ],
+    "scene_priors": [
+      "indoor basketball court",
+      "outdoor basketball court",
+      "gymnasium",
+      "sports arena"
+    ],
+    "attribute_cues": [
+      "upward jump",
+      "arm extension",
+      "ball-hand contact",
+      "rim contact"
+    ],
+    "phase_cues": [
+      "player approaches basket with ball",
+      "player leaps upward toward hoop",
+      "player slams ball through rim"
+    ],
+    "confusion_cues": [
+      "layup shot",
+      "alley-oop pass"
+    ]
+  },
+  "Bench Press": {
+    "label_text": "bench press exercise",
+    "action_anchor": "A person lies on a bench and pushes a barbell upward from their chest.",
+    "entity_priors": [
+      "person",
+      "barbell",
+      "weight plates",
+      "bench",
+      "spotter",
+      "rack"
+    ],
+    "scene_priors": [
+      "gym",
+      "weightlifting area",
+      "flat bench",
+      "power rack"
+    ],
+    "attribute_cues": [
+      "upward push",
+      "controlled descent",
+      "chest contact",
+      "elbow extension"
+    ],
+    "phase_cues": [
+      "barbell lowered to chest",
+      "pause at chest position",
+      "barbell pushed upward to full arm extension"
+    ],
+    "confusion_cues": [
+      "chest fly exercise",
+      "shoulder press exercise"
+    ]
+  },
+  "Biking": {
+    "label_text": "riding a bicycle",
+    "action_anchor": "A person pedals a bicycle on a road.",
+    "entity_priors": [
+      "person",
+      "bicycle",
+      "helmet",
+      "handlebars",
+      "pedals",
+      "wheels"
+    ],
+    "scene_priors": [
+      "road",
+      "bike lane",
+      "outdoor path",
+      "urban street"
+    ],
+    "attribute_cues": [
+      "forward motion",
+      "upright posture",
+      "pedaling rhythm",
+      "hands on handlebars"
+    ],
+    "phase_cues": [
+      "mounting the bicycle",
+      "pedaling steadily",
+      "dismounting at destination"
+    ],
+    "confusion_cues": [
+      "motorcycling",
+      "running with a bike"
+    ]
+  },
+  "Billiards": {
+    "label_text": "playing billiards",
+    "action_anchor": "A person uses a cue stick to strike balls on a felt-covered table.",
+    "entity_priors": [
+      "cue stick",
+      "billiard balls",
+      "pool table",
+      "chalk cube",
+      "player",
+      "cue ball"
+    ],
+    "scene_priors": [
+      "pool hall",
+      "green felt table",
+      "overhead lighting",
+      "wooden rails"
+    ],
+    "attribute_cues": [
+      "cue tip contacts ball",
+      "balls roll on felt",
+      "cue stick held horizontally",
+      "balls collide"
+    ],
+    "phase_cues": [
+      "player lines up shot with cue stick",
+      "cue stick strikes cue ball",
+      "balls scatter across table"
+    ],
+    "confusion_cues": [
+      "playing snooker",
+      "playing shuffleboard"
+    ]
+  },
+  "Blow DryHair": {
+    "label_text": "Blow Dry Hair",
+    "action_anchor": "A person holds a hair dryer to their head while moving it through damp hair.",
+    "entity_priors": [
+      "person",
+      "hair dryer",
+      "hair",
+      "hands",
+      "mirror",
+      "bathroom counter"
+    ],
+    "scene_priors": [
+      "bathroom",
+      "salon",
+      "bedroom vanity",
+      "dressing room"
+    ],
+    "attribute_cues": [
+      "hand-held device",
+      "air blowing",
+      "hair movement",
+      "heat application"
+    ],
+    "phase_cues": [
+      "person picks up hair dryer and turns it on",
+      "person directs airflow through sections of damp hair",
+      "person checks hair texture and turns off dryer"
+    ],
+    "confusion_cues": [
+      "brushing hair",
+      "styling with curling iron"
+    ]
+  },
+  "Body Weight Squats": {
+    "label_text": "Body Weight Squats",
+    "action_anchor": "A person bends their knees and lowers their hips while standing upright.",
+    "entity_priors": [
+      "person",
+      "floor",
+      "sneakers",
+      "gym mat",
+      "workout clothes"
+    ],
+    "scene_priors": [
+      "gym",
+      "home workout area",
+      "outdoor park",
+      "fitness studio"
+    ],
+    "attribute_cues": [
+      "vertical movement",
+      "knee flexion",
+      "feet shoulder-width apart",
+      "back straight"
+    ],
+    "phase_cues": [
+      "Standing upright with feet apart.",
+      "Lowering hips by bending knees.",
+      "Rising back to starting position."
+    ],
+    "confusion_cues": [
+      "lunges",
+      "jumping jacks"
+    ]
+  },
+  "Bowling": {
+    "label_text": "bowling a ball",
+    "action_anchor": "A person swings and rolls a heavy ball down a lane toward pins.",
+    "entity_priors": [
+      "bowler",
+      "bowling ball",
+      "bowling pins",
+      "bowling lane",
+      "bowling shoes",
+      "score display"
+    ],
+    "scene_priors": [
+      "indoor bowling alley",
+      "polished wooden lane",
+      "pin setup at end",
+      "overhead lighting"
+    ],
+    "attribute_cues": [
+      "overhand swing",
+      "forward roll",
+      "ball contact with lane",
+      "pins scattering"
+    ],
+    "phase_cues": [
+      "approaching lane with ball in hand",
+      "swinging arm back and releasing ball",
+      "ball rolling and hitting pins"
+    ],
+    "confusion_cues": [
+      "throwing a ball",
+      "rolling a ball casually"
+    ]
+  },
+  "Boxing Punching Bag": {
+    "label_text": "boxing punching bag",
+    "action_anchor": "A person punches a hanging heavy bag with boxing gloves.",
+    "entity_priors": [
+      "boxer",
+      "heavy bag",
+      "boxing gloves",
+      "gym",
+      "punching bag stand"
+    ],
+    "scene_priors": [
+      "gym or training facility",
+      "heavy bag hanging from ceiling or stand",
+      "boxing ring or mat area",
+      "mirrored walls"
+    ],
+    "attribute_cues": [
+      "forward punching motion",
+      "gloves contacting bag",
+      "bag swinging after impact",
+      "stance with feet apart"
+    ],
+    "phase_cues": [
+      "boxer assumes fighting stance facing bag",
+      "boxer throws punch making contact with bag",
+      "boxer retracts arm as bag swings from impact"
+    ],
+    "confusion_cues": [
+      "shadow boxing without equipment",
+      "punching a speed bag"
+    ]
+  },
+  "Boxing Speed Bag": {
+    "label_text": "boxing speed bag",
+    "action_anchor": "A person rapidly punches a small hanging bag with both fists.",
+    "entity_priors": [
+      "boxer",
+      "speed bag",
+      "gloves",
+      "mounting platform",
+      "ceiling or stand"
+    ],
+    "scene_priors": [
+      "gym",
+      "boxing ring area",
+      "training facility"
+    ],
+    "attribute_cues": [
+      "alternating hands",
+      "fast rhythmic motion",
+      "bag rebounds quickly"
+    ],
+    "phase_cues": [
+      "starting with a light tap to set rhythm",
+      "maintaining steady alternating punches",
+      "finishing with a controlled slowdown"
+    ],
+    "confusion_cues": [
+      "heavy bag punching",
+      "double-end bag training"
+    ]
+  },
+  "Breast Stroke": {
+    "label_text": "Swimming Breaststroke",
+    "action_anchor": "A swimmer moves through water with symmetrical arm pulls and frog-like leg kicks.",
+    "entity_priors": [
+      "swimmer",
+      "swimming pool",
+      "swim cap",
+      "goggles",
+      "swimsuit",
+      "lane lines"
+    ],
+    "scene_priors": [
+      "indoor swimming pool",
+      "outdoor pool",
+      "competition venue",
+      "aquatic center"
+    ],
+    "attribute_cues": [
+      "symmetrical arm movement",
+      "breathing forward",
+      "horizontal body position",
+      "rhythmic timing"
+    ],
+    "phase_cues": [
+      "arms extend forward, legs tucked",
+      "arms pull outward and back, legs prepare to kick",
+      "arms recover forward, legs execute whip kick"
+    ],
+    "confusion_cues": [
+      "butterfly stroke",
+      "frog kick in water"
+    ]
+  },
+  "Brushing Teeth": {
+    "label_text": "Brushing Teeth",
+    "action_anchor": "A person holds a toothbrush and moves it across their teeth.",
+    "entity_priors": [
+      "person",
+      "toothbrush",
+      "sink",
+      "mirror",
+      "toothpaste",
+      "cup"
+    ],
+    "scene_priors": [
+      "bathroom",
+      "near sink",
+      "mirror visible",
+      "indoor lighting"
+    ],
+    "attribute_cues": [
+      "hand gripping brush",
+      "up-down brushing motion",
+      "foam around mouth",
+      "head tilted forward"
+    ],
+    "phase_cues": [
+      "person applies toothpaste to brush",
+      "person brushes teeth with rhythmic motions",
+      "person rinses mouth and cleans brush"
+    ],
+    "confusion_cues": [
+      "brushing hair",
+      "applying makeup"
+    ]
+  },
+  "Cricket Bowling": {
+    "label_text": "Cricket Bowling",
+    "action_anchor": "A bowler runs up and delivers a ball toward the batsman.",
+    "entity_priors": [
+      "bowler",
+      "cricket ball",
+      "cricket pitch",
+      "wicket",
+      "batsman",
+      "umpire"
+    ],
+    "scene_priors": [
+      "cricket field",
+      "pitch with stumps",
+      "outdoor grassy area",
+      "players in whites"
+    ],
+    "attribute_cues": [
+      "overarm motion",
+      "ball release forward",
+      "run-up speed",
+      "bounce on pitch"
+    ],
+    "phase_cues": [
+      "bowler runs toward crease",
+      "arm swings over to release ball",
+      "ball travels toward batsman"
+    ],
+    "confusion_cues": [
+      "baseball pitching",
+      "javelin throwing"
+    ]
+  },
+  "Drumming": {
+    "label_text": "playing drums",
+    "action_anchor": "A person strikes drumheads with drumsticks in rhythmic patterns.",
+    "entity_priors": [
+      "drummer",
+      "drum kit",
+      "drumsticks",
+      "cymbals",
+      "bass drum pedal",
+      "throne"
+    ],
+    "scene_priors": [
+      "music studio",
+      "concert stage",
+      "practice room",
+      "garage band setup"
+    ],
+    "attribute_cues": [
+      "alternating hand motions",
+      "foot pedal operation",
+      "stick rebound",
+      "body leaning forward"
+    ],
+    "phase_cues": [
+      "raising drumsticks above drumheads",
+      "striking drumheads with controlled force",
+      "recovering stick position for next strike"
+    ],
+    "confusion_cues": [
+      "air drumming without contact",
+      "tapping on table surfaces"
+    ]
+  },
+  "Fencing": {
+    "label_text": "fencing duel",
+    "action_anchor": "Two opponents in white uniforms thrust and parry with thin swords.",
+    "entity_priors": [
+      "fencer",
+      "opponent",
+      "foil",
+      "épée",
+      "sabre",
+      "mask"
+    ],
+    "scene_priors": [
+      "fencing piste",
+      "sports hall",
+      "competition venue",
+      "striped floor"
+    ],
+    "attribute_cues": [
+      "lunging forward",
+      "blade contact",
+      "defensive stance",
+      "quick retreat"
+    ],
+    "phase_cues": [
+      "fencer assumes en garde position with sword raised",
+      "opponents exchange rapid thrusts and parries",
+      "one fencer scores a touch with blade tip"
+    ],
+    "confusion_cues": [
+      "sword fighting in historical reenactment",
+      "kendo with bamboo swords"
+    ]
+  },
+  "Field Hockey Penalty": {
+    "label_text": "field hockey penalty",
+    "action_anchor": "A player commits a foul and the referee awards a penalty.",
+    "entity_priors": [
+      "field hockey player",
+      "referee",
+      "hockey stick",
+      "ball",
+      "goal",
+      "penalty spot"
+    ],
+    "scene_priors": [
+      "hockey field",
+      "goal area",
+      "penalty circle",
+      "artificial turf"
+    ],
+    "attribute_cues": [
+      "illegal contact",
+      "deliberate foul",
+      "referee whistle",
+      "stopped play"
+    ],
+    "phase_cues": [
+      "player makes illegal contact with opponent or stick",
+      "referee blows whistle and signals penalty",
+      "player prepares to take penalty shot from spot"
+    ],
+    "confusion_cues": [
+      "regular foul without penalty",
+      "penalty corner instead of penalty stroke"
+    ]
+  },
+  "Frisbee Catch": {
+    "label_text": "Frisbee catch",
+    "action_anchor": "A person catches a flying disc with their hands.",
+    "entity_priors": [
+      "person",
+      "frisbee",
+      "hands",
+      "outdoor field",
+      "park",
+      "beach"
+    ],
+    "scene_priors": [
+      "grassy field",
+      "open outdoor space",
+      "sunny day",
+      "recreational area"
+    ],
+    "attribute_cues": [
+      "hands extended",
+      "disc in air",
+      "body leaning",
+      "eyes tracking"
+    ],
+    "phase_cues": [
+      "Frisbee flies toward person",
+      "Person reaches hands to intercept disc",
+      "Hands grasp and secure frisbee"
+    ],
+    "confusion_cues": [
+      "Frisbee throw",
+      "Frisbee drop"
+    ]
+  },
+  "Front Crawl": {
+    "label_text": "Front Crawl Swimming",
+    "action_anchor": "A swimmer propels forward face-down with alternating arm strokes and flutter kicks.",
+    "entity_priors": [
+      "swimmer",
+      "swimming pool",
+      "swimsuit",
+      "goggles",
+      "swim cap",
+      "lane lines"
+    ],
+    "scene_priors": [
+      "indoor or outdoor pool",
+      "water surface",
+      "clear visibility",
+      "poolside deck"
+    ],
+    "attribute_cues": [
+      "face submerged",
+      "horizontal body position",
+      "alternating arm movements",
+      "rapid leg kicks"
+    ],
+    "phase_cues": [
+      "Arm recovery over water with one arm extended forward.",
+      "Arm pull underwater while the other arm recovers.",
+      "Continuous flutter kicking throughout the stroke cycle."
+    ],
+    "confusion_cues": [
+      "Backstroke (swimming on back)",
+      "Butterfly stroke (synchronous arm movements)"
+    ]
+  },
+  "Haircut": {
+    "label_text": "getting a haircut",
+    "action_anchor": "A person sits in a chair while another person cuts their hair with scissors.",
+    "entity_priors": [
+      "person getting haircut",
+      "barber or stylist",
+      "scissors",
+      "hair clippers",
+      "comb",
+      "cape"
+    ],
+    "scene_priors": [
+      "barbershop",
+      "salon",
+      "mirrored wall",
+      "barber chair"
+    ],
+    "attribute_cues": [
+      "sitting upright",
+      "head tilted",
+      "scissors near hair",
+      "cape draped over shoulders"
+    ],
+    "phase_cues": [
+      "person sits in chair and cape is placed",
+      "barber sections and cuts hair with tools",
+      "hair is styled and cape removed"
+    ],
+    "confusion_cues": [
+      "hair brushing",
+      "hair washing"
+    ]
+  },
+  "Hammering": {
+    "label_text": "hammering a nail",
+    "action_anchor": "A person swings a hammer to strike a nail into a surface.",
+    "entity_priors": [
+      "person",
+      "hammer",
+      "nail",
+      "wood",
+      "workbench",
+      "safety glasses"
+    ],
+    "scene_priors": [
+      "workshop",
+      "construction site",
+      "garage",
+      "woodworking area"
+    ],
+    "attribute_cues": [
+      "downward swing",
+      "hammer-nail contact",
+      "repetitive motion",
+      "arm raised"
+    ],
+    "phase_cues": [
+      "hammer raised above head",
+      "hammer descending toward nail",
+      "hammer strikes nail head"
+    ],
+    "confusion_cues": [
+      "using mallet",
+      "tapping gently"
+    ]
+  },
+  "Head Massage": {
+    "label_text": "head massage",
+    "action_anchor": "A person uses their hands to rub and press someone's head.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "head",
+      "hair",
+      "fingers",
+      "scalp"
+    ],
+    "scene_priors": [
+      "salon",
+      "spa",
+      "home living room",
+      "wellness center"
+    ],
+    "attribute_cues": [
+      "circular motions",
+      "gentle pressure",
+      "direct contact",
+      "relaxed posture"
+    ],
+    "phase_cues": [
+      "hands placed on head with fingers spread",
+      "circular rubbing motions across scalp",
+      "gentle pressing and releasing of temples"
+    ],
+    "confusion_cues": [
+      "hair washing",
+      "head scratching"
+    ]
+  },
+  "Hula Hoop": {
+    "label_text": "hula hooping",
+    "action_anchor": "A person rotates a hoop around their waist using hip movements.",
+    "entity_priors": [
+      "person",
+      "hoop",
+      "hips",
+      "hands",
+      "torso",
+      "legs"
+    ],
+    "scene_priors": [
+      "outdoor park",
+      "gymnasium",
+      "backyard",
+      "fitness studio"
+    ],
+    "attribute_cues": [
+      "circular rotation",
+      "rhythmic swaying",
+      "waist contact",
+      "upright posture"
+    ],
+    "phase_cues": [
+      "holding hoop at waist level",
+      "initiating circular hip motion",
+      "maintaining continuous hoop rotation"
+    ],
+    "confusion_cues": [
+      "jump rope skipping",
+      "belly dancing"
+    ]
+  },
+  "Javelin Throw": {
+    "label_text": "javelin throw",
+    "action_anchor": "An athlete runs and throws a long spear-like javelin.",
+    "entity_priors": [
+      "athlete",
+      "javelin",
+      "runway",
+      "throwing sector",
+      "track field",
+      "sports uniform"
+    ],
+    "scene_priors": [
+      "outdoor athletics track",
+      "green field",
+      "clear sky",
+      "crowded stadium"
+    ],
+    "attribute_cues": [
+      "overarm throw",
+      "forward momentum",
+      "high arc",
+      "landing in sector"
+    ],
+    "phase_cues": [
+      "athlete runs with javelin held overhead",
+      "athlete plants foot and rotates to throw",
+      "javelin flies through air and lands"
+    ],
+    "confusion_cues": [
+      "spear throw",
+      "shot put"
+    ]
+  },
+  "Juggling Balls": {
+    "label_text": "Juggling Balls",
+    "action_anchor": "A person tosses and catches multiple balls in a continuous pattern.",
+    "entity_priors": [
+      "person",
+      "juggling balls",
+      "hands",
+      "air",
+      "performance space",
+      "audience"
+    ],
+    "scene_priors": [
+      "circus tent",
+      "street performance",
+      "park lawn",
+      "indoor stage"
+    ],
+    "attribute_cues": [
+      "upward toss",
+      "circular motion",
+      "hand contact",
+      "balanced rhythm"
+    ],
+    "phase_cues": [
+      "ball tossed upward from hand",
+      "ball arcs through the air",
+      "ball caught by opposite hand"
+    ],
+    "confusion_cues": [
+      "throwing a ball",
+      "playing catch"
+    ]
+  },
+  "Jumping Jack": {
+    "label_text": "Jumping Jack",
+    "action_anchor": "A person stands upright, jumps while spreading legs and raising arms overhead, then returns to starting position.",
+    "entity_priors": [
+      "person",
+      "athletic clothing",
+      "sneakers",
+      "exercise mat",
+      "gym floor",
+      "open space"
+    ],
+    "scene_priors": [
+      "gymnasium",
+      "fitness studio",
+      "outdoor park",
+      "home workout area"
+    ],
+    "attribute_cues": [
+      "vertical jump",
+      "symmetrical limb movement",
+      "feet apart",
+      "arms overhead"
+    ],
+    "phase_cues": [
+      "Stand with feet together and arms at sides.",
+      "Jump to spread legs wide and raise arms above head.",
+      "Jump back to starting position with feet together and arms down."
+    ],
+    "confusion_cues": [
+      "jumping rope",
+      "star jump variation"
+    ]
+  },
+  "Kayaking": {
+    "label_text": "kayaking",
+    "action_anchor": "A person paddles a narrow boat on water using a double-bladed paddle.",
+    "entity_priors": [
+      "kayaker",
+      "kayak",
+      "paddle",
+      "life jacket",
+      "helmet",
+      "water"
+    ],
+    "scene_priors": [
+      "river",
+      "lake",
+      "whitewater rapids",
+      "coastal waters"
+    ],
+    "attribute_cues": [
+      "forward stroke",
+      "turning sweep",
+      "bracing for balance",
+      "leaning with boat"
+    ],
+    "phase_cues": [
+      "sitting in cockpit, gripping paddle",
+      "alternating left-right paddle strokes",
+      "maneuvering around obstacles or through rapids"
+    ],
+    "confusion_cues": [
+      "canoeing",
+      "rowing"
+    ]
+  },
+  "Knitting": {
+    "label_text": "knitting with yarn",
+    "action_anchor": "A person manipulates two needles to interloop yarn into fabric.",
+    "entity_priors": [
+      "person",
+      "knitting needles",
+      "yarn",
+      "ball of yarn",
+      "fabric piece",
+      "hands"
+    ],
+    "scene_priors": [
+      "living room chair",
+      "cozy indoor setting",
+      "craft table",
+      "sofa with lamp"
+    ],
+    "attribute_cues": [
+      "hands moving rhythmically",
+      "yarn tension maintained",
+      "needles crossing repeatedly",
+      "fabric growing downward"
+    ],
+    "phase_cues": [
+      "holding needles with yarn cast on",
+      "inserting right needle through loop",
+      "wrapping yarn and pulling through"
+    ],
+    "confusion_cues": [
+      "crocheting with hook",
+      "sewing with needle and thread"
+    ]
+  },
+  "Long Jump": {
+    "label_text": "long jump",
+    "action_anchor": "An athlete sprints down a runway and leaps into a sandpit.",
+    "entity_priors": [
+      "athlete",
+      "runway",
+      "sandpit",
+      "takeoff board",
+      "measuring tape",
+      "track shoes"
+    ],
+    "scene_priors": [
+      "athletics track",
+      "sand landing area",
+      "stadium setting",
+      "outdoor daylight"
+    ],
+    "attribute_cues": [
+      "horizontal sprint",
+      "forward leap",
+      "sand contact",
+      "distance measurement"
+    ],
+    "phase_cues": [
+      "sprinting on runway",
+      "jumping from takeoff board",
+      "landing in sandpit"
+    ],
+    "confusion_cues": [
+      "triple jump",
+      "high jump"
+    ]
+  },
+  "Lunges": {
+    "label_text": "performing lunges",
+    "action_anchor": "A person bends one knee forward while keeping the other leg straight behind.",
+    "entity_priors": [
+      "person",
+      "athlete",
+      "trainer",
+      "exercise mat",
+      "dumbbells",
+      "kettlebell"
+    ],
+    "scene_priors": [
+      "gym",
+      "fitness studio",
+      "home workout area",
+      "outdoor park"
+    ],
+    "attribute_cues": [
+      "forward knee bent at 90 degrees",
+      "back leg extended straight",
+      "torso upright",
+      "feet hip-width apart"
+    ],
+    "phase_cues": [
+      "starting in standing position with feet together",
+      "stepping one foot forward and bending both knees",
+      "pushing back to return to standing position"
+    ],
+    "confusion_cues": [
+      "squats",
+      "step-ups"
+    ]
+  },
+  "Military Parade": {
+    "label_text": "military parade",
+    "action_anchor": "Soldiers march in formation with weapons while vehicles drive past.",
+    "entity_priors": [
+      "soldiers",
+      "military vehicles",
+      "flags",
+      "weapons",
+      "officers",
+      "marching band"
+    ],
+    "scene_priors": [
+      "city street",
+      "grandstand",
+      "monument",
+      "military base"
+    ],
+    "attribute_cues": [
+      "synchronized movement",
+      "straight lines",
+      "uniform attire",
+      "slow pace"
+    ],
+    "phase_cues": [
+      "troops assemble in formation",
+      "marching procession passes review stand",
+      "vehicles and equipment display follows"
+    ],
+    "confusion_cues": [
+      "civilian parade",
+      "military exercise"
+    ]
+  },
+  "Mixing": {
+    "label_text": "mixing ingredients",
+    "action_anchor": "A person uses a tool to combine multiple substances in a container.",
+    "entity_priors": [
+      "person",
+      "mixing bowl",
+      "whisk",
+      "spoon",
+      "ingredients",
+      "container"
+    ],
+    "scene_priors": [
+      "kitchen counter",
+      "food preparation area",
+      "cooking station",
+      "workshop table"
+    ],
+    "attribute_cues": [
+      "circular motion",
+      "blending consistency",
+      "hand-held tool",
+      "bowl contact"
+    ],
+    "phase_cues": [
+      "ingredients placed in container",
+      "tool inserted and begins stirring",
+      "substances become uniform mixture"
+    ],
+    "confusion_cues": [
+      "stirring (simpler motion)",
+      "beating (more vigorous)"
+    ]
+  },
+  "Mopping Floor": {
+    "label_text": "mopping floor",
+    "action_anchor": "A person pushes a mop across a wet floor surface.",
+    "entity_priors": [
+      "person",
+      "mop",
+      "bucket",
+      "floor",
+      "water",
+      "cleaning solution"
+    ],
+    "scene_priors": [
+      "indoor room",
+      "hard floor surface",
+      "cleaning supplies nearby",
+      "wet floor signs"
+    ],
+    "attribute_cues": [
+      "back-and-forth motion",
+      "wet mop head",
+      "floor contact",
+      "standing posture"
+    ],
+    "phase_cues": [
+      "dipping mop into bucket of water",
+      "pushing mop across floor in overlapping strokes",
+      "wringing excess water from mop"
+    ],
+    "confusion_cues": [
+      "sweeping floor",
+      "wiping counter"
+    ]
+  },
+  "Nunchucks": {
+    "label_text": "spinning nunchucks",
+    "action_anchor": "A person swings two sticks connected by a chain in circular motions.",
+    "entity_priors": [
+      "person",
+      "nunchucks",
+      "martial artist",
+      "training gear",
+      "wooden sticks",
+      "chain"
+    ],
+    "scene_priors": [
+      "martial arts dojo",
+      "training hall",
+      "outdoor practice area",
+      "gym"
+    ],
+    "attribute_cues": [
+      "circular swinging",
+      "rapid hand movements",
+      "chain whipping",
+      "body coordination"
+    ],
+    "phase_cues": [
+      "gripping both sticks firmly",
+      "initiating circular swing with one hand",
+      "alternating hands in continuous flow"
+    ],
+    "confusion_cues": [
+      "swinging a rope",
+      "twirling a baton"
+    ]
+  },
+  "Parallel Bars": {
+    "label_text": "parallel bars gymnastics",
+    "action_anchor": "A gymnast performs swings and holds on two horizontal bars.",
+    "entity_priors": [
+      "gymnast",
+      "parallel bars",
+      "hands",
+      "body",
+      "gymnasium",
+      "chalk"
+    ],
+    "scene_priors": [
+      "indoor gym",
+      "blue mats",
+      "two parallel bars",
+      "audience seating"
+    ],
+    "attribute_cues": [
+      "vertical body alignment",
+      "grip on bars",
+      "swinging motion",
+      "feet pointed"
+    ],
+    "phase_cues": [
+      "starting with a mount onto the bars",
+      "swinging between the bars with controlled momentum",
+      "dismounting with a landing on mats"
+    ],
+    "confusion_cues": [
+      "uneven bars",
+      "high bar"
+    ]
+  },
+  "Pizza Tossing": {
+    "label_text": "pizza dough tossing",
+    "action_anchor": "A chef tosses pizza dough in the air with both hands.",
+    "entity_priors": [
+      "chef",
+      "pizza dough",
+      "pizza peel",
+      "flour",
+      "pizza oven",
+      "counter"
+    ],
+    "scene_priors": [
+      "pizzeria kitchen",
+      "restaurant kitchen",
+      "cooking show set",
+      "home kitchen"
+    ],
+    "attribute_cues": [
+      "circular motion",
+      "dough spinning",
+      "hands outstretched",
+      "dough airborne"
+    ],
+    "phase_cues": [
+      "chef holds dough flat on hands",
+      "chef tosses dough upward with flick",
+      "dough spins and expands in air"
+    ],
+    "confusion_cues": [
+      "pizza spinning on peel",
+      "kneading pizza dough"
+    ]
+  },
+  "Playing Cello": {
+    "label_text": "Playing Cello",
+    "action_anchor": "A person sits with a cello between their knees, bowing the strings.",
+    "entity_priors": [
+      "cellist",
+      "cello",
+      "bow",
+      "chair",
+      "music stand",
+      "sheet music"
+    ],
+    "scene_priors": [
+      "concert hall",
+      "music studio",
+      "living room",
+      "stage"
+    ],
+    "attribute_cues": [
+      "seated posture",
+      "bow moving across strings",
+      "fingers pressing strings",
+      "cello tilted"
+    ],
+    "phase_cues": [
+      "holding cello upright between knees",
+      "drawing bow across strings",
+      "adjusting hand position on fingerboard"
+    ],
+    "confusion_cues": [
+      "playing violin",
+      "playing double bass"
+    ]
+  },
+  "Playing Dhol": {
+    "label_text": "Playing Dhol",
+    "action_anchor": "A person strikes a large double-headed drum with sticks.",
+    "entity_priors": [
+      "person",
+      "dhol drum",
+      "drumsticks",
+      "hands",
+      "shoulder strap",
+      "traditional attire"
+    ],
+    "scene_priors": [
+      "outdoor festival",
+      "cultural celebration",
+      "stage performance",
+      "street parade"
+    ],
+    "attribute_cues": [
+      "rhythmic beating",
+      "both hands active",
+      "drum held horizontally",
+      "standing posture"
+    ],
+    "phase_cues": [
+      "Grasping drumsticks and positioning dhol on shoulder.",
+      "Alternating strikes on left and right drumheads.",
+      "Maintaining steady rhythm with coordinated arm movements."
+    ],
+    "confusion_cues": [
+      "Playing other drums like tabla",
+      "Dancing while holding instrument"
+    ]
+  },
+  "Playing Flute": {
+    "label_text": "Playing Flute",
+    "action_anchor": "A person holds a flute horizontally to their mouth with both hands.",
+    "entity_priors": [
+      "flute player",
+      "flute instrument",
+      "fingers",
+      "mouth",
+      "sheet music",
+      "music stand"
+    ],
+    "scene_priors": [
+      "concert hall",
+      "music studio",
+      "orchestra pit",
+      "outdoor performance"
+    ],
+    "attribute_cues": [
+      "horizontal instrument orientation",
+      "fingers covering holes",
+      "cheeks puffed while blowing",
+      "instrument near mouth"
+    ],
+    "phase_cues": [
+      "bringing flute to mouth position",
+      "fingers moving over holes while blowing",
+      "lowering flute after playing"
+    ],
+    "confusion_cues": [
+      "playing clarinet",
+      "playing recorder"
+    ]
+  },
+  "Playing Piano": {
+    "label_text": "Playing Piano",
+    "action_anchor": "A person sits at a piano and presses keys with their fingers.",
+    "entity_priors": [
+      "pianist",
+      "piano",
+      "piano bench",
+      "sheet music",
+      "piano keys",
+      "pedals"
+    ],
+    "scene_priors": [
+      "concert hall",
+      "living room",
+      "music studio",
+      "grand piano on stage"
+    ],
+    "attribute_cues": [
+      "fingers contacting keys",
+      "both hands moving",
+      "sitting posture",
+      "foot on pedals"
+    ],
+    "phase_cues": [
+      "sitting down at piano bench",
+      "hands positioned over keyboard",
+      "fingers pressing keys in sequence"
+    ],
+    "confusion_cues": [
+      "typing on keyboard",
+      "playing organ"
+    ]
+  },
+  "Playing Sitar": {
+    "label_text": "Playing Sitar",
+    "action_anchor": "A person sits with a sitar on their lap, plucking its strings with a mizrab.",
+    "entity_priors": [
+      "person",
+      "sitar",
+      "mizrab",
+      "cushion",
+      "floor seating"
+    ],
+    "scene_priors": [
+      "indoor room",
+      "cultural setting",
+      "quiet environment"
+    ],
+    "attribute_cues": [
+      "seated posture",
+      "hands on strings",
+      "instrument balanced on lap"
+    ],
+    "phase_cues": [
+      "holding sitar upright on lap",
+      "plucking strings with mizrab",
+      "adjusting tuning pegs"
+    ],
+    "confusion_cues": [
+      "playing guitar",
+      "playing veena"
+    ]
+  },
+  "Playing Tabla": {
+    "label_text": "Playing Tabla",
+    "action_anchor": "A person strikes two hand drums with fingers and palms.",
+    "entity_priors": [
+      "person",
+      "tabla drums",
+      "hands",
+      "fingers",
+      "drumsticks (rare)",
+      "cushion"
+    ],
+    "scene_priors": [
+      "music room",
+      "stage performance",
+      "cultural event",
+      "practice space"
+    ],
+    "attribute_cues": [
+      "seated cross-legged",
+      "drums on floor",
+      "hand contact with drumheads",
+      "rhythmic motion"
+    ],
+    "phase_cues": [
+      "positioning hands above drumheads",
+      "striking drumheads with fingers",
+      "alternating between two drums"
+    ],
+    "confusion_cues": [
+      "playing other hand drums",
+      "hand drumming on surfaces"
+    ]
+  },
+  "Playing Violin": {
+    "label_text": "playing violin",
+    "action_anchor": "A person holds a violin under their chin and draws a bow across its strings.",
+    "entity_priors": [
+      "violinist",
+      "violin",
+      "bow",
+      "chin rest",
+      "shoulder rest",
+      "music stand"
+    ],
+    "scene_priors": [
+      "concert hall",
+      "orchestra pit",
+      "music studio",
+      "living room"
+    ],
+    "attribute_cues": [
+      "bow moving horizontally",
+      "fingers pressing strings",
+      "chin on violin",
+      "standing or seated upright"
+    ],
+    "phase_cues": [
+      "holding violin under chin with left hand",
+      "drawing bow across strings with right hand",
+      "moving left fingers on fingerboard while bowing"
+    ],
+    "confusion_cues": [
+      "playing cello",
+      "playing viola"
+    ]
+  },
+  "Pole Vault": {
+    "label_text": "pole vault",
+    "action_anchor": "An athlete runs with a long pole, plants it into a box, and vaults over a high bar.",
+    "entity_priors": [
+      "athlete",
+      "pole",
+      "bar",
+      "landing mat",
+      "runway",
+      "box"
+    ],
+    "scene_priors": [
+      "track and field stadium",
+      "runway with markings",
+      "high bar setup",
+      "landing area"
+    ],
+    "attribute_cues": [
+      "running forward",
+      "pole vertical",
+      "body arching",
+      "landing on back"
+    ],
+    "phase_cues": [
+      "athlete sprints down runway holding pole",
+      "pole plants into box and bends, athlete lifts off",
+      "athlete clears bar and lands on mat"
+    ],
+    "confusion_cues": [
+      "high jump",
+      "long jump"
+    ]
+  },
+  "Pull Ups": {
+    "label_text": "Pull Ups",
+    "action_anchor": "A person grips a horizontal bar and pulls their body upward until their chin clears the bar.",
+    "entity_priors": [
+      "person",
+      "horizontal bar",
+      "gym equipment",
+      "arms",
+      "hands",
+      "upper body"
+    ],
+    "scene_priors": [
+      "gym",
+      "outdoor fitness area",
+      "home workout space",
+      "sports facility"
+    ],
+    "attribute_cues": [
+      "upward motion",
+      "grip on bar",
+      "body suspended",
+      "chin above bar"
+    ],
+    "phase_cues": [
+      "person hangs from bar with arms extended",
+      "person pulls body upward by bending elbows",
+      "person lowers body back to starting position"
+    ],
+    "confusion_cues": [
+      "chin-ups",
+      "lat pulldowns"
+    ]
+  },
+  "Push Ups": {
+    "label_text": "Push Ups",
+    "action_anchor": "A person lies face down and pushes their body up and down using their arms.",
+    "entity_priors": [
+      "person",
+      "floor",
+      "hands",
+      "arms",
+      "chest",
+      "feet"
+    ],
+    "scene_priors": [
+      "gym",
+      "home floor",
+      "outdoor ground",
+      "fitness mat"
+    ],
+    "attribute_cues": [
+      "body horizontal",
+      "arms extended",
+      "elbows bending",
+      "chest lowering"
+    ],
+    "phase_cues": [
+      "starting in plank position",
+      "lowering chest toward floor",
+      "pushing back up to start"
+    ],
+    "confusion_cues": [
+      "Plank hold",
+      "Burpee"
+    ]
+  },
+  "Rafting": {
+    "label_text": "whitewater rafting",
+    "action_anchor": "People paddle an inflatable raft through turbulent river rapids.",
+    "entity_priors": [
+      "rafters",
+      "inflatable raft",
+      "paddles",
+      "life jackets",
+      "helmets",
+      "river guide"
+    ],
+    "scene_priors": [
+      "whitewater river",
+      "rocky canyon",
+      "foaming rapids",
+      "outdoor wilderness"
+    ],
+    "attribute_cues": [
+      "downstream movement",
+      "team coordination",
+      "paddling rhythm",
+      "raft bouncing"
+    ],
+    "phase_cues": [
+      "raft enters turbulent rapids section",
+      "team paddles in unison to navigate obstacles",
+      "raft exits rapids into calmer water"
+    ],
+    "confusion_cues": [
+      "kayaking",
+      "canoeing"
+    ]
+  },
+  "Rope Climbing": {
+    "label_text": "rope climbing",
+    "action_anchor": "A person ascends a vertical rope using hands and legs.",
+    "entity_priors": [
+      "person",
+      "rope",
+      "hands",
+      "legs",
+      "gymnasium",
+      "outdoor structure"
+    ],
+    "scene_priors": [
+      "gymnasium",
+      "outdoor obstacle course",
+      "climbing wall area",
+      "military training ground"
+    ],
+    "attribute_cues": [
+      "vertical ascent",
+      "alternating grip",
+      "leg wrap",
+      "upward momentum"
+    ],
+    "phase_cues": [
+      "initial grip on rope",
+      "alternating pull-up motion",
+      "legs wrapping for support"
+    ],
+    "confusion_cues": [
+      "rock climbing",
+      "pole climbing"
+    ]
+  },
+  "Rowing": {
+    "label_text": "rowing a boat",
+    "action_anchor": "A person sits in a narrow boat and pulls oars through water.",
+    "entity_priors": [
+      "rower",
+      "rowing shell",
+      "oars",
+      "water",
+      "life jacket",
+      "coxswain"
+    ],
+    "scene_priors": [
+      "river or lake",
+      "rowing club dock",
+      "regatta course",
+      "calm water surface"
+    ],
+    "attribute_cues": [
+      "symmetric arm motion",
+      "backward-facing direction",
+      "oar-water contact",
+      "rhythmic movement"
+    ],
+    "phase_cues": [
+      "oar blades enter water at catch position",
+      "rower pulls oars through power stroke",
+      "oars exit water and feather during recovery"
+    ],
+    "confusion_cues": [
+      "kayaking or canoeing",
+      "paddling with single-bladed paddle"
+    ]
+  },
+  "Shaving Beard": {
+    "label_text": "shaving beard",
+    "action_anchor": "A person uses a razor to remove facial hair.",
+    "entity_priors": [
+      "person",
+      "razor",
+      "shaving cream",
+      "mirror",
+      "sink",
+      "towel"
+    ],
+    "scene_priors": [
+      "bathroom",
+      "barbershop",
+      "home vanity",
+      "sink area"
+    ],
+    "attribute_cues": [
+      "hand moving downward",
+      "foam on face",
+      "razor contact with skin",
+      "looking in mirror"
+    ],
+    "phase_cues": [
+      "applying shaving cream to face",
+      "moving razor across facial hair",
+      "rinsing face and cleaning razor"
+    ],
+    "confusion_cues": [
+      "trimming beard with clippers",
+      "applying makeup to face"
+    ]
+  },
+  "Skijet": {
+    "label_text": "riding a skijet",
+    "action_anchor": "A person rides a personal watercraft over water.",
+    "entity_priors": [
+      "person",
+      "personal watercraft",
+      "handlebars",
+      "life jacket",
+      "water spray",
+      "engine"
+    ],
+    "scene_priors": [
+      "open water",
+      "lake or ocean",
+      "sunny day",
+      "boat wake"
+    ],
+    "attribute_cues": [
+      "standing or sitting",
+      "leaning into turns",
+      "spray behind craft",
+      "accelerating forward"
+    ],
+    "phase_cues": [
+      "mounting the skijet from water or dock",
+      "accelerating and maneuvering across water surface",
+      "making sharp turns creating spray patterns"
+    ],
+    "confusion_cues": [
+      "riding a jet ski",
+      "driving a speedboat"
+    ]
+  },
+  "Soccer Juggling": {
+    "label_text": "soccer ball juggling",
+    "action_anchor": "A person repeatedly kicks a soccer ball upward to keep it airborne.",
+    "entity_priors": [
+      "soccer player",
+      "soccer ball",
+      "athletic shoes",
+      "shorts",
+      "jersey",
+      "grass field"
+    ],
+    "scene_priors": [
+      "outdoor field",
+      "training session",
+      "open space",
+      "sports environment"
+    ],
+    "attribute_cues": [
+      "alternating feet",
+      "ball contact",
+      "controlled height",
+      "rhythmic motion"
+    ],
+    "phase_cues": [
+      "ball drops toward foot",
+      "foot makes contact to lift ball",
+      "ball rises into controlled arc"
+    ],
+    "confusion_cues": [
+      "soccer dribbling",
+      "volleyball juggling"
+    ]
+  },
+  "Soccer Penalty": {
+    "label_text": "soccer penalty kick",
+    "action_anchor": "A player kicks a stationary ball from the penalty spot toward the goal.",
+    "entity_priors": [
+      "soccer player",
+      "goalkeeper",
+      "soccer ball",
+      "penalty spot",
+      "goal",
+      "referee"
+    ],
+    "scene_priors": [
+      "soccer field",
+      "penalty area",
+      "goalposts",
+      "crowded stadium"
+    ],
+    "attribute_cues": [
+      "ball stationary on ground",
+      "player runs up to ball",
+      "ball kicked forward",
+      "goalkeeper dives"
+    ],
+    "phase_cues": [
+      "Player places ball on penalty spot and steps back.",
+      "Player runs toward ball and kicks it toward goal.",
+      "Goalkeeper attempts to save the shot."
+    ],
+    "confusion_cues": [
+      "free kick from distance",
+      "corner kick setup"
+    ]
+  },
+  "Sumo Wrestling": {
+    "label_text": "Sumo wrestling match",
+    "action_anchor": "Two large wrestlers push and grapple in a circular ring.",
+    "entity_priors": [
+      "sumo wrestler",
+      "opponent wrestler",
+      "gyoji referee",
+      "dohyo ring",
+      "mawashi belt",
+      "salt"
+    ],
+    "scene_priors": [
+      "circular clay ring",
+      "Japanese-style arena",
+      "raised platform",
+      "roof canopy"
+    ],
+    "attribute_cues": [
+      "face-to-face pushing",
+      "low center of gravity",
+      "barefoot contact",
+      "circular boundary"
+    ],
+    "phase_cues": [
+      "Wrestlers squat and face off at ring center.",
+      "One wrestler pushes opponent with full body force.",
+      "Opponent steps out of ring or touches ground."
+    ],
+    "confusion_cues": [
+      "Wrestling in regular ring",
+      "Martial arts demonstration"
+    ]
+  },
+  "Swing": {
+    "label_text": "swing a bat",
+    "action_anchor": "A person swings a baseball bat horizontally through the air.",
+    "entity_priors": [
+      "baseball player",
+      "baseball bat",
+      "pitcher",
+      "baseball",
+      "home plate",
+      "batting helmet"
+    ],
+    "scene_priors": [
+      "baseball field",
+      "batting cage",
+      "indoor practice facility",
+      "backyard"
+    ],
+    "attribute_cues": [
+      "horizontal arc",
+      "two-handed grip",
+      "weight shift",
+      "follow-through"
+    ],
+    "phase_cues": [
+      "preparing stance with bat raised",
+      "rotating torso and swinging bat forward",
+      "completing swing with bat extended"
+    ],
+    "confusion_cues": [
+      "golf swing",
+      "tennis forehand"
+    ]
+  },
+  "Table Tennis Shot": {
+    "label_text": "table tennis shot",
+    "action_anchor": "A player swings a paddle to strike a small white ball over a net on a rectangular table.",
+    "entity_priors": [
+      "player",
+      "table tennis paddle",
+      "table tennis ball",
+      "table",
+      "net",
+      "opponent"
+    ],
+    "scene_priors": [
+      "indoor sports hall",
+      "table tennis court",
+      "green or blue table surface",
+      "overhead lighting"
+    ],
+    "attribute_cues": [
+      "forehand or backhand swing",
+      "ball contact with paddle",
+      "ball trajectory over net",
+      "follow-through motion"
+    ],
+    "phase_cues": [
+      "player positions body and raises paddle",
+      "paddle swings forward to contact ball",
+      "arm follows through after ball impact"
+    ],
+    "confusion_cues": [
+      "tennis groundstroke",
+      "badminton smash"
+    ]
+  },
+  "Tai Chi": {
+    "label_text": "Tai Chi practice",
+    "action_anchor": "A person performs slow, flowing martial arts movements in a standing position.",
+    "entity_priors": [
+      "person",
+      "loose clothing",
+      "flat shoes",
+      "outdoor space",
+      "martial arts attire"
+    ],
+    "scene_priors": [
+      "park",
+      "open courtyard",
+      "quiet garden",
+      "indoor dojo"
+    ],
+    "attribute_cues": [
+      "slow motion",
+      "balanced stance",
+      "fluid transitions",
+      "circular arm movements"
+    ],
+    "phase_cues": [
+      "Starting with feet shoulder-width apart in a relaxed stance",
+      "Executing a sequence of flowing arm and leg movements",
+      "Concluding with controlled breathing and centered posture"
+    ],
+    "confusion_cues": [
+      "yoga stretching",
+      "slow dance"
+    ]
+  },
+  "Throw Discus": {
+    "label_text": "throw discus",
+    "action_anchor": "An athlete spins and releases a heavy disc from their hand.",
+    "entity_priors": [
+      "athlete",
+      "discus",
+      "throwing circle",
+      "track and field venue",
+      "sports uniform",
+      "coach"
+    ],
+    "scene_priors": [
+      "outdoor athletics stadium",
+      "throwing sector",
+      "track infield",
+      "competition setting"
+    ],
+    "attribute_cues": [
+      "rotational spin",
+      "overhead release",
+      "discus in hand",
+      "forward momentum"
+    ],
+    "phase_cues": [
+      "athlete spins with discus in hand",
+      "athlete releases discus forward",
+      "discus flies through air"
+    ],
+    "confusion_cues": [
+      "shot put throw",
+      "hammer throw"
+    ]
+  },
+  "Trampoline Jumping": {
+    "label_text": "trampoline jumping",
+    "action_anchor": "A person bounces up and down on a trampoline.",
+    "entity_priors": [
+      "person",
+      "trampoline",
+      "springs",
+      "frame",
+      "safety net"
+    ],
+    "scene_priors": [
+      "gymnasium",
+      "backyard",
+      "indoor sports facility",
+      "outdoor play area"
+    ],
+    "attribute_cues": [
+      "upward motion",
+      "downward compression",
+      "feet contact",
+      "mid-air suspension"
+    ],
+    "phase_cues": [
+      "person crouches on trampoline surface",
+      "person pushes off and ascends into air",
+      "person descends and lands on trampoline"
+    ],
+    "confusion_cues": [
+      "jumping on a bed",
+      "diving into water"
+    ]
+  },
+  "Typing": {
+    "label_text": "typing on keyboard",
+    "action_anchor": "A person's fingers press keys on a keyboard.",
+    "entity_priors": [
+      "person",
+      "keyboard",
+      "computer",
+      "desk",
+      "chair",
+      "monitor"
+    ],
+    "scene_priors": [
+      "office desk",
+      "home workspace",
+      "cafe table",
+      "computer lab"
+    ],
+    "attribute_cues": [
+      "fingers contacting keys",
+      "hands positioned over keyboard",
+      "eyes on screen",
+      "sitting posture"
+    ],
+    "phase_cues": [
+      "hands approach keyboard",
+      "fingers press multiple keys",
+      "hands return to resting position"
+    ],
+    "confusion_cues": [
+      "playing piano",
+      "using touchscreen"
+    ]
+  },
+  "Uneven Bars": {
+    "label_text": "gymnastics uneven bars",
+    "action_anchor": "A gymnast performs swinging and release moves between two horizontal bars at different heights.",
+    "entity_priors": [
+      "female gymnast",
+      "high bar",
+      "low bar",
+      "chalk bag",
+      "gymnastics grips",
+      "spotter"
+    ],
+    "scene_priors": [
+      "gymnastics arena",
+      "spring floor",
+      "competition podium",
+      "parallel bars nearby"
+    ],
+    "attribute_cues": [
+      "alternating grip changes",
+      "body fully extended",
+      "bar contact with hands",
+      "momentary airborne release"
+    ],
+    "phase_cues": [
+      "mount onto lower bar with jump or swing",
+      "transition between bars with kip or giant swing",
+      "dismount with salto or twist to land"
+    ],
+    "confusion_cues": [
+      "parallel bars (two same-height bars)",
+      "high bar (single bar routines)"
+    ]
+  },
+  "Walking WithDog": {
+    "label_text": "Walking With Dog",
+    "action_anchor": "A person moves forward on foot while holding a dog's leash.",
+    "entity_priors": [
+      "person",
+      "dog",
+      "leash",
+      "sidewalk",
+      "park path"
+    ],
+    "scene_priors": [
+      "outdoor path",
+      "sidewalk",
+      "park trail",
+      "residential street"
+    ],
+    "attribute_cues": [
+      "leash taut",
+      "forward motion",
+      "side-by-side",
+      "casual pace"
+    ],
+    "phase_cues": [
+      "person stands with dog on leash",
+      "both begin moving forward together",
+      "maintain steady walking pace side-by-side"
+    ],
+    "confusion_cues": [
+      "jogging with dog",
+      "standing with dog"
+    ]
+  },
+  "Wall Pushups": {
+    "label_text": "wall pushups",
+    "action_anchor": "A person performs pushups against a vertical wall.",
+    "entity_priors": [
+      "person",
+      "wall",
+      "hands",
+      "floor",
+      "feet"
+    ],
+    "scene_priors": [
+      "indoor wall",
+      "gym wall",
+      "home wall",
+      "vertical surface"
+    ],
+    "attribute_cues": [
+      "vertical orientation",
+      "standing position",
+      "wall contact",
+      "upper body movement"
+    ],
+    "phase_cues": [
+      "hands placed on wall at shoulder height",
+      "body leans toward wall with elbows bending",
+      "body pushes back to starting position"
+    ],
+    "confusion_cues": [
+      "floor pushups",
+      "incline pushups"
+    ]
+  },
+  "Writing On Board": {
+    "label_text": "Writing on board",
+    "action_anchor": "A person uses a marker to write text on a whiteboard.",
+    "entity_priors": [
+      "teacher",
+      "student",
+      "marker",
+      "whiteboard",
+      "eraser",
+      "hand"
+    ],
+    "scene_priors": [
+      "classroom",
+      "office meeting room",
+      "lecture hall",
+      "training session"
+    ],
+    "attribute_cues": [
+      "standing facing board",
+      "hand holding marker",
+      "contact with surface",
+      "text appearing"
+    ],
+    "phase_cues": [
+      "person approaches board with marker",
+      "hand moves to write characters or words",
+      "person steps back to view writing"
+    ],
+    "confusion_cues": [
+      "drawing on board",
+      "pointing at board"
+    ]
+  },
+  "Yo Yo": {
+    "label_text": "playing with yo-yo",
+    "action_anchor": "A person manipulates a yo-yo on a string with hand motions.",
+    "entity_priors": [
+      "person",
+      "yo-yo",
+      "string",
+      "hand",
+      "fingers",
+      "wrist"
+    ],
+    "scene_priors": [
+      "outdoor space",
+      "indoor room",
+      "park",
+      "sidewalk"
+    ],
+    "attribute_cues": [
+      "circular motion",
+      "vertical drop",
+      "string tension",
+      "hand flick"
+    ],
+    "phase_cues": [
+      "hand holds yo-yo ready",
+      "yo-yo drops and spins downward",
+      "yo-yo returns upward to hand"
+    ],
+    "confusion_cues": [
+      "spinning a top",
+      "juggling balls"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+Generate one JSON object for the action class "{class_name}".
+
+Return JSON only. No markdown fences. No extra prose.
+
+Schema:
+{
+  "label_text": "canonical short class phrase",
+  "action_anchor": "one short visual sentence",
+  "entity_priors": ["entity 1", "entity 2"],
+  "scene_priors": ["scene cue 1"],
+  "attribute_cues": ["attribute cue 1", "attribute cue 2"],
+  "phase_cues": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "confusion_cues": ["easy confusion 1", "easy confusion 2"]
+}
+
+Requirements:
+1) English only.
+2) Focus on body pose, limb motion, short object interaction, and human-to-human contact.
+3) label_text must be a short canonical action phrase.
+4) action_anchor must be one short observable sentence, ideally 8-14 words.
+5) entity_priors: at most 3 key objects or body parts. Avoid generic words like person unless it is essential.
+6) scene_priors: default to []. Only keep one highly stable scene cue such as staircase, swimming pool, golf course, bike lane, or riding arena.
+7) Do not use generic background cues such as home interior, bathroom mirror, room, indoor/outdoor, open space, restaurant, or court-like area.
+8) attribute_cues should prioritize pose and interaction patterns, such as upward motion, downward motion, body rotation, ground contact, two-person contact, object contact, alternating steps, mounted posture, or repetitive strokes.
+9) phase_cues must be exactly {num_phases} short cues in strict temporal order: initial pose -> core motion -> end state.
+10) confusion_cues: at most 2 short cues for the nearest visual confusions.
+11) Avoid caption-style storytelling and broad environmental narration.

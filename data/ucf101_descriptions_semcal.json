@@ -1,0 +1,1366 @@
+{
+  "Apply Eye Makeup": {
+    "global_description": "A person uses makeup tools near their eyes.",
+    "local_description": "Objects: eye, makeup, eyeliner, mascara Cues: close to face, hand precision, looking at mirror, small tools State change: preparing tools near mirror; applying product to eyelid or lash; blending or finishing eye area",
+    "objects": [
+      "eye",
+      "makeup",
+      "eyeliner",
+      "mascara"
+    ],
+    "state_change": [
+      "preparing tools near mirror",
+      "applying product to eyelid or lash",
+      "blending or finishing eye area"
+    ]
+  },
+  "Archery": {
+    "global_description": "A person draws and releases an arrow from a bow.",
+    "local_description": "Objects: archery, archer, bow, arrow Cues: object contact, upward release, bow drawn back, arrow nocked State change: nocking arrow on bowstring; drawing bow with tension; releasing arrow toward target",
+    "objects": [
+      "archery",
+      "archer",
+      "bow",
+      "arrow"
+    ],
+    "state_change": [
+      "nocking arrow on bowstring",
+      "drawing bow with tension",
+      "releasing arrow toward target"
+    ]
+  },
+  "Baby Crawling": {
+    "global_description": "An infant moves forward on hands and knees across a floor.",
+    "local_description": "Objects: baby, infant, toddler, floor Cues: forward movement, hands and knees contact, alternating limb motion, low to ground State change: baby gets on hands and knees; baby lifts one hand and opposite knee; baby moves forward and repeats with other",
+    "objects": [
+      "baby",
+      "infant",
+      "toddler",
+      "floor"
+    ],
+    "state_change": [
+      "baby gets on hands and knees",
+      "baby lifts one hand and opposite knee",
+      "baby moves forward and repeats with other"
+    ]
+  },
+  "Balance Beam": {
+    "global_description": "A gymnast performs acrobatic moves on a narrow elevated beam.",
+    "local_description": "Objects: balance, beam, balance beam, judges Cues: bar support, rotation, upright posture, precise foot placement State change: mounting the beam with controlled steps; performing turns and leaps in center; dismounting with aerial flip to mat",
+    "objects": [
+      "balance",
+      "beam",
+      "balance beam",
+      "judges"
+    ],
+    "state_change": [
+      "mounting the beam with controlled steps",
+      "performing turns and leaps in center",
+      "dismounting with aerial flip to mat"
+    ]
+  },
+  "Band Marching": {
+    "global_description": "Musicians in uniform march in formation while playing instruments.",
+    "local_description": "Objects: band, marching band members, brass instruments, percussion instruments Cues: synchronized movement, forward marching, instrument playing, uniform attire State change: band members line up in formation; conductor signals start and musicians begin marching; band moves in coordinated patterns while playing",
+    "objects": [
+      "band",
+      "marching band members",
+      "brass instruments",
+      "percussion instruments"
+    ],
+    "state_change": [
+      "band members line up in formation",
+      "conductor signals start and musicians begin marching",
+      "band moves in coordinated patterns while playing"
+    ]
+  },
+  "Baseball Pitch": {
+    "global_description": "A pitcher winds up and throws a baseball toward home plate.",
+    "local_description": "Objects: baseball, pitch, pitcher, glove Cues: overhand motion, arm extension, ball release, follow-through State change: Wind-up with leg lift; Arm cocking and stride; Ball release and follow-through",
+    "objects": [
+      "baseball",
+      "pitch",
+      "pitcher",
+      "glove"
+    ],
+    "state_change": [
+      "Wind-up with leg lift",
+      "Arm cocking and stride",
+      "Ball release and follow-through"
+    ]
+  },
+  "Basketball": {
+    "global_description": "A person dribbles and shoots a basketball toward a hoop.",
+    "local_description": "Objects: basketball, basketball player, hoop, backboard Cues: ball control, jump, bouncing ball, upward arm motion State change: dribbling the ball while moving; aiming and jumping for a shot; ball arcing toward or through hoop",
+    "objects": [
+      "basketball",
+      "basketball player",
+      "hoop",
+      "backboard"
+    ],
+    "state_change": [
+      "dribbling the ball while moving",
+      "aiming and jumping for a shot",
+      "ball arcing toward or through hoop"
+    ]
+  },
+  "Basketball Dunk": {
+    "global_description": "A player jumps and forcefully puts the basketball through the hoop.",
+    "local_description": "Objects: basketball, dunk, basketball player, hoop Cues: ball control, jump, upward jump, arm extension State change: player approaches basket with ball; player leaps upward toward hoop; player slams ball through rim",
+    "objects": [
+      "basketball",
+      "dunk",
+      "basketball player",
+      "hoop"
+    ],
+    "state_change": [
+      "player approaches basket with ball",
+      "player leaps upward toward hoop",
+      "player slams ball through rim"
+    ]
+  },
+  "Bench Press": {
+    "global_description": "A person lies on a bench and pushes a barbell upward from their chest.",
+    "local_description": "Objects: bench, press, weight plates, spotter Cues: upward push, controlled descent, chest contact, elbow extension State change: barbell lowered to chest; pause at chest position; barbell pushed upward to full arm extension",
+    "objects": [
+      "bench",
+      "press",
+      "weight plates",
+      "spotter"
+    ],
+    "state_change": [
+      "barbell lowered to chest",
+      "pause at chest position",
+      "barbell pushed upward to full arm extension"
+    ]
+  },
+  "Biking": {
+    "global_description": "A person pedals a bicycle on a road.",
+    "local_description": "Objects: bicycle, helmet, pedals, wheels Cues: vehicle riding, forward motion, upright posture, pedaling rhythm State change: mounting the bicycle; pedaling steadily; dismounting at destination",
+    "objects": [
+      "bicycle",
+      "helmet",
+      "pedals",
+      "wheels"
+    ],
+    "state_change": [
+      "mounting the bicycle",
+      "pedaling steadily",
+      "dismounting at destination"
+    ]
+  },
+  "Billiards": {
+    "global_description": "A person uses a cue stick to strike balls on a felt-covered table.",
+    "local_description": "Objects: billiards, cue stick, billiard balls, pool table Cues: cue tip contacts ball, balls roll on felt, cue stick held horizontally, balls collide State change: player lines up shot with cue stick; cue stick strikes cue ball; balls scatter across table",
+    "objects": [
+      "billiards",
+      "cue stick",
+      "billiard balls",
+      "pool table"
+    ],
+    "state_change": [
+      "player lines up shot with cue stick",
+      "cue stick strikes cue ball",
+      "balls scatter across table"
+    ]
+  },
+  "Blow DryHair": {
+    "global_description": "A person holds a hair dryer to their head while moving it through damp.",
+    "local_description": "Objects: blow, dry, hair, hair dryer Cues: hand-held device, air blowing, hair movement, heat application State change: person picks up hair dryer and turns; person directs airflow through sections of damp; person checks hair texture and turns off",
+    "objects": [
+      "blow",
+      "dry",
+      "hair",
+      "hair dryer"
+    ],
+    "state_change": [
+      "person picks up hair dryer and turns",
+      "person directs airflow through sections of damp",
+      "person checks hair texture and turns off"
+    ]
+  },
+  "Body Weight Squats": {
+    "global_description": "A person bends their knees and lowers their hips while standing upright.",
+    "local_description": "Objects: body, weight, squats, floor Cues: vertical movement, knee flexion, feet shoulder-width apart, back straight State change: Standing upright with feet apart; Lowering hips by bending knees; Rising back to starting position",
+    "objects": [
+      "body",
+      "weight",
+      "squats",
+      "floor"
+    ],
+    "state_change": [
+      "Standing upright with feet apart",
+      "Lowering hips by bending knees",
+      "Rising back to starting position"
+    ]
+  },
+  "Bowling": {
+    "global_description": "A person swings and rolls a heavy ball down a lane toward pins.",
+    "local_description": "Objects: bowler, bowling ball, bowling pins, bowling lane Cues: overhand swing, forward roll, ball contact with lane, pins scattering State change: approaching lane with ball in hand; swinging arm back and releasing ball; ball rolling and hitting pins",
+    "objects": [
+      "bowler",
+      "bowling ball",
+      "bowling pins",
+      "bowling lane"
+    ],
+    "state_change": [
+      "approaching lane with ball in hand",
+      "swinging arm back and releasing ball",
+      "ball rolling and hitting pins"
+    ]
+  },
+  "Boxing Punching Bag": {
+    "global_description": "A person punches a hanging heavy bag with boxing gloves.",
+    "local_description": "Objects: bag, boxer, heavy bag, boxing gloves Cues: forward punching motion, gloves contacting bag, bag swinging after impact, stance with feet apart State change: boxer assumes fighting stance facing bag; boxer throws punch making contact with bag; boxer retracts arm as bag swings from",
+    "objects": [
+      "bag",
+      "boxer",
+      "heavy bag",
+      "boxing gloves"
+    ],
+    "state_change": [
+      "boxer assumes fighting stance facing bag",
+      "boxer throws punch making contact with bag",
+      "boxer retracts arm as bag swings from"
+    ]
+  },
+  "Boxing Speed Bag": {
+    "global_description": "A person rapidly punches a small hanging bag with both fists.",
+    "local_description": "Objects: bag, boxer, speed bag, gloves Cues: alternating hands, fast rhythmic motion, bag rebounds quickly State change: starting with a light tap to set; maintaining steady alternating punches; finishing with a controlled slowdown",
+    "objects": [
+      "bag",
+      "boxer",
+      "speed bag",
+      "gloves"
+    ],
+    "state_change": [
+      "starting with a light tap to set",
+      "maintaining steady alternating punches",
+      "finishing with a controlled slowdown"
+    ]
+  },
+  "Breast Stroke": {
+    "global_description": "A swimmer moves through water with symmetrical arm pulls and frog-like leg kicks.",
+    "local_description": "Objects: breast, stroke, swimmer, swimming pool Cues: water contact, symmetrical arm movement, breathing forward, horizontal body position State change: arms extend forward, legs tucked; arms pull outward and back, legs prepare; arms recover forward, legs execute whip kick",
+    "objects": [
+      "breast",
+      "stroke",
+      "swimmer",
+      "swimming pool"
+    ],
+    "state_change": [
+      "arms extend forward, legs tucked",
+      "arms pull outward and back, legs prepare",
+      "arms recover forward, legs execute whip kick"
+    ]
+  },
+  "Brushing Teeth": {
+    "global_description": "A person holds a toothbrush and moves it across their teeth.",
+    "local_description": "Objects: teeth, toothbrush, sink, mirror Cues: hand gripping brush, up-down brushing motion, foam around mouth, head tilted forward State change: person applies toothpaste to brush; person brushes teeth with rhythmic motions; person rinses mouth and cleans brush",
+    "objects": [
+      "teeth",
+      "toothbrush",
+      "sink",
+      "mirror"
+    ],
+    "state_change": [
+      "person applies toothpaste to brush",
+      "person brushes teeth with rhythmic motions",
+      "person rinses mouth and cleans brush"
+    ]
+  },
+  "Cricket Bowling": {
+    "global_description": "A bowler runs up and delivers a ball toward the batsman.",
+    "local_description": "Objects: cricket, bowler, cricket ball, cricket pitch Cues: overarm motion, ball release forward, run-up speed, bounce on pitch State change: bowler runs toward crease; arm swings over to release ball; ball travels toward batsman",
+    "objects": [
+      "cricket",
+      "bowler",
+      "cricket ball",
+      "cricket pitch"
+    ],
+    "state_change": [
+      "bowler runs toward crease",
+      "arm swings over to release ball",
+      "ball travels toward batsman"
+    ]
+  },
+  "Drumming": {
+    "global_description": "A person strikes drumheads with drumsticks in rhythmic patterns.",
+    "local_description": "Objects: drummer, drum kit, drumsticks, cymbals Cues: instrument playing, alternating hand motions, foot pedal operation, stick rebound State change: raising drumsticks above drumheads; striking drumheads with controlled force; recovering stick position for next strike",
+    "objects": [
+      "drummer",
+      "drum kit",
+      "drumsticks",
+      "cymbals"
+    ],
+    "state_change": [
+      "raising drumsticks above drumheads",
+      "striking drumheads with controlled force",
+      "recovering stick position for next strike"
+    ]
+  },
+  "Fencing": {
+    "global_description": "Two opponents in white uniforms thrust and parry with thin swords.",
+    "local_description": "Objects: fencer, opponent, foil, épée Cues: lunging forward, blade contact, defensive stance, quick retreat State change: fencer assumes en garde position with sword; opponents exchange rapid thrusts and parries; one fencer scores a touch with blade",
+    "objects": [
+      "fencer",
+      "opponent",
+      "foil",
+      "épée"
+    ],
+    "state_change": [
+      "fencer assumes en garde position with sword",
+      "opponents exchange rapid thrusts and parries",
+      "one fencer scores a touch with blade"
+    ]
+  },
+  "Field Hockey Penalty": {
+    "global_description": "A player commits a foul and the referee awards a penalty.",
+    "local_description": "Objects: field, hockey, penalty, field hockey player Cues: racket swing, illegal contact, deliberate foul, referee whistle State change: player makes illegal contact with opponent or; referee blows whistle and signals penalty; player prepares to take penalty shot from",
+    "objects": [
+      "field",
+      "hockey",
+      "penalty",
+      "field hockey player"
+    ],
+    "state_change": [
+      "player makes illegal contact with opponent or",
+      "referee blows whistle and signals penalty",
+      "player prepares to take penalty shot from"
+    ]
+  },
+  "Frisbee Catch": {
+    "global_description": "A person catches a flying disc with their hands.",
+    "local_description": "Objects: frisbee, hands, park, beach Cues: hands extended, disc in air, body leaning, eyes tracking State change: Frisbee flies toward person; Person reaches hands to intercept disc; Hands grasp and secure frisbee",
+    "objects": [
+      "frisbee",
+      "hands",
+      "park",
+      "beach"
+    ],
+    "state_change": [
+      "Frisbee flies toward person",
+      "Person reaches hands to intercept disc",
+      "Hands grasp and secure frisbee"
+    ]
+  },
+  "Front Crawl": {
+    "global_description": "A swimmer propels forward face-down with alternating arm strokes and flutter kicks.",
+    "local_description": "Objects: front, crawl, swimmer, swimming pool Cues: water contact, face submerged, horizontal body position, alternating arm movements State change: Arm recovery over water with one arm; Arm pull underwater while the other arm; Continuous flutter kicking throughout the stroke cycle",
+    "objects": [
+      "front",
+      "crawl",
+      "swimmer",
+      "swimming pool"
+    ],
+    "state_change": [
+      "Arm recovery over water with one arm",
+      "Arm pull underwater while the other arm",
+      "Continuous flutter kicking throughout the stroke cycle"
+    ]
+  },
+  "Haircut": {
+    "global_description": "A person sits in a chair while another person cuts their hair with scissors.",
+    "local_description": "Objects: haircut, person getting haircut, scissors, hair clippers Cues: sitting upright, head tilted, scissors near hair, cape draped over shoulders State change: person sits in chair and cape is; barber sections and cuts hair with tools; hair is styled and cape removed",
+    "objects": [
+      "haircut",
+      "person getting haircut",
+      "scissors",
+      "hair clippers"
+    ],
+    "state_change": [
+      "person sits in chair and cape is",
+      "barber sections and cuts hair with tools",
+      "hair is styled and cape removed"
+    ]
+  },
+  "Hammering": {
+    "global_description": "A person swings a hammer to strike a nail into a surface.",
+    "local_description": "Objects: hammer, nail, wood, workbench Cues: downward swing, hammer-nail contact, repetitive motion, arm raised State change: hammer raised above head; hammer descending toward nail; hammer strikes nail head",
+    "objects": [
+      "hammer",
+      "nail",
+      "wood",
+      "workbench"
+    ],
+    "state_change": [
+      "hammer raised above head",
+      "hammer descending toward nail",
+      "hammer strikes nail head"
+    ]
+  },
+  "Head Massage": {
+    "global_description": "A person uses their hands to rub and press someone's head.",
+    "local_description": "Objects: head, massage, hands, hair Cues: circular motions, gentle pressure, direct contact, relaxed posture State change: hands placed on head with fingers spread; circular rubbing motions across scalp; gentle pressing and releasing of temples",
+    "objects": [
+      "head",
+      "massage",
+      "hands",
+      "hair"
+    ],
+    "state_change": [
+      "hands placed on head with fingers spread",
+      "circular rubbing motions across scalp",
+      "gentle pressing and releasing of temples"
+    ]
+  },
+  "Hula Hoop": {
+    "global_description": "A person rotates a hoop around their waist using hip movements.",
+    "local_description": "Objects: hula, hoop, hips, hands Cues: circular rotation, rhythmic swaying, waist contact, upright posture State change: holding hoop at waist level; initiating circular hip motion; maintaining continuous hoop rotation",
+    "objects": [
+      "hula",
+      "hoop",
+      "hips",
+      "hands"
+    ],
+    "state_change": [
+      "holding hoop at waist level",
+      "initiating circular hip motion",
+      "maintaining continuous hoop rotation"
+    ]
+  },
+  "Javelin Throw": {
+    "global_description": "An athlete runs and throws a long spear-like javelin.",
+    "local_description": "Objects: javelin, throw, athlete, runway Cues: overarm throw, forward momentum, high arc, landing in sector State change: athlete runs with javelin held overhead; athlete plants foot and rotates to throw; javelin flies through air and lands",
+    "objects": [
+      "javelin",
+      "throw",
+      "athlete",
+      "runway"
+    ],
+    "state_change": [
+      "athlete runs with javelin held overhead",
+      "athlete plants foot and rotates to throw",
+      "javelin flies through air and lands"
+    ]
+  },
+  "Juggling Balls": {
+    "global_description": "A person tosses and catches multiple balls in a continuous pattern.",
+    "local_description": "Objects: balls, juggling balls, hands, air Cues: upward toss, circular motion, hand contact, balanced rhythm State change: ball tossed upward from hand; ball arcs through the air; ball caught by opposite hand",
+    "objects": [
+      "balls",
+      "juggling balls",
+      "hands",
+      "air"
+    ],
+    "state_change": [
+      "ball tossed upward from hand",
+      "ball arcs through the air",
+      "ball caught by opposite hand"
+    ]
+  },
+  "Jumping Jack": {
+    "global_description": "A person stands upright, jumps while spreading legs and raising arms overhead, then returns.",
+    "local_description": "Objects: jack, athletic clothing, sneakers, exercise mat Cues: vertical jump, symmetrical limb movement, feet apart, arms overhead State change: Stand with feet together and arms at; Jump to spread legs wide and raise; Jump back to starting position with feet",
+    "objects": [
+      "jack",
+      "athletic clothing",
+      "sneakers",
+      "exercise mat"
+    ],
+    "state_change": [
+      "Stand with feet together and arms at",
+      "Jump to spread legs wide and raise",
+      "Jump back to starting position with feet"
+    ]
+  },
+  "Kayaking": {
+    "global_description": "A person paddles a narrow boat on water using a double-bladed paddle.",
+    "local_description": "Objects: kayaker, kayak, paddle, life jacket Cues: vehicle riding, forward stroke, turning sweep, bracing for balance State change: sitting in cockpit, gripping paddle; alternating left-right paddle strokes; maneuvering around obstacles or through rapids",
+    "objects": [
+      "kayaker",
+      "kayak",
+      "paddle",
+      "life jacket"
+    ],
+    "state_change": [
+      "sitting in cockpit, gripping paddle",
+      "alternating left-right paddle strokes",
+      "maneuvering around obstacles or through rapids"
+    ]
+  },
+  "Knitting": {
+    "global_description": "A person manipulates two needles to interloop yarn into fabric.",
+    "local_description": "Objects: knitting needles, yarn, ball of yarn, fabric piece Cues: hands moving rhythmically, yarn tension maintained, needles crossing repeatedly, fabric growing downward State change: holding needles with yarn cast on; inserting right needle through loop; wrapping yarn and pulling through",
+    "objects": [
+      "knitting needles",
+      "yarn",
+      "ball of yarn",
+      "fabric piece"
+    ],
+    "state_change": [
+      "holding needles with yarn cast on",
+      "inserting right needle through loop",
+      "wrapping yarn and pulling through"
+    ]
+  },
+  "Long Jump": {
+    "global_description": "An athlete sprints down a runway and leaps into a sandpit.",
+    "local_description": "Objects: long, jump, athlete, runway Cues: horizontal sprint, forward leap, sand contact, distance measurement State change: sprinting on runway; jumping from takeoff board; landing in sandpit",
+    "objects": [
+      "long",
+      "jump",
+      "athlete",
+      "runway"
+    ],
+    "state_change": [
+      "sprinting on runway",
+      "jumping from takeoff board",
+      "landing in sandpit"
+    ]
+  },
+  "Lunges": {
+    "global_description": "A person bends one knee forward while keeping the other leg straight behind.",
+    "local_description": "Objects: lunges, athlete, trainer, exercise mat Cues: forward knee bent at, back leg extended straight, torso upright, feet hip-width apart State change: starting in standing position with feet together; stepping one foot forward and bending both; pushing back to return to standing position",
+    "objects": [
+      "lunges",
+      "athlete",
+      "trainer",
+      "exercise mat"
+    ],
+    "state_change": [
+      "starting in standing position with feet together",
+      "stepping one foot forward and bending both",
+      "pushing back to return to standing position"
+    ]
+  },
+  "Military Parade": {
+    "global_description": "Soldiers march in formation with weapons while vehicles drive past.",
+    "local_description": "Objects: military, parade, soldiers, military vehicles Cues: synchronized movement, straight lines, uniform attire, slow pace State change: troops assemble in formation; marching procession passes review stand; vehicles and equipment display follows",
+    "objects": [
+      "military",
+      "parade",
+      "soldiers",
+      "military vehicles"
+    ],
+    "state_change": [
+      "troops assemble in formation",
+      "marching procession passes review stand",
+      "vehicles and equipment display follows"
+    ]
+  },
+  "Mixing": {
+    "global_description": "A person uses a tool to combine multiple substances in a container.",
+    "local_description": "Objects: mixing bowl, whisk, spoon, ingredients Cues: circular motion, blending consistency, hand-held tool, bowl contact State change: ingredients placed in container; tool inserted and begins stirring; substances become uniform mixture",
+    "objects": [
+      "mixing bowl",
+      "whisk",
+      "spoon",
+      "ingredients"
+    ],
+    "state_change": [
+      "ingredients placed in container",
+      "tool inserted and begins stirring",
+      "substances become uniform mixture"
+    ]
+  },
+  "Mopping Floor": {
+    "global_description": "A person pushes a mop across a wet floor surface.",
+    "local_description": "Objects: floor, mop, bucket, water Cues: back-and-forth motion, wet mop head, floor contact, standing posture State change: dipping mop into bucket of water; pushing mop across floor in overlapping strokes; wringing excess water from mop",
+    "objects": [
+      "floor",
+      "mop",
+      "bucket",
+      "water"
+    ],
+    "state_change": [
+      "dipping mop into bucket of water",
+      "pushing mop across floor in overlapping strokes",
+      "wringing excess water from mop"
+    ]
+  },
+  "Nunchucks": {
+    "global_description": "A person swings two sticks connected by a chain in circular motions.",
+    "local_description": "Objects: nunchucks, martial artist, training gear, wooden sticks Cues: circular swinging, rapid hand movements, chain whipping, body coordination State change: gripping both sticks firmly; initiating circular swing with one hand; alternating hands in continuous flow",
+    "objects": [
+      "nunchucks",
+      "martial artist",
+      "training gear",
+      "wooden sticks"
+    ],
+    "state_change": [
+      "gripping both sticks firmly",
+      "initiating circular swing with one hand",
+      "alternating hands in continuous flow"
+    ]
+  },
+  "Parallel Bars": {
+    "global_description": "A gymnast performs swings and holds on two horizontal bars.",
+    "local_description": "Objects: parallel, hands, body, chalk Cues: bar support, rotation, vertical body alignment, grip on bars State change: starting with a mount onto the bars; swinging between the bars with controlled momentum; dismounting with a landing on mats",
+    "objects": [
+      "parallel",
+      "hands",
+      "body",
+      "chalk"
+    ],
+    "state_change": [
+      "starting with a mount onto the bars",
+      "swinging between the bars with controlled momentum",
+      "dismounting with a landing on mats"
+    ]
+  },
+  "Pizza Tossing": {
+    "global_description": "A chef tosses pizza dough in the air with both hands.",
+    "local_description": "Objects: pizza, chef, pizza dough, pizza peel Cues: circular motion, dough spinning, hands outstretched, dough airborne State change: chef holds dough flat on hands; chef tosses dough upward with flick; dough spins and expands in air",
+    "objects": [
+      "pizza",
+      "chef",
+      "pizza dough",
+      "pizza peel"
+    ],
+    "state_change": [
+      "chef holds dough flat on hands",
+      "chef tosses dough upward with flick",
+      "dough spins and expands in air"
+    ]
+  },
+  "Playing Cello": {
+    "global_description": "A person sits with a cello between their knees, bowing the strings.",
+    "local_description": "Objects: cello, cellist, bow, chair Cues: instrument playing, seated posture, bow moving across strings, fingers pressing strings State change: holding cello upright between knees; drawing bow across strings; adjusting hand position on fingerboard",
+    "objects": [
+      "cello",
+      "cellist",
+      "bow",
+      "chair"
+    ],
+    "state_change": [
+      "holding cello upright between knees",
+      "drawing bow across strings",
+      "adjusting hand position on fingerboard"
+    ]
+  },
+  "Playing Dhol": {
+    "global_description": "A person strikes a large double-headed drum with sticks.",
+    "local_description": "Objects: dhol, dhol drum, drumsticks, hands Cues: instrument playing, rhythmic beating, both hands active, drum held horizontally State change: Grasping drumsticks and positioning dhol on shoulder; Alternating strikes on left and right drumheads; Maintaining steady rhythm with coordinated arm movements",
+    "objects": [
+      "dhol",
+      "dhol drum",
+      "drumsticks",
+      "hands"
+    ],
+    "state_change": [
+      "Grasping drumsticks and positioning dhol on shoulder",
+      "Alternating strikes on left and right drumheads",
+      "Maintaining steady rhythm with coordinated arm movements"
+    ]
+  },
+  "Playing Flute": {
+    "global_description": "A person holds a flute horizontally to their mouth with both hands.",
+    "local_description": "Objects: flute, flute player, flute instrument, fingers Cues: instrument playing, horizontal instrument orientation, fingers covering holes, cheeks puffed while blowing State change: bringing flute to mouth position; fingers moving over holes while blowing; lowering flute after playing",
+    "objects": [
+      "flute",
+      "flute player",
+      "flute instrument",
+      "fingers"
+    ],
+    "state_change": [
+      "bringing flute to mouth position",
+      "fingers moving over holes while blowing",
+      "lowering flute after playing"
+    ]
+  },
+  "Playing Piano": {
+    "global_description": "A person sits at a piano and presses keys with their fingers.",
+    "local_description": "Objects: piano, pianist, piano bench, sheet music Cues: instrument playing, fingers contacting keys, both hands moving, sitting posture State change: sitting down at piano bench; hands positioned over keyboard; fingers pressing keys in sequence",
+    "objects": [
+      "piano",
+      "pianist",
+      "piano bench",
+      "sheet music"
+    ],
+    "state_change": [
+      "sitting down at piano bench",
+      "hands positioned over keyboard",
+      "fingers pressing keys in sequence"
+    ]
+  },
+  "Playing Sitar": {
+    "global_description": "A person sits with a sitar on their lap, plucking its strings with a.",
+    "local_description": "Objects: sitar, mizrab, cushion, floor seating Cues: instrument playing, seated posture, hands on strings, instrument balanced on lap State change: holding sitar upright on lap; plucking strings with mizrab; adjusting tuning pegs",
+    "objects": [
+      "sitar",
+      "mizrab",
+      "cushion",
+      "floor seating"
+    ],
+    "state_change": [
+      "holding sitar upright on lap",
+      "plucking strings with mizrab",
+      "adjusting tuning pegs"
+    ]
+  },
+  "Playing Tabla": {
+    "global_description": "A person strikes two hand drums with fingers and palms.",
+    "local_description": "Objects: tabla, tabla drums, hands, fingers Cues: instrument playing, seated cross-legged, drums on floor, hand contact with drumheads State change: positioning hands above drumheads; striking drumheads with fingers; alternating between two drums",
+    "objects": [
+      "tabla",
+      "tabla drums",
+      "hands",
+      "fingers"
+    ],
+    "state_change": [
+      "positioning hands above drumheads",
+      "striking drumheads with fingers",
+      "alternating between two drums"
+    ]
+  },
+  "Playing Violin": {
+    "global_description": "A person holds a violin under their chin and draws a bow across its.",
+    "local_description": "Objects: violin, violinist, bow, chin rest Cues: instrument playing, bow moving horizontally, fingers pressing strings, chin on violin State change: holding violin under chin with left hand; drawing bow across strings with right hand; moving left fingers on fingerboard while bowing",
+    "objects": [
+      "violin",
+      "violinist",
+      "bow",
+      "chin rest"
+    ],
+    "state_change": [
+      "holding violin under chin with left hand",
+      "drawing bow across strings with right hand",
+      "moving left fingers on fingerboard while bowing"
+    ]
+  },
+  "Pole Vault": {
+    "global_description": "An athlete runs with a long pole, plants it into a box, and vaults.",
+    "local_description": "Objects: pole, vault, athlete, landing mat Cues: running forward, pole vertical, body arching, landing on back State change: athlete sprints down runway holding pole; pole plants into box and bends, athlete; athlete clears bar and lands on mat",
+    "objects": [
+      "pole",
+      "vault",
+      "athlete",
+      "landing mat"
+    ],
+    "state_change": [
+      "athlete sprints down runway holding pole",
+      "pole plants into box and bends, athlete",
+      "athlete clears bar and lands on mat"
+    ]
+  },
+  "Pull Ups": {
+    "global_description": "A person grips a horizontal bar and pulls their body upward until their chin.",
+    "local_description": "Objects: pull, ups, arms, hands Cues: upward motion, grip on bar, body suspended, chin above bar State change: person hangs from bar with arms extended; person pulls body upward by bending elbows; person lowers body back to starting position",
+    "objects": [
+      "pull",
+      "ups",
+      "arms",
+      "hands"
+    ],
+    "state_change": [
+      "person hangs from bar with arms extended",
+      "person pulls body upward by bending elbows",
+      "person lowers body back to starting position"
+    ]
+  },
+  "Push Ups": {
+    "global_description": "A person lies face down and pushes their body up and down using their.",
+    "local_description": "Objects: push, ups, floor, hands Cues: body horizontal, arms extended, elbows bending, chest lowering State change: starting in plank position; lowering chest toward floor; pushing back up to start",
+    "objects": [
+      "push",
+      "ups",
+      "floor",
+      "hands"
+    ],
+    "state_change": [
+      "starting in plank position",
+      "lowering chest toward floor",
+      "pushing back up to start"
+    ]
+  },
+  "Rafting": {
+    "global_description": "People paddle an inflatable raft through turbulent river rapids.",
+    "local_description": "Objects: rafters, inflatable raft, paddles, life jackets Cues: downstream movement, paddling rhythm, raft bouncing State change: raft enters turbulent rapids section; team paddles in unison to navigate obstacles; raft exits rapids into calmer water",
+    "objects": [
+      "rafters",
+      "inflatable raft",
+      "paddles",
+      "life jackets"
+    ],
+    "state_change": [
+      "raft enters turbulent rapids section",
+      "team paddles in unison to navigate obstacles",
+      "raft exits rapids into calmer water"
+    ]
+  },
+  "Rope Climbing": {
+    "global_description": "A person ascends a vertical rope using hands and legs.",
+    "local_description": "Objects: rope, hands, legs, outdoor structure Cues: vertical ascent, alternating grip, leg wrap, upward momentum State change: initial grip on rope; alternating pull-up motion; legs wrapping for support",
+    "objects": [
+      "rope",
+      "hands",
+      "legs",
+      "outdoor structure"
+    ],
+    "state_change": [
+      "initial grip on rope",
+      "alternating pull-up motion",
+      "legs wrapping for support"
+    ]
+  },
+  "Rowing": {
+    "global_description": "A person sits in a narrow boat and pulls oars through water.",
+    "local_description": "Objects: rower, rowing shell, oars, water Cues: symmetric arm motion, backward-facing direction, oar-water contact, rhythmic movement State change: oar blades enter water at catch position; rower pulls oars through power stroke; oars exit water and feather during recovery",
+    "objects": [
+      "rower",
+      "rowing shell",
+      "oars",
+      "water"
+    ],
+    "state_change": [
+      "oar blades enter water at catch position",
+      "rower pulls oars through power stroke",
+      "oars exit water and feather during recovery"
+    ]
+  },
+  "Shaving Beard": {
+    "global_description": "A person uses a razor to remove facial hair.",
+    "local_description": "Objects: beard, razor, shaving cream, mirror Cues: hand moving downward, foam on face, razor contact with skin, looking in mirror State change: applying shaving cream to face; moving razor across facial hair; rinsing face and cleaning razor",
+    "objects": [
+      "beard",
+      "razor",
+      "shaving cream",
+      "mirror"
+    ],
+    "state_change": [
+      "applying shaving cream to face",
+      "moving razor across facial hair",
+      "rinsing face and cleaning razor"
+    ]
+  },
+  "Skijet": {
+    "global_description": "A person rides a personal watercraft over water.",
+    "local_description": "Objects: skijet, personal watercraft, life jacket, water spray Cues: standing or sitting, leaning into turns, spray behind craft, accelerating forward State change: mounting the skijet from water or dock; accelerating and maneuvering across water surface; making sharp turns creating spray patterns",
+    "objects": [
+      "skijet",
+      "personal watercraft",
+      "life jacket",
+      "water spray"
+    ],
+    "state_change": [
+      "mounting the skijet from water or dock",
+      "accelerating and maneuvering across water surface",
+      "making sharp turns creating spray patterns"
+    ]
+  },
+  "Soccer Juggling": {
+    "global_description": "A person repeatedly kicks a soccer ball upward to keep it airborne.",
+    "local_description": "Objects: soccer, soccer player, soccer ball, athletic shoes Cues: alternating feet, ball contact, controlled height, rhythmic motion State change: ball drops toward foot; foot makes contact to lift ball; ball rises into controlled arc",
+    "objects": [
+      "soccer",
+      "soccer player",
+      "soccer ball",
+      "athletic shoes"
+    ],
+    "state_change": [
+      "ball drops toward foot",
+      "foot makes contact to lift ball",
+      "ball rises into controlled arc"
+    ]
+  },
+  "Soccer Penalty": {
+    "global_description": "A player kicks a stationary ball from the penalty spot toward the goal.",
+    "local_description": "Objects: soccer, penalty, soccer player, goalkeeper Cues: ball stationary on ground, player runs up to, ball kicked forward, goalkeeper dives State change: Player places ball on penalty spot and; Player runs toward ball and kicks it; Goalkeeper attempts to save the shot",
+    "objects": [
+      "soccer",
+      "penalty",
+      "soccer player",
+      "goalkeeper"
+    ],
+    "state_change": [
+      "Player places ball on penalty spot and",
+      "Player runs toward ball and kicks it",
+      "Goalkeeper attempts to save the shot"
+    ]
+  },
+  "Sumo Wrestling": {
+    "global_description": "Two large wrestlers push and grapple in a circular ring.",
+    "local_description": "Objects: sumo, sumo wrestler, opponent wrestler, gyoji referee Cues: face-to-face pushing, low center of gravity, barefoot contact, circular boundary State change: Wrestlers squat and face off at ring; One wrestler pushes opponent with full body; Opponent steps out of ring or touches",
+    "objects": [
+      "sumo",
+      "sumo wrestler",
+      "opponent wrestler",
+      "gyoji referee"
+    ],
+    "state_change": [
+      "Wrestlers squat and face off at ring",
+      "One wrestler pushes opponent with full body",
+      "Opponent steps out of ring or touches"
+    ]
+  },
+  "Swing": {
+    "global_description": "A person swings a baseball bat horizontally through the air.",
+    "local_description": "Objects: baseball player, baseball bat, pitcher, baseball Cues: horizontal arc, two-handed grip, weight shift, follow-through State change: preparing stance with bat raised; rotating torso and swinging bat forward; completing swing with bat extended",
+    "objects": [
+      "baseball player",
+      "baseball bat",
+      "pitcher",
+      "baseball"
+    ],
+    "state_change": [
+      "preparing stance with bat raised",
+      "rotating torso and swinging bat forward",
+      "completing swing with bat extended"
+    ]
+  },
+  "Table Tennis Shot": {
+    "global_description": "A player swings a paddle to strike a small white ball over a net.",
+    "local_description": "Objects: table, tennis, shot, player Cues: racket swing, forehand or backhand swing, ball contact with paddle, ball trajectory over net State change: player positions body and raises paddle; paddle swings forward to contact ball; arm follows through after ball impact",
+    "objects": [
+      "table",
+      "tennis",
+      "shot",
+      "player"
+    ],
+    "state_change": [
+      "player positions body and raises paddle",
+      "paddle swings forward to contact ball",
+      "arm follows through after ball impact"
+    ]
+  },
+  "Tai Chi": {
+    "global_description": "A person performs slow, flowing martial arts movements in a standing position.",
+    "local_description": "Objects: tai, chi, loose clothing, flat shoes Cues: slow motion, balanced stance, fluid transitions, circular arm movements State change: Starting with feet shoulder-width apart in a; Executing a sequence of flowing arm and; Concluding with controlled breathing and centered posture",
+    "objects": [
+      "tai",
+      "chi",
+      "loose clothing",
+      "flat shoes"
+    ],
+    "state_change": [
+      "Starting with feet shoulder-width apart in a",
+      "Executing a sequence of flowing arm and",
+      "Concluding with controlled breathing and centered posture"
+    ]
+  },
+  "Throw Discus": {
+    "global_description": "An athlete spins and releases a heavy disc from their hand.",
+    "local_description": "Objects: throw, discus, athlete, throwing circle Cues: rotational spin, overhead release, discus in hand, forward momentum State change: athlete spins with discus in hand; athlete releases discus forward; discus flies through air",
+    "objects": [
+      "throw",
+      "discus",
+      "athlete",
+      "throwing circle"
+    ],
+    "state_change": [
+      "athlete spins with discus in hand",
+      "athlete releases discus forward",
+      "discus flies through air"
+    ]
+  },
+  "Trampoline Jumping": {
+    "global_description": "A person bounces up and down on a trampoline.",
+    "local_description": "Objects: trampoline, springs, frame, safety net Cues: upward motion, downward compression, feet contact, mid-air suspension State change: person crouches on trampoline surface; person pushes off and ascends into air; person descends and lands on trampoline",
+    "objects": [
+      "trampoline",
+      "springs",
+      "frame",
+      "safety net"
+    ],
+    "state_change": [
+      "person crouches on trampoline surface",
+      "person pushes off and ascends into air",
+      "person descends and lands on trampoline"
+    ]
+  },
+  "Typing": {
+    "global_description": "A person's fingers press keys on a keyboard.",
+    "local_description": "Objects: keyboard, computer, desk, chair Cues: fingers contacting keys, hands positioned over keyboard, eyes on screen, sitting posture State change: hands approach keyboard; fingers press multiple keys; hands return to resting position",
+    "objects": [
+      "keyboard",
+      "computer",
+      "desk",
+      "chair"
+    ],
+    "state_change": [
+      "hands approach keyboard",
+      "fingers press multiple keys",
+      "hands return to resting position"
+    ]
+  },
+  "Uneven Bars": {
+    "global_description": "A gymnast performs swinging and release moves between two horizontal bars at different heights.",
+    "local_description": "Objects: uneven, chalk bag, spotter Cues: bar support, rotation, alternating grip changes, body fully extended State change: mount onto lower bar with jump or; transition between bars with kip or giant; dismount with salto or twist to land",
+    "objects": [
+      "uneven",
+      "chalk bag",
+      "spotter"
+    ],
+    "state_change": [
+      "mount onto lower bar with jump or",
+      "transition between bars with kip or giant",
+      "dismount with salto or twist to land"
+    ]
+  },
+  "Walking WithDog": {
+    "global_description": "A person moves forward on foot while holding a dog's leash.",
+    "local_description": "Objects: dog, leash, sidewalk, park path Cues: leash taut, forward motion, side-by-side, casual pace State change: person stands with dog on leash; both begin moving forward together; maintain steady walking pace side-by-side",
+    "objects": [
+      "dog",
+      "leash",
+      "sidewalk",
+      "park path"
+    ],
+    "state_change": [
+      "person stands with dog on leash",
+      "both begin moving forward together",
+      "maintain steady walking pace side-by-side"
+    ]
+  },
+  "Wall Pushups": {
+    "global_description": "A person performs pushups against a vertical wall.",
+    "local_description": "Objects: wall, pushups, hands, floor Cues: vertical orientation, standing position, wall contact, upper body movement State change: hands placed on wall at shoulder height; body leans toward wall with elbows bending; body pushes back to starting position",
+    "objects": [
+      "wall",
+      "pushups",
+      "hands",
+      "floor"
+    ],
+    "state_change": [
+      "hands placed on wall at shoulder height",
+      "body leans toward wall with elbows bending",
+      "body pushes back to starting position"
+    ]
+  },
+  "Writing On Board": {
+    "global_description": "A person uses a marker to write text on a whiteboard.",
+    "local_description": "Objects: board, teacher, student, marker Cues: standing facing board, hand holding marker, contact with surface, text appearing State change: person approaches board with marker; hand moves to write characters or words; person steps back to view writing",
+    "objects": [
+      "board",
+      "teacher",
+      "student",
+      "marker"
+    ],
+    "state_change": [
+      "person approaches board with marker",
+      "hand moves to write characters or words",
+      "person steps back to view writing"
+    ]
+  },
+  "Yo Yo": {
+    "global_description": "A person manipulates a yo-yo on a string with hand motions.",
+    "local_description": "Objects: yo-yo, string, hand, fingers Cues: circular motion, vertical drop, string tension, hand flick State change: hand holds yo-yo ready; yo-yo drops and spins downward; yo-yo returns upward to hand",
+    "objects": [
+      "yo-yo",
+      "string",
+      "hand",
+      "fingers"
+    ],
+    "state_change": [
+      "hand holds yo-yo ready",
+      "yo-yo drops and spins downward",
+      "yo-yo returns upward to hand"
+    ]
+  },
+  "Blowing Candles": {
+    "global_description": "A person leans forward and exhales toward lit candles on a cake.",
+    "local_description": "Objects: candles, birthday cake, flame, mouth Cues: leaning forward, pursed lips, directed airflow, flame extinguishing State change: person positioning face near candles; forceful exhalation toward flames; candle flames flicker and go out",
+    "objects": [
+      "candles",
+      "birthday cake",
+      "flame",
+      "mouth"
+    ],
+    "state_change": [
+      "person positioning face near candles",
+      "forceful exhalation toward flames",
+      "candle flames flicker and go out"
+    ]
+  },
+  "Clean And Jerk": {
+    "global_description": "A weightlifter lifts a barbell from the floor to overhead in two distinct motions.",
+    "local_description": "Objects: clean, jerk, weightlifter, weight plates Cues: explosive upward motion, barbell overhead, feet repositioning, full body extension State change: barbell pulled from floor to shoulders; athlete dips and drives under barbell; barbell pressed overhead with locked arms",
+    "objects": [
+      "clean",
+      "jerk",
+      "weightlifter",
+      "weight plates"
+    ],
+    "state_change": [
+      "barbell pulled from floor to shoulders",
+      "athlete dips and drives under barbell",
+      "barbell pressed overhead with locked arms"
+    ]
+  },
+  "Cliff Diving": {
+    "global_description": "A person leaps from a high cliff into water below.",
+    "local_description": "Objects: cliff, diver, water, swimwear Cues: water contact, downward trajectory, arms extended, body straight State change: climbing or standing at cliff edge; jumping with arms spread; entering water with splash",
+    "objects": [
+      "cliff",
+      "diver",
+      "water",
+      "swimwear"
+    ],
+    "state_change": [
+      "climbing or standing at cliff edge",
+      "jumping with arms spread",
+      "entering water with splash"
+    ]
+  },
+  "Cutting in Kitchen": {
+    "global_description": "A person slices vegetables on a cutting board with a knife.",
+    "local_description": "Objects: kitchen, knife, cutting board, vegetables Cues: hand holding knife, downward slicing motion, vegetables on board, knife contact State change: holding knife above vegetables; knife slicing through vegetables; cut pieces separated on board",
+    "objects": [
+      "kitchen",
+      "knife",
+      "cutting board",
+      "vegetables"
+    ],
+    "state_change": [
+      "holding knife above vegetables",
+      "knife slicing through vegetables",
+      "cut pieces separated on board"
+    ]
+  },
+  "Diving": {
+    "global_description": "A person leaps from a platform or springboard into a body of water.",
+    "local_description": "Objects: diver, swimming pool, diving board, water Cues: water contact, upward jump, body streamlined, headfirst entry State change: approach and takeoff from platform; mid-air tuck or pike position; entry into water with minimal splash",
+    "objects": [
+      "diver",
+      "swimming pool",
+      "diving board",
+      "water"
+    ],
+    "state_change": [
+      "approach and takeoff from platform",
+      "mid-air tuck or pike position",
+      "entry into water with minimal splash"
+    ]
+  },
+  "Floor Gymnastics": {
+    "global_description": "A gymnast performs acrobatic movements on a padded floor mat.",
+    "local_description": "Objects: floor, floor mat, leotard, chalk Cues: dynamic body rotations, balanced landings, synchronized with music, controlled momentum State change: starting pose at mat corner; executing tumbling passes across mat; final pose holding position",
+    "objects": [
+      "floor",
+      "floor mat",
+      "leotard",
+      "chalk"
+    ],
+    "state_change": [
+      "starting pose at mat corner",
+      "executing tumbling passes across mat",
+      "final pose holding position"
+    ]
+  },
+  "Golf Swing": {
+    "global_description": "A golfer swings a club to strike a golf ball.",
+    "local_description": "Objects: golf, golfer, golf club, golf ball Cues: racket swing, rotating torso, club head speed, ball contact State change: backswing with club raised; downswing toward ball; follow-through after impact",
+    "objects": [
+      "golf",
+      "golfer",
+      "golf club",
+      "golf ball"
+    ],
+    "state_change": [
+      "backswing with club raised",
+      "downswing toward ball",
+      "follow-through after impact"
+    ]
+  },
+  "Handstand Walking": {
+    "global_description": "A person walks forward while balanced upside down on their hands.",
+    "local_description": "Objects: handstand, acrobat, athlete, hands Cues: upside down, vertical torso, alternating hand contact, forward progression State change: initial handstand balance; alternating hand steps forward; controlled forward movement",
+    "objects": [
+      "handstand",
+      "acrobat",
+      "athlete",
+      "hands"
+    ],
+    "state_change": [
+      "initial handstand balance",
+      "alternating hand steps forward",
+      "controlled forward movement"
+    ]
+  },
+  "Horse Race": {
+    "global_description": "Multiple horses with jockeys sprint along a track.",
+    "local_description": "Objects: horse, race, jockey, saddle Cues: forward sprinting, side-by-side competition, jockey leaning forward, dirt track surface State change: horses lined up in starting gates; horses accelerating out of gates; horses sprinting toward finish line",
+    "objects": [
+      "horse",
+      "race",
+      "jockey",
+      "saddle"
+    ],
+    "state_change": [
+      "horses lined up in starting gates",
+      "horses accelerating out of gates",
+      "horses sprinting toward finish line"
+    ]
+  },
+  "Ice Dancing": {
+    "global_description": "Two skaters perform synchronized choreography on ice.",
+    "local_description": "Objects: ice, figure skaters, ice skates, partner Cues: synchronized movement, fluid gliding, close partner contact, rhythmic to music State change: Partners take starting positions on ice; They execute choreographed sequences in unison; They conclude with final pose and exit",
+    "objects": [
+      "ice",
+      "figure skaters",
+      "ice skates",
+      "partner"
+    ],
+    "state_change": [
+      "Partners take starting positions on ice",
+      "They execute choreographed sequences in unison",
+      "They conclude with final pose and exit"
+    ]
+  },
+  "Jump Rope": {
+    "global_description": "A person swings a rope overhead and jumps over it as it passes underfoot.",
+    "local_description": "Objects: jump, rope, jump rope, hands Cues: vertical jump, rhythmic motion, rope contact, bouncing stance State change: rope swings upward behind the person; person jumps as rope arcs overhead; rope passes under feet and swings back",
+    "objects": [
+      "jump",
+      "rope",
+      "jump rope",
+      "hands"
+    ],
+    "state_change": [
+      "rope swings upward behind the person",
+      "person jumps as rope arcs overhead",
+      "rope passes under feet and swings back"
+    ]
+  },
+  "Pommel Horse": {
+    "global_description": "A gymnast swings their body around a pommel horse apparatus.",
+    "local_description": "Objects: pommel, horse, pommel horse, hands Cues: bar support, rotation, circular swinging motion, hand contact maintained State change: mounting the pommel horse; executing circular swings; dismounting with controlled landing",
+    "objects": [
+      "pommel",
+      "horse",
+      "pommel horse",
+      "hands"
+    ],
+    "state_change": [
+      "mounting the pommel horse",
+      "executing circular swings",
+      "dismounting with controlled landing"
+    ]
+  },
+  "Punch": {
+    "global_description": "A person's fist makes forceful contact with another person's body.",
+    "local_description": "Objects: punch, fist, boxing glove, heavy bag Cues: forward thrust, impact moment, arm extended, body torque State change: arm draws back in preparation; fist accelerates forward toward target; fist impacts with visible force",
+    "objects": [
+      "punch",
+      "fist",
+      "boxing glove",
+      "heavy bag"
+    ],
+    "state_change": [
+      "arm draws back in preparation",
+      "fist accelerates forward toward target",
+      "fist impacts with visible force"
+    ]
+  },
+  "Rock Climbing Indoor": {
+    "global_description": "A person ascends an artificial climbing wall using handholds and footholds.",
+    "local_description": "Objects: rock, indoor, climber, climbing wall Cues: vertical ascent, gripping holds, body tension, controlled movement State change: reaching for next handhold; transferring weight to foothold; securing position before next move",
+    "objects": [
+      "rock",
+      "indoor",
+      "climber",
+      "climbing wall"
+    ],
+    "state_change": [
+      "reaching for next handhold",
+      "transferring weight to foothold",
+      "securing position before next move"
+    ]
+  },
+  "Salsa Spin": {
+    "global_description": "A dancer rotates their body while maintaining salsa footwork and posture.",
+    "local_description": "Objects: salsa, spin, salsa dancer, dance partner Cues: rotational movement, upright posture, weight transfer, arm positioning State change: prepares with weight on one foot and; initiates rotation with hip movement and foot; completes turn with controlled stop and weight",
+    "objects": [
+      "salsa",
+      "spin",
+      "salsa dancer",
+      "dance partner"
+    ],
+    "state_change": [
+      "prepares with weight on one foot and",
+      "initiates rotation with hip movement and foot",
+      "completes turn with controlled stop and weight"
+    ]
+  },
+  "Skiing": {
+    "global_description": "A person glides down a snowy mountain on skis.",
+    "local_description": "Objects: skier, skis, ski poles, snow Cues: downward motion, balanced stance, snow contact State change: standing at slope top with skis parallel; leaning forward to initiate descent; carving turns while maintaining speed",
+    "objects": [
+      "skier",
+      "skis",
+      "ski poles",
+      "snow"
+    ],
+    "state_change": [
+      "standing at slope top with skis parallel",
+      "leaning forward to initiate descent",
+      "carving turns while maintaining speed"
+    ]
+  },
+  "Sky Diving": {
+    "global_description": "A person jumps from an aircraft and falls through the air with a parachute.",
+    "local_description": "Objects: sky, skydiver, parachute, aircraft Cues: water contact, falling downward, freefall posture, parachute deployed State change: jumping from aircraft door; freefalling in spread position; parachute open and gliding",
+    "objects": [
+      "sky",
+      "skydiver",
+      "parachute",
+      "aircraft"
+    ],
+    "state_change": [
+      "jumping from aircraft door",
+      "freefalling in spread position",
+      "parachute open and gliding"
+    ]
+  },
+  "Still Rings": {
+    "global_description": "A gymnast performs strength holds and swings on two suspended rings.",
+    "local_description": "Objects: still, rings, still rings, rings straps Cues: body tension, controlled motion, rings stationary, straight arms State change: starting position hanging from rings; executing strength elements like iron cross; dismounting with controlled landing",
+    "objects": [
+      "still",
+      "rings",
+      "still rings",
+      "rings straps"
+    ],
+    "state_change": [
+      "starting position hanging from rings",
+      "executing strength elements like iron cross",
+      "dismounting with controlled landing"
+    ]
+  },
+  "Surfing": {
+    "global_description": "A person rides a surfboard on ocean waves.",
+    "local_description": "Objects: surfer, surfboard, ocean waves, wetsuit Cues: standing on board, balancing on wave, facing shore, arms extended State change: paddling out through waves; catching a wave and popping up; riding along the wave face",
+    "objects": [
+      "surfer",
+      "surfboard",
+      "ocean waves",
+      "wetsuit"
+    ],
+    "state_change": [
+      "paddling out through waves",
+      "catching a wave and popping up",
+      "riding along the wave face"
+    ]
+  },
+  "Tennis Swing": {
+    "global_description": "A player swings a tennis racket to hit a ball.",
+    "local_description": "Objects: tennis, tennis player, tennis racket, tennis ball Cues: sideways body rotation, racket forward motion, ball contact point, follow-through arc State change: backswing with racket raised behind; forward swing contacting ball; follow-through across body",
+    "objects": [
+      "tennis",
+      "tennis player",
+      "tennis racket",
+      "tennis ball"
+    ],
+    "state_change": [
+      "backswing with racket raised behind",
+      "forward swing contacting ball",
+      "follow-through across body"
+    ]
+  },
+  "Volleyball Spiking": {
+    "global_description": "A player jumps and forcefully hits the volleyball downward over the net.",
+    "local_description": "Objects: volleyball, volleyball player, net, court Cues: downward trajectory, powerful arm swing, jumping motion, ball contact above net State change: player approaches and jumps upward; arm swings back then forward to contact; ball travels sharply downward across net",
+    "objects": [
+      "volleyball",
+      "volleyball player",
+      "net",
+      "court"
+    ],
+    "state_change": [
+      "player approaches and jumps upward",
+      "arm swings back then forward to contact",
+      "ball travels sharply downward across net"
+    ]
+  }
+}

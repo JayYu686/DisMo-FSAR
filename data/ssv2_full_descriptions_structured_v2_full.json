@@ -1,0 +1,2456 @@
+{
+  "Bending [something] until it breaks": {
+    "label_text": "bending until break",
+    "action_anchor": "A person bends [something] until it snaps.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "object",
+      "fingers",
+      "arms",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hands in contact",
+      "object bending",
+      "support from surface",
+      "left/right grip"
+    ],
+    "phase_cues": [
+      "hands grip object",
+      "object bends visibly",
+      "object snaps apart"
+    ],
+    "confusion_cues": [
+      "bending without breaking",
+      "twisting until break"
+    ]
+  },
+  "Closing [something]": {
+    "label_text": "closing [something]",
+    "action_anchor": "A hand moves to bring two parts of an object together, reducing an opening.",
+    "entity_priors": [
+      "hand",
+      "door",
+      "lid",
+      "book",
+      "window",
+      "container"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand contact",
+      "object support",
+      "opening reduces",
+      "motion inward"
+    ],
+    "phase_cues": [
+      "hand approaches object near opening",
+      "hand grasps or pushes object part",
+      "opening fully closes with parts meeting"
+    ],
+    "confusion_cues": [
+      "opening [something]",
+      "pushing [something]"
+    ]
+  },
+  "Covering [something] with [something]": {
+    "label_text": "Covering with object",
+    "action_anchor": "A hand places an object over another object to obscure it.",
+    "entity_priors": [
+      "hand",
+      "cloth",
+      "lid",
+      "blanket",
+      "paper",
+      "box"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "over/under",
+      "contact",
+      "obscured/visible",
+      "support change"
+    ],
+    "phase_cues": [
+      "Hand holds covering object",
+      "Object moves over target",
+      "Covering object rests on target"
+    ],
+    "confusion_cues": [
+      "Placing object",
+      "Wrapping object"
+    ]
+  },
+  "Dropping [something] behind [something]": {
+    "label_text": "dropping behind object",
+    "action_anchor": "A person releases an object so it falls behind another object.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "object",
+      "background object",
+      "floor",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand opens",
+      "object moves down",
+      "object disappears behind",
+      "contact lost"
+    ],
+    "phase_cues": [
+      "hand holds object above background object",
+      "hand releases object downward",
+      "object lands behind background object"
+    ],
+    "confusion_cues": [
+      "placing behind object",
+      "throwing behind object"
+    ]
+  },
+  "Dropping [something] in front of [something]": {
+    "label_text": "dropping object in front",
+    "action_anchor": "A hand releases an object that falls downward in front of another object.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "ground",
+      "target object",
+      "fingers",
+      "arm"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward motion",
+      "release contact",
+      "in front of",
+      "gravity fall"
+    ],
+    "phase_cues": [
+      "hand holding object above target",
+      "fingers open releasing object",
+      "object falling downward in front of target"
+    ],
+    "confusion_cues": [
+      "placing object gently",
+      "throwing object away"
+    ]
+  },
+  "Dropping [something] into [something]": {
+    "label_text": "dropping into",
+    "action_anchor": "A hand releases an object that falls into a container.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "container",
+      "liquid",
+      "solid object",
+      "receptacle"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward motion",
+      "release contact",
+      "into container",
+      "gravity fall"
+    ],
+    "phase_cues": [
+      "hand holds object above container",
+      "hand releases object",
+      "object falls into container"
+    ],
+    "confusion_cues": [
+      "throwing into",
+      "placing into"
+    ]
+  },
+  "Folding [something]": {
+    "label_text": "Folding [something]",
+    "action_anchor": "A person bends a flexible object into a smaller shape.",
+    "entity_priors": [
+      "person",
+      "cloth",
+      "paper",
+      "towel",
+      "blanket",
+      "map"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "inward bend",
+      "crease formation",
+      "support on surface",
+      "hands in contact"
+    ],
+    "phase_cues": [
+      "object laid flat",
+      "edges brought together",
+      "crease pressed down"
+    ],
+    "confusion_cues": [
+      "crumpling object",
+      "rolling object"
+    ]
+  },
+  "Holding [something]": {
+    "label_text": "Holding [something]",
+    "action_anchor": "A person's hand is in contact with and supporting an object.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "arm",
+      "fingers",
+      "grip",
+      "palm"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand-object contact",
+      "support from below",
+      "grasp closed",
+      "object stable"
+    ],
+    "phase_cues": [
+      "hand approaches object",
+      "hand makes contact and encloses object",
+      "object is lifted or held steady"
+    ],
+    "confusion_cues": [
+      "touching [something]",
+      "carrying [something]"
+    ]
+  },
+  "Holding [something] next to [something]": {
+    "label_text": "Holding next to",
+    "action_anchor": "A person holds an object close to another object without touching it.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "held object",
+      "target object",
+      "arm",
+      "fingers"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "close proximity",
+      "no contact",
+      "parallel alignment",
+      "stable support"
+    ],
+    "phase_cues": [
+      "hand approaches object to grasp",
+      "object lifted and positioned near target",
+      "held steady in proximity to target"
+    ],
+    "confusion_cues": [
+      "touching objects",
+      "placing object on surface"
+    ]
+  },
+  "Letting [something] roll along a flat surface": {
+    "label_text": "letting something roll",
+    "action_anchor": "A hand releases an object that rolls forward on a flat surface.",
+    "entity_priors": [
+      "hand",
+      "ball",
+      "cylinder",
+      "wheel",
+      "bottle",
+      "can"
+    ],
+    "scene_priors": [
+      "flat surface",
+      "level ground"
+    ],
+    "attribute_cues": [
+      "hand contact release",
+      "object support on surface",
+      "forward motion",
+      "rotational movement"
+    ],
+    "phase_cues": [
+      "hand holds object above surface",
+      "hand releases object onto surface",
+      "object rolls forward without hand contact"
+    ],
+    "confusion_cues": [
+      "pushing object",
+      "throwing object"
+    ]
+  },
+  "Letting [something] roll down a slanted surface": {
+    "label_text": "letting object roll down slope",
+    "action_anchor": "A person releases an object on an inclined surface, and it rolls downward.",
+    "entity_priors": [
+      "person",
+      "object",
+      "inclined surface",
+      "ground"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward direction",
+      "contact with surface",
+      "support from slope",
+      "release motion"
+    ],
+    "phase_cues": [
+      "person holds object at top of slope",
+      "person releases object onto slope",
+      "object rolls down slope without assistance"
+    ],
+    "confusion_cues": [
+      "pushing object down slope",
+      "dropping object vertically"
+    ]
+  },
+  "Lifting a surface with [something] on it but not enough for it to slide down": {
+    "label_text": "lifting surface with object",
+    "action_anchor": "A person lifts a surface with [something] on it, but the surface tilts only slightly, not enough for the object to slide off.",
+    "entity_priors": [
+      "person",
+      "surface",
+      "object",
+      "hands",
+      "arms"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "surface tilts upward",
+      "object remains on surface",
+      "hands support surface bottom",
+      "surface angle shallow"
+    ],
+    "phase_cues": [
+      "hands grip surface edges",
+      "surface lifts slightly upward",
+      "object stays in place on surface"
+    ],
+    "confusion_cues": [
+      "tilting surface to slide object",
+      "lifting surface completely"
+    ]
+  },
+  "Lifting [something] with [something] on it": {
+    "label_text": "Lifting [something] with [something] on it",
+    "action_anchor": "A person raises an object that has another object resting on top of it.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "base object",
+      "top object",
+      "arms",
+      "floor"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "upward motion",
+      "support maintained",
+      "contact between objects",
+      "hands gripping base"
+    ],
+    "phase_cues": [
+      "hands grip base object with top object resting on it",
+      "arms extend upward lifting both objects together",
+      "objects reach elevated position with top still supported"
+    ],
+    "confusion_cues": [
+      "carrying [something] with [something] on it",
+      "placing [something] with [something] on it"
+    ]
+  },
+  "Moving away from [something] with your camera": {
+    "label_text": "moving away from [something]",
+    "action_anchor": "The camera steadily recedes from a fixed object or scene.",
+    "entity_priors": [
+      "camera",
+      "object",
+      "person",
+      "building",
+      "vehicle",
+      "landmark"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "backward motion",
+      "decreasing size",
+      "increasing distance",
+      "stable background"
+    ],
+    "phase_cues": [
+      "camera starts stationary near [something]",
+      "camera moves backward smoothly",
+      "[something] shrinks in frame as distance grows"
+    ],
+    "confusion_cues": [
+      "zooming out",
+      "panning away"
+    ]
+  },
+  "Moving [something] across a surface until it falls down": {
+    "label_text": "Moving object until fall",
+    "action_anchor": "A hand pushes an object across a flat surface until it goes over the edge and drops.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "flat surface",
+      "edge",
+      "floor"
+    ],
+    "scene_priors": [
+      "table",
+      "desk"
+    ],
+    "attribute_cues": [
+      "contact with surface",
+      "support loss",
+      "downward motion",
+      "edge crossing"
+    ],
+    "phase_cues": [
+      "hand pushes object on surface",
+      "object moves toward surface edge",
+      "object falls off edge downward"
+    ],
+    "confusion_cues": [
+      "sliding without falling",
+      "picking up object"
+    ]
+  },
+  "Moving [something] and [something] closer to each other": {
+    "label_text": "moving objects closer",
+    "action_anchor": "A person brings two objects toward each other until they touch or nearly touch.",
+    "entity_priors": [
+      "person",
+      "object 1",
+      "object 2",
+      "hands",
+      "table",
+      "floor"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right alignment",
+      "contact/no contact",
+      "support change",
+      "distance decreasing"
+    ],
+    "phase_cues": [
+      "person grasps or positions two objects apart",
+      "person moves objects toward each other simultaneously",
+      "objects make contact or stop close together"
+    ],
+    "confusion_cues": [
+      "moving one object toward another",
+      "separating objects apart"
+    ]
+  },
+  "Moving [something] and [something] so they collide with each other": {
+    "label_text": "colliding two objects",
+    "action_anchor": "A person moves two objects toward each other until they make contact.",
+    "entity_priors": [
+      "person",
+      "object",
+      "hand",
+      "table",
+      "floor",
+      "tool"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right movement",
+      "toward each other",
+      "contact point",
+      "support surface"
+    ],
+    "phase_cues": [
+      "person grasps two separate objects",
+      "objects move toward each other",
+      "objects make contact with impact"
+    ],
+    "confusion_cues": [
+      "placing objects together",
+      "stacking objects"
+    ]
+  },
+  "Moving [something] down": {
+    "label_text": "Moving [something] down",
+    "action_anchor": "A hand pushes an object downward.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "arm",
+      "tool",
+      "container",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward motion",
+      "contact with object",
+      "support from below",
+      "gravity-assisted"
+    ],
+    "phase_cues": [
+      "Hand approaches object from above.",
+      "Hand makes contact and pushes downward.",
+      "Object settles at a lower position."
+    ],
+    "confusion_cues": [
+      "Lifting [something] up",
+      "Sliding [something] sideways"
+    ]
+  },
+  "Moving [something] up": {
+    "label_text": "Moving [something] up",
+    "action_anchor": "A hand lifts an object upward from a lower position.",
+    "entity_priors": [
+      "hand",
+      "arm",
+      "object",
+      "tool",
+      "container",
+      "lever"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "upward motion",
+      "vertical displacement",
+      "hand contact",
+      "support change"
+    ],
+    "phase_cues": [
+      "Hand reaches toward object at rest.",
+      "Hand grasps and lifts object upward.",
+      "Object is held or placed at higher position."
+    ],
+    "confusion_cues": [
+      "Pushing [something] forward",
+      "Raising [something] overhead"
+    ]
+  },
+  "Plugging [something] into [something]": {
+    "label_text": "Plugging into",
+    "action_anchor": "A hand inserts a plug into a socket.",
+    "entity_priors": [
+      "plug",
+      "socket",
+      "cord",
+      "hand",
+      "device",
+      "outlet"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "in/out",
+      "contact",
+      "left/right alignment",
+      "support"
+    ],
+    "phase_cues": [
+      "Hand holding plug near socket.",
+      "Plug tip aligning with socket hole.",
+      "Plug fully inserted into socket."
+    ],
+    "confusion_cues": [
+      "Unplugging from socket.",
+      "Holding plug without inserting."
+    ]
+  },
+  "Poking a hole into [something soft]": {
+    "label_text": "poking hole into soft",
+    "action_anchor": "A finger pushes into a soft surface, creating a small indentation.",
+    "entity_priors": [
+      "finger",
+      "soft surface",
+      "tool",
+      "hand",
+      "foam",
+      "clay"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "finger in contact",
+      "surface deforms",
+      "downward motion",
+      "indentation visible"
+    ],
+    "phase_cues": [
+      "finger approaches soft surface",
+      "finger presses into surface, causing deformation",
+      "finger withdraws, leaving a hole"
+    ],
+    "confusion_cues": [
+      "tapping surface",
+      "pressing without hole"
+    ]
+  },
+  "Poking [something] so lightly that it doesn't or almost doesn't move": {
+    "label_text": "lightly poking [something]",
+    "action_anchor": "A finger or object gently touches [something] with minimal force.",
+    "entity_priors": [
+      "finger",
+      "stick",
+      "pen",
+      "hand",
+      "object",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "light contact",
+      "minimal movement",
+      "gentle pressure",
+      "no displacement"
+    ],
+    "phase_cues": [
+      "finger approaches [something] slowly",
+      "finger makes brief contact with [something]",
+      "finger retracts without moving [something]"
+    ],
+    "confusion_cues": [
+      "tapping [something]",
+      "pushing [something]"
+    ]
+  },
+  "Poking [something] so that it falls over": {
+    "label_text": "poking to topple",
+    "action_anchor": "A finger or stick makes contact with an object, causing it to tip over.",
+    "entity_priors": [
+      "finger",
+      "stick",
+      "object",
+      "table",
+      "floor",
+      "hand"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "contact point",
+      "support loss",
+      "downward tilt",
+      "left/right lean"
+    ],
+    "phase_cues": [
+      "approach and contact",
+      "push or prod motion",
+      "object falls over"
+    ],
+    "confusion_cues": [
+      "tapping lightly",
+      "pushing without falling"
+    ]
+  },
+  "Pouring [something] into [something]": {
+    "label_text": "Pouring into container",
+    "action_anchor": "A person tilts a container to transfer liquid into another container.",
+    "entity_priors": [
+      "liquid container",
+      "receiving container",
+      "hand",
+      "liquid stream",
+      "counter surface",
+      "spout"
+    ],
+    "scene_priors": [
+      "kitchen counter",
+      "dining table"
+    ],
+    "attribute_cues": [
+      "tilt angle increasing",
+      "liquid flowing downward",
+      "hand supporting container",
+      "containers in contact"
+    ],
+    "phase_cues": [
+      "container lifted and positioned above receiving container",
+      "container tilted causing liquid to pour out",
+      "container returned to upright position after pouring"
+    ],
+    "confusion_cues": [
+      "stirring liquid in container",
+      "filling container from faucet"
+    ]
+  },
+  "Pouring [something] into [something] until it overflows": {
+    "label_text": "Pouring until overflow",
+    "action_anchor": "A person tilts a container to pour liquid into another until it spills over the rim.",
+    "entity_priors": [
+      "person",
+      "source container",
+      "target container",
+      "liquid",
+      "hands",
+      "rim"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "tilt angle increases",
+      "liquid level rises",
+      "contact between containers",
+      "overflow from rim"
+    ],
+    "phase_cues": [
+      "person holds source container above target",
+      "liquid flows into target container",
+      "liquid spills over the rim"
+    ],
+    "confusion_cues": [
+      "pouring without overflow",
+      "filling to the brim"
+    ]
+  },
+  "Pouring [something] onto [something]": {
+    "label_text": "Pouring onto surface",
+    "action_anchor": "A person tilts a container to transfer liquid onto a surface.",
+    "entity_priors": [
+      "container",
+      "liquid",
+      "surface",
+      "hand",
+      "arm",
+      "object"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "tilt angle",
+      "liquid flow",
+      "container above surface",
+      "contact with container"
+    ],
+    "phase_cues": [
+      "Container held upright near surface",
+      "Container tilted to initiate pouring",
+      "Liquid flows onto surface as container returns upright"
+    ],
+    "confusion_cues": [
+      "Spilling accidentally",
+      "Stirring in container"
+    ]
+  },
+  "Pretending to be tearing [something that is not tearable]": {
+    "label_text": "pretending to tear",
+    "action_anchor": "A person holds an object with both hands and makes tearing motions without actual separation.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "object",
+      "fingers"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "both hands contact",
+      "object remains intact",
+      "no material separation",
+      "exaggerated motion"
+    ],
+    "phase_cues": [
+      "person grasps object with both hands",
+      "hands pull in opposite directions with tension",
+      "object remains whole despite pulling motion"
+    ],
+    "confusion_cues": [
+      "actual tearing",
+      "stretching flexible material"
+    ]
+  },
+  "Pretending to close [something] without actually closing it": {
+    "label_text": "pretending to close [something]",
+    "action_anchor": "A person's hand moves toward [something] as if to close it but stops short of contact.",
+    "entity_priors": [
+      "hand",
+      "door",
+      "lid",
+      "drawer",
+      "window",
+      "container"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand near [something]",
+      "no contact",
+      "open state unchanged",
+      "motion stops short"
+    ],
+    "phase_cues": [
+      "hand approaches [something] from open side",
+      "hand stops just before touching [something]",
+      "hand withdraws while [something] remains open"
+    ],
+    "confusion_cues": [
+      "actually closing [something]",
+      "tapping or touching [something]"
+    ]
+  },
+  "Pretending to pick [something] up": {
+    "label_text": "pretending to pick up",
+    "action_anchor": "A person mimes grasping and lifting an invisible object.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "fingers",
+      "floor",
+      "table",
+      "air"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand open to closed",
+      "arm moves upward",
+      "no actual contact",
+      "grasping motion"
+    ],
+    "phase_cues": [
+      "hand reaches downward toward empty space",
+      "fingers curl as if grasping an object",
+      "arm lifts upward with imaginary weight"
+    ],
+    "confusion_cues": [
+      "actually picking something up",
+      "pointing at something"
+    ]
+  },
+  "Pretending to put [something] next to [something]": {
+    "label_text": "pretending to put next to",
+    "action_anchor": "A person holds an object and moves it toward another object without making contact.",
+    "entity_priors": [
+      "person",
+      "held object",
+      "target object",
+      "hand",
+      "table",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand-object contact",
+      "object-object proximity",
+      "no support change",
+      "horizontal movement"
+    ],
+    "phase_cues": [
+      "hand grasps object",
+      "object moves toward target",
+      "object stops near target"
+    ],
+    "confusion_cues": [
+      "actually placing object",
+      "pretending to throw"
+    ]
+  },
+  "Pretending to spread air onto [something]": {
+    "label_text": "pretending to spread air",
+    "action_anchor": "A person mimes spreading air onto [something] with hands.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "air",
+      "[something]"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hands open",
+      "downward motion",
+      "contact with [something]",
+      "air direction outward"
+    ],
+    "phase_cues": [
+      "hands raised near [something]",
+      "hands move downward spreading air",
+      "hands retract after spreading"
+    ],
+    "confusion_cues": [
+      "actually spreading substance",
+      "waving hands without contact"
+    ]
+  },
+  "Pretending to take [something] out of [something]": {
+    "label_text": "pretending to take out",
+    "action_anchor": "A person mimes removing an object from a container without actual contact.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "container",
+      "imaginary object"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand near container opening",
+      "mimetic grasping motion",
+      "hand moving away",
+      "no actual object contact"
+    ],
+    "phase_cues": [
+      "hand approaches container opening",
+      "fingers form grasping shape near opening",
+      "hand pulls back as if holding object"
+    ],
+    "confusion_cues": [
+      "actually taking object out",
+      "pretending to put object in"
+    ]
+  },
+  "Pulling [something] onto [something]": {
+    "label_text": "Pulling onto surface",
+    "action_anchor": "A person pulls [something] onto [something] with visible tension.",
+    "entity_priors": [
+      "person",
+      "object",
+      "surface",
+      "hands",
+      "rope",
+      "handle"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right hand contact",
+      "upward/downward motion",
+      "support change",
+      "contact change"
+    ],
+    "phase_cues": [
+      "Hands grip object near edge",
+      "Object lifts off original surface",
+      "Object settles onto new surface"
+    ],
+    "confusion_cues": [
+      "Pushing onto surface",
+      "Lifting without moving"
+    ]
+  },
+  "Pulling two ends of [something] so that it gets stretched": {
+    "label_text": "stretching [something]",
+    "action_anchor": "A person pulls both ends of an object away from each other, elongating it.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "elastic object",
+      "rope",
+      "fabric",
+      "band"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hands moving apart",
+      "object elongating",
+      "tension visible",
+      "ends pulled outward"
+    ],
+    "phase_cues": [
+      "hands grip opposite ends of object",
+      "arms extend outward, pulling ends apart",
+      "object reaches maximum stretched length"
+    ],
+    "confusion_cues": [
+      "pulling object toward body",
+      "tearing object apart"
+    ]
+  },
+  "Pulling two ends of [something] so that it separates into two pieces": {
+    "label_text": "pulling apart [something]",
+    "action_anchor": "A person pulls two ends of [something] until it separates into two pieces.",
+    "entity_priors": [
+      "person",
+      "hands",
+      "two ends",
+      "object",
+      "two pieces"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hands in contact with ends",
+      "ends moving apart",
+      "object splitting",
+      "pieces separate"
+    ],
+    "phase_cues": [
+      "hands grip two ends of [something]",
+      "hands pull ends in opposite directions",
+      "[something] separates into two pieces"
+    ],
+    "confusion_cues": [
+      "tearing [something] apart",
+      "breaking [something] in half"
+    ]
+  },
+  "Pushing [something] from left to right": {
+    "label_text": "Pushing [something] left to right",
+    "action_anchor": "A hand or object moves [something] horizontally from left to right.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "table",
+      "cart",
+      "box",
+      "door"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left to right motion",
+      "horizontal movement",
+      "contact maintained",
+      "support surface"
+    ],
+    "phase_cues": [
+      "Initial contact with [something] on left side.",
+      "Sustained push moving [something] horizontally.",
+      "Release after [something] reaches right position."
+    ],
+    "confusion_cues": [
+      "Pulling from right to left",
+      "Sliding without push contact"
+    ]
+  },
+  "Pushing [something] off of [something]": {
+    "label_text": "Pushing off surface",
+    "action_anchor": "A hand pushes an object off a supporting surface.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "surface",
+      "arm",
+      "fingers",
+      "table"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "contact loss",
+      "downward motion",
+      "left/right direction",
+      "support change"
+    ],
+    "phase_cues": [
+      "Hand contacts object on surface.",
+      "Hand applies force, object moves off edge.",
+      "Object falls or slides away from surface."
+    ],
+    "confusion_cues": [
+      "sliding object on surface",
+      "placing object down"
+    ]
+  },
+  "Pushing [something] so that it falls off the table": {
+    "label_text": "Pushing object off table",
+    "action_anchor": "A hand pushes [something] until it falls off the table edge.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "table",
+      "floor"
+    ],
+    "scene_priors": [
+      "table surface",
+      "table edge"
+    ],
+    "attribute_cues": [
+      "contact with object",
+      "horizontal push",
+      "loss of support",
+      "falling motion"
+    ],
+    "phase_cues": [
+      "hand makes contact with object on table",
+      "object slides toward table edge",
+      "object falls off table to floor"
+    ],
+    "confusion_cues": [
+      "sliding object on table",
+      "knocking object over"
+    ]
+  },
+  "Pushing [something] so that it slightly moves": {
+    "label_text": "Pushing [something] slightly",
+    "action_anchor": "A hand contacts an object and applies force, causing it to shift a small distance.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "table",
+      "floor",
+      "wall",
+      "cart"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "contact change",
+      "left/right shift",
+      "support change",
+      "slight movement"
+    ],
+    "phase_cues": [
+      "Hand approaches and makes contact with object.",
+      "Force is applied, object begins to move slightly.",
+      "Object stops after a small displacement."
+    ],
+    "confusion_cues": [
+      "Tapping or nudging",
+      "Sliding without push"
+    ]
+  },
+  "Putting [number of] [something] onto [something]": {
+    "label_text": "Putting [number of] [something] onto [something]",
+    "action_anchor": "A hand places [number of] [something] onto the surface of [something].",
+    "entity_priors": [
+      "hand",
+      "object being placed",
+      "target surface",
+      "table",
+      "counter",
+      "shelf"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand moves downward",
+      "object contacts surface",
+      "support transfer",
+      "object rests on surface"
+    ],
+    "phase_cues": [
+      "hand grasps object",
+      "hand moves object toward surface",
+      "object contacts and rests on surface"
+    ],
+    "confusion_cues": [
+      "dropping object",
+      "sliding object across surface"
+    ]
+  },
+  "Putting [something] and [something] on the table": {
+    "label_text": "Putting objects on table",
+    "action_anchor": "A hand places [something] and [something] onto a table surface.",
+    "entity_priors": [
+      "hand",
+      "object 1",
+      "object 2",
+      "table"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand moves downward",
+      "objects contact table",
+      "support change from hand to table"
+    ],
+    "phase_cues": [
+      "hand grasps objects",
+      "hand moves objects toward table",
+      "objects rest on table"
+    ],
+    "confusion_cues": [
+      "picking up from table",
+      "sliding objects on table"
+    ]
+  },
+  "Putting [something] onto a slanted surface but it doesn't glide down": {
+    "label_text": "placing on slanted surface",
+    "action_anchor": "A person puts [something] onto a slanted surface where it remains stationary.",
+    "entity_priors": [
+      "person",
+      "object",
+      "slanted surface",
+      "hand",
+      "friction point"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "slanted angle",
+      "stationary after placement",
+      "contact maintained",
+      "support from below"
+    ],
+    "phase_cues": [
+      "hand approaches slanted surface with object",
+      "object makes contact with slanted surface",
+      "object remains in place without sliding"
+    ],
+    "confusion_cues": [
+      "object sliding down slope",
+      "object rolling away"
+    ]
+  },
+  "Putting [something] onto [something]": {
+    "label_text": "Putting onto surface",
+    "action_anchor": "A hand places an object onto a supporting surface.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "surface",
+      "table",
+      "shelf",
+      "counter"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward motion",
+      "contact established",
+      "support transition",
+      "object release"
+    ],
+    "phase_cues": [
+      "hand holding object above surface",
+      "object descending toward surface",
+      "object resting on surface"
+    ],
+    "confusion_cues": [
+      "placing inside container",
+      "dropping object"
+    ]
+  },
+  "Putting [something similar to other things that are already on the table]": {
+    "label_text": "placing similar object",
+    "action_anchor": "A hand places an object onto a table near other similar objects.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "table",
+      "other objects"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand-object contact",
+      "object-table support",
+      "object proximity",
+      "similar appearance"
+    ],
+    "phase_cues": [
+      "hand grasps object",
+      "hand moves object horizontally",
+      "object contacts table surface"
+    ],
+    "confusion_cues": [
+      "arranging objects",
+      "stacking objects"
+    ]
+  },
+  "Showing a photo of [something] to the camera": {
+    "label_text": "showing photo to camera",
+    "action_anchor": "A person holds a photo toward the camera lens.",
+    "entity_priors": [
+      "person",
+      "photo",
+      "camera",
+      "hand",
+      "fingers",
+      "photo edge"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand in front",
+      "photo facing camera",
+      "photo held steady",
+      "camera lens visible"
+    ],
+    "phase_cues": [
+      "person picks up photo",
+      "person positions photo toward camera",
+      "photo held in camera view"
+    ],
+    "confusion_cues": [
+      "holding photo for viewing",
+      "taking photo of object"
+    ]
+  },
+  "Showing [something] behind [something]": {
+    "label_text": "showing behind object",
+    "action_anchor": "A person holds an object and moves it to reveal something behind another object.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "object being shown",
+      "object being hidden behind",
+      "background surface",
+      "foreground object"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right movement",
+      "in/out of view",
+      "support change",
+      "contact with hand"
+    ],
+    "phase_cues": [
+      "person grasps object with hand",
+      "person moves object laterally or vertically",
+      "previously hidden object becomes visible"
+    ],
+    "confusion_cues": [
+      "hiding behind object",
+      "placing behind object"
+    ]
+  },
+  "[Something] colliding with [something] and both are being deflected": {
+    "label_text": "collision with deflection",
+    "action_anchor": "Two objects collide and bounce away from each other.",
+    "entity_priors": [
+      "ball",
+      "vehicle",
+      "person",
+      "object",
+      "projectile",
+      "animal"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "contact then separation",
+      "direction change",
+      "bounce motion",
+      "rebound angle"
+    ],
+    "phase_cues": [
+      "objects approach each other",
+      "moment of impact contact",
+      "objects deflect away"
+    ],
+    "confusion_cues": [
+      "collision without deflection",
+      "objects sticking together"
+    ]
+  },
+  "Spilling [something] next to [something]": {
+    "label_text": "spilling next to",
+    "action_anchor": "A liquid flows from a container and lands adjacent to an object.",
+    "entity_priors": [
+      "cup",
+      "glass",
+      "bottle",
+      "liquid",
+      "table",
+      "floor"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "liquid pouring out",
+      "container tilting",
+      "contact with surface",
+      "adjacent landing"
+    ],
+    "phase_cues": [
+      "container held upright",
+      "container tilted causing flow",
+      "liquid spreads near object"
+    ],
+    "confusion_cues": [
+      "pouring into",
+      "dropping onto"
+    ]
+  },
+  "Spilling [something] onto [something]": {
+    "label_text": "Spilling onto surface",
+    "action_anchor": "A liquid or granular substance flows unintentionally from a container onto another surface.",
+    "entity_priors": [
+      "liquid container",
+      "granular container",
+      "receiving surface",
+      "spilled substance",
+      "hand holding container",
+      "support surface"
+    ],
+    "scene_priors": [
+      "kitchen counter",
+      "table"
+    ],
+    "attribute_cues": [
+      "container tilted",
+      "substance flowing downward",
+      "contact between substance and surface",
+      "container above receiving surface"
+    ],
+    "phase_cues": [
+      "Container held above surface with substance inside",
+      "Container tilted causing substance to flow out",
+      "Substance spreads across receiving surface"
+    ],
+    "confusion_cues": [
+      "Pouring intentionally",
+      "Dropping solid object"
+    ]
+  },
+  "Spinning [something] that quickly stops spinning": {
+    "label_text": "Spinning [something] that quickly stops",
+    "action_anchor": "A person spins an object and it abruptly halts.",
+    "entity_priors": [
+      "person",
+      "spinning top",
+      "coin",
+      "bottle",
+      "fidget spinner",
+      "plate"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "clockwise rotation",
+      "counterclockwise rotation",
+      "contact with surface",
+      "sudden deceleration"
+    ],
+    "phase_cues": [
+      "Object begins spinning with hand contact.",
+      "Object rotates steadily on a surface.",
+      "Object stops spinning abruptly, motionless."
+    ],
+    "confusion_cues": [
+      "Spinning without stopping",
+      "Dropping or throwing an object"
+    ]
+  },
+  "Spreading [something] onto [something]": {
+    "label_text": "Spreading onto surface",
+    "action_anchor": "A hand moves a spreadable substance across a surface with a spreading tool.",
+    "entity_priors": [
+      "spatula",
+      "knife",
+      "butter",
+      "jam",
+      "bread",
+      "counter"
+    ],
+    "scene_priors": [
+      "kitchen counter",
+      "dining table"
+    ],
+    "attribute_cues": [
+      "hand moves left-right",
+      "tool contacts surface",
+      "substance flattens",
+      "surface coverage increases"
+    ],
+    "phase_cues": [
+      "tool picks up substance",
+      "tool contacts target surface",
+      "tool moves to spread substance"
+    ],
+    "confusion_cues": [
+      "smearing with fingers",
+      "pouring liquid"
+    ]
+  },
+  "Squeezing [something]": {
+    "label_text": "Squeezing [something]",
+    "action_anchor": "A hand compresses an object inward.",
+    "entity_priors": [
+      "hand",
+      "fingers",
+      "object",
+      "bottle",
+      "sponge",
+      "tube"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "inward pressure",
+      "contact with object",
+      "object deformation",
+      "hand grip"
+    ],
+    "phase_cues": [
+      "Hand approaches object with open grip.",
+      "Fingers wrap around object and apply pressure.",
+      "Object visibly compresses or releases contents."
+    ],
+    "confusion_cues": [
+      "pressing",
+      "crushing"
+    ]
+  },
+  "Stuffing [something] into [something]": {
+    "label_text": "Stuffing into container",
+    "action_anchor": "A person pushes an object into a container until it fits inside.",
+    "entity_priors": [
+      "person",
+      "object",
+      "container",
+      "hands",
+      "bag",
+      "box"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "in/out",
+      "contact",
+      "containment",
+      "tight fit"
+    ],
+    "phase_cues": [
+      "Object held near container opening",
+      "Object being pushed into container",
+      "Object fully inside container"
+    ],
+    "confusion_cues": [
+      "Placing on surface",
+      "Throwing into container"
+    ]
+  },
+  "Taking [something] from [somewhere]": {
+    "label_text": "Taking [something] from [somewhere]",
+    "action_anchor": "A hand reaches toward and grasps an object from a location.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "container",
+      "surface",
+      "shelf",
+      "person"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand moves toward object",
+      "object changes support from source to hand",
+      "object moves out of container/surface",
+      "hand-object contact established"
+    ],
+    "phase_cues": [
+      "hand extends toward object location",
+      "hand makes contact and grasps object",
+      "object lifts away from original position"
+    ],
+    "confusion_cues": [
+      "placing object somewhere",
+      "holding object without movement"
+    ]
+  },
+  "Tearing [something] into two pieces": {
+    "label_text": "Tearing [something] into two pieces",
+    "action_anchor": "A person holds an object with both hands and pulls in opposite directions until it separates into two parts.",
+    "entity_priors": [
+      "person",
+      "paper",
+      "fabric",
+      "plastic sheet",
+      "cardboard",
+      "food wrapper"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hands pulling apart",
+      "opposite directions",
+      "material separation",
+      "tension visible"
+    ],
+    "phase_cues": [
+      "Hands grip object at opposite ends",
+      "Arms pull outward creating tension",
+      "Material rips completely into two separate pieces"
+    ],
+    "confusion_cues": [
+      "Folding paper",
+      "Cutting with scissors"
+    ]
+  },
+  "Tilting [something] with [something] on it slightly so it doesn't fall down": {
+    "label_text": "Tilting object with item",
+    "action_anchor": "A person tilts [something] with [something] on it slightly to prevent it from falling.",
+    "entity_priors": [
+      "person",
+      "object",
+      "item",
+      "hand",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "slight tilt angle",
+      "contact maintained",
+      "support stable",
+      "item balanced"
+    ],
+    "phase_cues": [
+      "Hand grasps object with item on top.",
+      "Object tilted slightly to one side.",
+      "Item remains balanced without falling."
+    ],
+    "confusion_cues": [
+      "Dropping object",
+      "Spilling contents"
+    ]
+  },
+  "Tilting [something] with [something] on it until it falls off": {
+    "label_text": "tilting object until fall",
+    "action_anchor": "A person tilts [something] with [something] on it until the top object falls off.",
+    "entity_priors": [
+      "person",
+      "table",
+      "plate",
+      "cup",
+      "book",
+      "tray"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right tilt",
+      "support loss",
+      "contact break",
+      "downward motion"
+    ],
+    "phase_cues": [
+      "[something] is stable with [something] on top",
+      "person tilts [something] gradually",
+      "[something] falls off to the side"
+    ],
+    "confusion_cues": [
+      "sliding object off",
+      "dropping object directly"
+    ]
+  },
+  "Tipping [something] with [something in it] over, so [something in it] falls out": {
+    "label_text": "tip container over",
+    "action_anchor": "A person tilts [something] until its contents spill out.",
+    "entity_priors": [
+      "container",
+      "liquid",
+      "solid objects",
+      "hand",
+      "table",
+      "floor"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "tilt angle increases",
+      "contents shift",
+      "container empties",
+      "spillage direction"
+    ],
+    "phase_cues": [
+      "container upright with contents inside",
+      "container tilting at increasing angle",
+      "container inverted with contents fallen out"
+    ],
+    "confusion_cues": [
+      "pouring from container",
+      "shaking container"
+    ]
+  },
+  "Turning the camera downwards while filming [something]": {
+    "label_text": "tilting camera down",
+    "action_anchor": "The camera tilts downward while filming [something].",
+    "entity_priors": [
+      "camera",
+      "hand",
+      "tripod",
+      "smartphone",
+      "filmmaker",
+      "subject"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward tilt",
+      "vertical angle change",
+      "hand or tripod support",
+      "camera orientation shift"
+    ],
+    "phase_cues": [
+      "Camera held steady in initial position.",
+      "Camera tilts downward smoothly.",
+      "Camera stabilizes in new downward-facing orientation."
+    ],
+    "confusion_cues": [
+      "panning camera sideways",
+      "zooming in or out"
+    ]
+  },
+  "Turning the camera left while filming [something]": {
+    "label_text": "turning camera left",
+    "action_anchor": "A person rotates a camera horizontally to the left while filming.",
+    "entity_priors": [
+      "person",
+      "camera",
+      "hand",
+      "tripod",
+      "smartphone"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "leftward rotation",
+      "horizontal pan",
+      "hand contact",
+      "camera support"
+    ],
+    "phase_cues": [
+      "camera held steady facing forward",
+      "camera begins rotating leftward",
+      "camera stops with leftward orientation"
+    ],
+    "confusion_cues": [
+      "tilting camera up or down",
+      "moving camera forward while filming"
+    ]
+  },
+  "Turning the camera upwards while filming [something]": {
+    "label_text": "tilting camera upward",
+    "action_anchor": "The camera lens points upward while filming [something].",
+    "entity_priors": [
+      "camera",
+      "hand",
+      "tripod",
+      "smartphone",
+      "filmmaker",
+      "subject"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "upward tilt",
+      "vertical rotation",
+      "lens angle change",
+      "hand support"
+    ],
+    "phase_cues": [
+      "camera held steady at initial angle",
+      "camera tilts upward smoothly",
+      "camera stabilizes at new upward angle"
+    ],
+    "confusion_cues": [
+      "panning horizontally",
+      "zooming in/out"
+    ]
+  },
+  "Twisting (wringing) [something] wet until water comes out": {
+    "label_text": "twisting [something] wet",
+    "action_anchor": "A person twists a wet object with both hands until water drips out.",
+    "entity_priors": [
+      "cloth",
+      "towel",
+      "sponge",
+      "garment",
+      "hands",
+      "water"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hands in contact with object",
+      "object changes shape",
+      "water moves out",
+      "twisting motion clockwise/counterclockwise"
+    ],
+    "phase_cues": [
+      "hands grip wet object firmly",
+      "object twists tightly, water squeezed out",
+      "water drips or streams from object"
+    ],
+    "confusion_cues": [
+      "wringing vs squeezing",
+      "twisting vs wringing"
+    ]
+  },
+  "Twisting [something]": {
+    "label_text": "Twisting [something]",
+    "action_anchor": "A hand rotates an object around its axis.",
+    "entity_priors": [
+      "hand",
+      "wrist",
+      "object",
+      "fingers",
+      "forearm",
+      "knob"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "clockwise rotation",
+      "counterclockwise rotation",
+      "contact with object",
+      "wrist flexion"
+    ],
+    "phase_cues": [
+      "hand grasps object firmly",
+      "wrist rotates object around axis",
+      "object returns to original position"
+    ],
+    "confusion_cues": [
+      "turning [something]",
+      "spinning [something]"
+    ]
+  },
+  "Uncovering [something]": {
+    "label_text": "uncovering [something]",
+    "action_anchor": "A hand moves an object aside to reveal what is underneath.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "surface",
+      "hidden item"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right movement",
+      "up/down lifting",
+      "in/out displacement",
+      "contact change"
+    ],
+    "phase_cues": [
+      "hand approaches object on surface",
+      "hand grasps and moves object aside",
+      "hidden item becomes visible underneath"
+    ],
+    "confusion_cues": [
+      "covering [something]",
+      "moving [something] without revealing"
+    ]
+  },
+  "Approaching [something] with your camera": {
+    "label_text": "Approaching [something] with camera",
+    "action_anchor": "A camera moves steadily closer to a target object or scene.",
+    "entity_priors": [
+      "camera",
+      "person holding camera",
+      "target object",
+      "background",
+      "hands",
+      "viewfinder"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "closer distance",
+      "increasing object size in frame",
+      "steady forward motion",
+      "focus adjustment"
+    ],
+    "phase_cues": [
+      "Camera starts at a distance from target.",
+      "Camera moves forward, filling frame with target.",
+      "Camera stops close, target dominates view."
+    ],
+    "confusion_cues": [
+      "Panning camera sideways",
+      "Zooming in without moving"
+    ]
+  },
+  "Digging [something] out of [something]": {
+    "label_text": "Digging [something] out of [something]",
+    "action_anchor": "A person uses a tool to remove an object from a container or ground.",
+    "entity_priors": [
+      "person",
+      "shovel",
+      "spoon",
+      "object",
+      "container",
+      "ground"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "tool in contact with object",
+      "object moving out of container",
+      "upward or outward motion",
+      "support change from inside to outside"
+    ],
+    "phase_cues": [
+      "Tool inserted into container or ground.",
+      "Tool lifts or scoops object upward.",
+      "Object removed and placed outside."
+    ],
+    "confusion_cues": [
+      "burying an object",
+      "stirring contents"
+    ]
+  },
+  "Dropping [something] next to [something]": {
+    "label_text": "dropping next to",
+    "action_anchor": "A hand releases an object, letting it fall to rest beside another object.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "table",
+      "floor",
+      "container",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand open",
+      "object falling",
+      "contact lost",
+      "support gained"
+    ],
+    "phase_cues": [
+      "hand holding object above surface",
+      "hand releasing object downward",
+      "object resting beside target"
+    ],
+    "confusion_cues": [
+      "placing gently",
+      "throwing away"
+    ]
+  },
+  "Dropping [something] onto [something]": {
+    "label_text": "Dropping onto surface",
+    "action_anchor": "An object falls from a hand onto a surface.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "surface",
+      "floor",
+      "table",
+      "ground"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "downward motion",
+      "loss of support",
+      "contact impact",
+      "left/right hand"
+    ],
+    "phase_cues": [
+      "Hand holds object above surface.",
+      "Object released and falls downward.",
+      "Object makes contact with surface."
+    ],
+    "confusion_cues": [
+      "Throwing object",
+      "Placing object gently"
+    ]
+  },
+  "Failing to put [something] into [something] because [something] does not fit": {
+    "label_text": "failing to fit object",
+    "action_anchor": "A person tries to insert an object into a container but it doesn't fit.",
+    "entity_priors": [
+      "person",
+      "object",
+      "container",
+      "hands",
+      "opening"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "object too large",
+      "container opening too small",
+      "contact attempt",
+      "no containment"
+    ],
+    "phase_cues": [
+      "person approaches container with object",
+      "person attempts to insert object into opening",
+      "object stops at opening, cannot enter"
+    ],
+    "confusion_cues": [
+      "successful insertion",
+      "abandoning attempt"
+    ]
+  },
+  "Lifting up one end of [something] without letting it drop down": {
+    "label_text": "lifting one end",
+    "action_anchor": "A person raises one end of an object while the other end stays supported.",
+    "entity_priors": [
+      "person",
+      "object",
+      "hand",
+      "ground",
+      "table",
+      "support surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "upward motion",
+      "one end elevated",
+      "other end in contact",
+      "support maintained"
+    ],
+    "phase_cues": [
+      "hand grasps one end of object",
+      "one end lifts upward while other end remains on surface",
+      "object held at an angle without dropping"
+    ],
+    "confusion_cues": [
+      "tilting entire object",
+      "lifting object fully off ground"
+    ]
+  },
+  "Picking [something] up": {
+    "label_text": "Picking [something] up",
+    "action_anchor": "A hand grasps an object and lifts it from a surface.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "surface",
+      "fingers",
+      "arm",
+      "floor"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand moves down to contact",
+      "object leaves support",
+      "upward motion",
+      "grip visible"
+    ],
+    "phase_cues": [
+      "hand reaches toward object on surface",
+      "fingers close around object",
+      "object rises into air"
+    ],
+    "confusion_cues": [
+      "placing down",
+      "holding stationary"
+    ]
+  },
+  "Poking a stack of [something] without the stack collapsing": {
+    "label_text": "poking stack without collapse",
+    "action_anchor": "A finger gently pushes the side of a vertical stack without toppling it.",
+    "entity_priors": [
+      "finger",
+      "stack of objects",
+      "table surface",
+      "hand"
+    ],
+    "scene_priors": [
+      "table",
+      "flat surface"
+    ],
+    "attribute_cues": [
+      "gentle contact",
+      "side push",
+      "vertical stability",
+      "minimal displacement"
+    ],
+    "phase_cues": [
+      "finger approaches stack side",
+      "finger makes light contact with stack",
+      "stack remains upright after contact"
+    ],
+    "confusion_cues": [
+      "toppling a stack",
+      "pushing over a stack"
+    ]
+  },
+  "Pouring [something] out of [something]": {
+    "label_text": "Pouring out of container",
+    "action_anchor": "A person tilts a container to empty its contents outwards.",
+    "entity_priors": [
+      "person",
+      "container",
+      "liquid",
+      "sink",
+      "ground",
+      "receptacle"
+    ],
+    "scene_priors": [
+      "kitchen",
+      "outdoor"
+    ],
+    "attribute_cues": [
+      "container tilted",
+      "contents flowing out",
+      "downward motion",
+      "emptying state"
+    ],
+    "phase_cues": [
+      "container held upright with contents inside",
+      "container tilted causing contents to pour out",
+      "container returned to upright position, now empty"
+    ],
+    "confusion_cues": [
+      "pouring into container",
+      "spilling accidentally"
+    ]
+  },
+  "Pretending to open [something] without actually opening it": {
+    "label_text": "pretending to open [something]",
+    "action_anchor": "A person's hand approaches and touches a closed object without opening it.",
+    "entity_priors": [
+      "hand",
+      "closed object",
+      "door handle",
+      "lid",
+      "drawer pull",
+      "container"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand contact with object",
+      "object remains closed",
+      "no gap appears",
+      "no interior visible"
+    ],
+    "phase_cues": [
+      "hand reaches toward closed object",
+      "fingers make contact with object surface",
+      "hand withdraws without object opening"
+    ],
+    "confusion_cues": [
+      "actually opening something",
+      "tapping or knocking on surface"
+    ]
+  },
+  "Pretending to put [something] behind [something]": {
+    "label_text": "pretending to put behind",
+    "action_anchor": "A person moves an object toward the back of another object without making contact.",
+    "entity_priors": [
+      "person",
+      "held object",
+      "target object",
+      "hand",
+      "arm"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand holding object",
+      "object moving backward",
+      "no contact made",
+      "motion stops before touching"
+    ],
+    "phase_cues": [
+      "hand lifts object near target",
+      "object moves behind target object",
+      "hand stops motion without contact"
+    ],
+    "confusion_cues": [
+      "actually placing behind",
+      "pretending to hide elsewhere"
+    ]
+  },
+  "Pretending to put [something] into [something]": {
+    "label_text": "pretending to put something",
+    "action_anchor": "A person holds an object and moves it toward a container without releasing it.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "object",
+      "container",
+      "table",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand-object contact",
+      "object-container proximity",
+      "no release",
+      "mimicked motion"
+    ],
+    "phase_cues": [
+      "hand grasps object",
+      "object moves toward container",
+      "object stops near container without entering"
+    ],
+    "confusion_cues": [
+      "actual placing",
+      "pretending to take"
+    ]
+  },
+  "Pretending to put [something] underneath [something]": {
+    "label_text": "pretending to put underneath",
+    "action_anchor": "A person moves an object toward a surface without making contact underneath.",
+    "entity_priors": [
+      "person",
+      "object",
+      "surface",
+      "hand"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand holding object",
+      "object above surface",
+      "no contact underneath",
+      "motion downward"
+    ],
+    "phase_cues": [
+      "hand lifts object near surface",
+      "object moves downward toward surface",
+      "hand stops before contact underneath"
+    ],
+    "confusion_cues": [
+      "actually placing underneath",
+      "pretending to put on top"
+    ]
+  },
+  "Pretending to sprinkle air onto [something]": {
+    "label_text": "pretending to sprinkle air",
+    "action_anchor": "A person holds an imaginary container and mimes sprinkling motion over [something].",
+    "entity_priors": [
+      "person",
+      "hand",
+      "fingers",
+      "imaginary container",
+      "air",
+      "[something]"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand up",
+      "fingers pinched",
+      "wrist rotation",
+      "downward motion"
+    ],
+    "phase_cues": [
+      "hand raised with pinched fingers",
+      "wrist rotates while moving downward",
+      "hand stops above [something]"
+    ],
+    "confusion_cues": [
+      "actual sprinkling",
+      "waving hand"
+    ]
+  },
+  "Pulling [something] from left to right": {
+    "label_text": "Pulling from left to right",
+    "action_anchor": "A person pulls [something] horizontally from left to right.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "object",
+      "rope",
+      "handle",
+      "cart"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left to right",
+      "horizontal motion",
+      "contact maintained",
+      "tension visible"
+    ],
+    "phase_cues": [
+      "hand grasps [something] on left side",
+      "[something] moves horizontally rightward",
+      "[something] reaches new position on right"
+    ],
+    "confusion_cues": [
+      "pushing from right to left",
+      "dragging diagonally"
+    ]
+  },
+  "Pulling [something] out of [something]": {
+    "label_text": "Pulling out of",
+    "action_anchor": "A hand grasps [something] and moves it outward from inside [something].",
+    "entity_priors": [
+      "hand",
+      "object",
+      "container",
+      "drawer",
+      "bag",
+      "pocket"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "outward motion",
+      "hand-object contact",
+      "object leaves container",
+      "container opening visible"
+    ],
+    "phase_cues": [
+      "Hand reaches toward container opening",
+      "Hand grasps object inside container",
+      "Object moves outward from container"
+    ],
+    "confusion_cues": [
+      "pushing into",
+      "lifting from"
+    ]
+  },
+  "Pushing [something] from right to left": {
+    "label_text": "Pushing from right to left",
+    "action_anchor": "A person pushes [something] horizontally from the right side to the left side.",
+    "entity_priors": [
+      "person",
+      "object",
+      "hand",
+      "arm",
+      "surface",
+      "furniture"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "right to left",
+      "horizontal motion",
+      "contact maintained",
+      "force applied"
+    ],
+    "phase_cues": [
+      "Hand makes contact on right side of object.",
+      "Object moves steadily leftward across surface.",
+      "Motion stops as object reaches left position."
+    ],
+    "confusion_cues": [
+      "Pulling from left to right",
+      "Sliding without pushing"
+    ]
+  },
+  "Removing [something], revealing [something] behind": {
+    "label_text": "removing cover revealing object",
+    "action_anchor": "A hand pulls away a covering object to expose what's underneath.",
+    "entity_priors": [
+      "hand",
+      "covering object",
+      "hidden object",
+      "surface",
+      "fingers",
+      "cloth"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand moves away",
+      "covering object lifted",
+      "hidden object becomes visible",
+      "contact breaks"
+    ],
+    "phase_cues": [
+      "hand grasps covering object",
+      "covering object lifted upward/outward",
+      "hidden object fully exposed"
+    ],
+    "confusion_cues": [
+      "placing cover over object",
+      "adjusting position of object"
+    ]
+  },
+  "Showing [something] next to [something]": {
+    "label_text": "showing next to",
+    "action_anchor": "A person holds an object near another object, aligning them side-by-side.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "object",
+      "other object",
+      "surface"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "left/right alignment",
+      "close proximity",
+      "parallel orientation",
+      "hand contact"
+    ],
+    "phase_cues": [
+      "person picks up an object",
+      "person moves object next to another object",
+      "person holds objects aligned side-by-side"
+    ],
+    "confusion_cues": [
+      "placing on top of",
+      "pointing at"
+    ]
+  },
+  "Showing that [something] is empty": {
+    "label_text": "showing empty container",
+    "action_anchor": "A person holds a container and tilts it to show its empty interior.",
+    "entity_priors": [
+      "person",
+      "container",
+      "hands",
+      "empty space"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "tilted orientation",
+      "open top",
+      "visible interior",
+      "no contents"
+    ],
+    "phase_cues": [
+      "person grasps container",
+      "person tilts container toward viewer",
+      "empty interior becomes visible"
+    ],
+    "confusion_cues": [
+      "pouring out contents",
+      "showing full container"
+    ]
+  },
+  "Spilling [something] behind [something]": {
+    "label_text": "spilling behind",
+    "action_anchor": "A person spills [something] so it flows behind [something].",
+    "entity_priors": [
+      "person",
+      "liquid",
+      "container",
+      "object behind",
+      "floor",
+      "hand"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "liquid flowing",
+      "behind object",
+      "contact with container",
+      "downward direction"
+    ],
+    "phase_cues": [
+      "person holds container tilted",
+      "liquid pours out and moves behind object",
+      "liquid settles on surface behind"
+    ],
+    "confusion_cues": [
+      "pouring in front",
+      "dropping on top"
+    ]
+  },
+  "Taking [something] out of [something]": {
+    "label_text": "taking out of",
+    "action_anchor": "A hand removes an object from inside a container.",
+    "entity_priors": [
+      "hand",
+      "object",
+      "container",
+      "bag",
+      "box",
+      "drawer"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "hand in container",
+      "object moving out",
+      "container opening",
+      "support change"
+    ],
+    "phase_cues": [
+      "hand reaches into container",
+      "hand grasps object inside",
+      "hand lifts object out"
+    ],
+    "confusion_cues": [
+      "putting into",
+      "holding near"
+    ]
+  },
+  "Throwing [something] in the air and letting it fall": {
+    "label_text": "Throwing [something] in the air",
+    "action_anchor": "A person throws an object upward and releases it.",
+    "entity_priors": [
+      "person",
+      "object",
+      "hand",
+      "air"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "upward motion",
+      "release contact",
+      "gravity fall",
+      "downward trajectory"
+    ],
+    "phase_cues": [
+      "hand lifts object upward",
+      "object leaves hand in air",
+      "object falls back down"
+    ],
+    "confusion_cues": [
+      "catching an object",
+      "tossing to someone"
+    ]
+  },
+  "Tipping [something] over": {
+    "label_text": "Tipping [something] over",
+    "action_anchor": "A person pushes an object until it loses balance and falls sideways.",
+    "entity_priors": [
+      "person",
+      "hand",
+      "object",
+      "table",
+      "floor",
+      "container"
+    ],
+    "scene_priors": [],
+    "attribute_cues": [
+      "sideways motion",
+      "loss of support",
+      "contact with hand",
+      "object falls"
+    ],
+    "phase_cues": [
+      "hand makes contact with object",
+      "object tilts and loses balance",
+      "object falls to side on surface"
+    ],
+    "confusion_cues": [
+      "pushing without tipping",
+      "knocking over accidentally"
+    ]
+  }
+}

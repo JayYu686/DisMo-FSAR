@@ -1,0 +1,576 @@
+{
+  "brush hair": {
+    "global_description": "A person holds a brush and moves it through their hair.",
+    "local_description": "Objects: hair, hair brush, hand Cues: repetitive strokes, object contact, upward strokes, hand gripping brush State change: reach for brush with hand; position brush at hair roots; stroke brush through hair length",
+    "objects": [
+      "hair",
+      "hair brush",
+      "hand"
+    ],
+    "state_change": [
+      "reach for brush with hand",
+      "position brush at hair roots",
+      "stroke brush through hair length"
+    ]
+  },
+  "catch": {
+    "global_description": "A person extends arms to receive and grasp a thrown object.",
+    "local_description": "Objects: ball, glove, hands Cues: hands forward, eyes tracking, object in air, grasping contact State change: object approaches in air; arms reach toward object; hands close around object",
+    "objects": [
+      "ball",
+      "glove",
+      "hands"
+    ],
+    "state_change": [
+      "object approaches in air",
+      "arms reach toward object",
+      "hands close around object"
+    ]
+  },
+  "chew": {
+    "global_description": "A person's jaw moves rhythmically while holding food in their mouth.",
+    "local_description": "Objects: chew, food, mouth Cues: jaw up-down motion, cheek bulging, mouth closed, rhythmic pattern State change: food placed in mouth; jaw begins rhythmic motion; swallowing or pause",
+    "objects": [
+      "chew",
+      "food",
+      "mouth"
+    ],
+    "state_change": [
+      "food placed in mouth",
+      "jaw begins rhythmic motion",
+      "swallowing or pause"
+    ]
+  },
+  "clap": {
+    "global_description": "A person brings both palms together repeatedly.",
+    "local_description": "Objects: clap, hands, palms Cues: symmetric motion, contact sound, rhythmic timing, forward movement State change: arms raise to chest level; palms meet with force; hands separate briefly",
+    "objects": [
+      "clap",
+      "hands",
+      "palms"
+    ],
+    "state_change": [
+      "arms raise to chest level",
+      "palms meet with force",
+      "hands separate briefly"
+    ]
+  },
+  "climb": {
+    "global_description": "A person ascends using hands and feet on rungs.",
+    "local_description": "Objects: climb, ladder, rungs Cues: upward motion, alternating limbs, gripping contact, body tension State change: reaching for next rung; pulling body upward; securing footing",
+    "objects": [
+      "climb",
+      "ladder",
+      "rungs"
+    ],
+    "state_change": [
+      "reaching for next rung",
+      "pulling body upward",
+      "securing footing"
+    ]
+  },
+  "climb stairs": {
+    "global_description": "A person ascends steps by lifting feet alternately.",
+    "local_description": "Objects: climb, stairs, steps Cues: upward motion, alternating steps, alternating foot placement, hand contact optional State change: foot lifts onto first step; weight shifts as other foot follows; repeating pattern continues upward",
+    "objects": [
+      "climb",
+      "stairs",
+      "steps"
+    ],
+    "state_change": [
+      "foot lifts onto first step",
+      "weight shifts as other foot follows",
+      "repeating pattern continues upward"
+    ]
+  },
+  "dive": {
+    "global_description": "A person leaps headfirst into a body of water.",
+    "local_description": "Objects: dive, water, pool Cues: headfirst descent, arms extended forward, body streamlined, splash on entry State change: crouch or run-up preparation; jump with arms leading; submerge into water",
+    "objects": [
+      "dive",
+      "water",
+      "pool"
+    ],
+    "state_change": [
+      "crouch or run-up preparation",
+      "jump with arms leading",
+      "submerge into water"
+    ]
+  },
+  "draw_sword": {
+    "global_description": "A person pulls a sword from its sheath with one hand.",
+    "local_description": "Objects: draw, sword, sheath Cues: body rotation, object contact, upward motion, grip contact State change: hand reaches toward sword hilt; sword slides out of sheath; sword held ready in hand",
+    "objects": [
+      "draw",
+      "sword",
+      "sheath"
+    ],
+    "state_change": [
+      "hand reaches toward sword hilt",
+      "sword slides out of sheath",
+      "sword held ready in hand"
+    ]
+  },
+  "dribble": {
+    "global_description": "A player bounces a basketball repeatedly with one hand while moving.",
+    "local_description": "Objects: dribble, basketball, player Cues: ball contact, rhythmic motion, forward movement, hand control State change: hand pushes ball downward; ball bounces off floor; hand meets ball on return",
+    "objects": [
+      "dribble",
+      "basketball",
+      "player"
+    ],
+    "state_change": [
+      "hand pushes ball downward",
+      "ball bounces off floor",
+      "hand meets ball on return"
+    ]
+  },
+  "drink": {
+    "global_description": "A person lifts a container to their mouth and swallows liquid.",
+    "local_description": "Objects: drink, cup, glass Cues: hand-to-mouth motion, head tilted back, liquid visible, container contact State change: hand grasps container near mouth; container tilts toward face; throat movement indicates swallowing",
+    "objects": [
+      "drink",
+      "cup",
+      "glass"
+    ],
+    "state_change": [
+      "hand grasps container near mouth",
+      "container tilts toward face",
+      "throat movement indicates swallowing"
+    ]
+  },
+  "fall floor": {
+    "global_description": "A person loses balance and collapses onto a floor surface.",
+    "local_description": "Objects: fall, floor, ground Cues: sudden descent, loss of balance, body contact with floor, uncontrolled motion State change: person wobbling or stumbling; body dropping toward floor; body lying on floor surface",
+    "objects": [
+      "fall",
+      "floor",
+      "ground"
+    ],
+    "state_change": [
+      "person wobbling or stumbling",
+      "body dropping toward floor",
+      "body lying on floor surface"
+    ]
+  },
+  "flic flac": {
+    "global_description": "A person performs a backward handspring with hands and feet touching the ground in.",
+    "local_description": "Objects: flic, flac, hands Cues: backward motion, arched body, hand contact, feet contact State change: Start with hands raised and body leaning; Push off with feet and swing legs; Land on hands then feet in a",
+    "objects": [
+      "flic",
+      "flac",
+      "hands"
+    ],
+    "state_change": [
+      "Start with hands raised and body leaning",
+      "Push off with feet and swing legs",
+      "Land on hands then feet in a"
+    ]
+  },
+  "handstand": {
+    "global_description": "A person balances upside down on their hands with legs extended upward.",
+    "local_description": "Objects: handstand, hands, arms Cues: ground contact, vertical inversion, hand-floor contact, extended legs State change: initial hand placement on ground; legs lift upward to vertical; balanced inverted hold",
+    "objects": [
+      "handstand",
+      "hands",
+      "arms"
+    ],
+    "state_change": [
+      "initial hand placement on ground",
+      "legs lift upward to vertical",
+      "balanced inverted hold"
+    ]
+  },
+  "hug": {
+    "global_description": "Two people wrap arms around each other's upper body.",
+    "local_description": "Objects: hug, arms, upper body Cues: two-person contact, facing each other, upper body contact, arms encircling State change: arms begin to extend forward; arms wrap around upper torso; brief hold with upper body contact",
+    "objects": [
+      "hug",
+      "arms",
+      "upper body"
+    ],
+    "state_change": [
+      "arms begin to extend forward",
+      "arms wrap around upper torso",
+      "brief hold with upper body contact"
+    ]
+  },
+  "jump": {
+    "global_description": "A person propels upward off the ground with both feet leaving the surface.",
+    "local_description": "Objects: jump, feet, ground Cues: upward motion, both feet off ground, brief airborne moment, landing contact State change: bending knees and preparing to push off; feet leaving ground with body in air; landing with feet making contact",
+    "objects": [
+      "jump",
+      "feet",
+      "ground"
+    ],
+    "state_change": [
+      "bending knees and preparing to push off",
+      "feet leaving ground with body in air",
+      "landing with feet making contact"
+    ]
+  },
+  "kiss": {
+    "global_description": "Two people press their lips together briefly.",
+    "local_description": "Objects: kiss, face, lips Cues: two-person contact, forward lean, eye contact, lip contact State change: Heads tilt toward each other; Lips make soft contact; Heads pull back slightly",
+    "objects": [
+      "kiss",
+      "face",
+      "lips"
+    ],
+    "state_change": [
+      "Heads tilt toward each other",
+      "Lips make soft contact",
+      "Heads pull back slightly"
+    ]
+  },
+  "pullup": {
+    "global_description": "A person grips an overhead bar and pulls their body upward until their chin.",
+    "local_description": "Objects: pullup, hands, arms Cues: ground contact, vertical upward motion, grip contact with bar, chin above bar State change: initial hanging position with arms extended; pulling upward with elbow flexion; chin clearing bar at peak position",
+    "objects": [
+      "pullup",
+      "hands",
+      "arms"
+    ],
+    "state_change": [
+      "initial hanging position with arms extended",
+      "pulling upward with elbow flexion",
+      "chin clearing bar at peak position"
+    ]
+  },
+  "punch": {
+    "global_description": "A person's fist moves rapidly forward to strike a target.",
+    "local_description": "Objects: punch, fist, arm Cues: punch motion, forward motion, arm extension, fist contact State change: arm draws back with fist clenched; torso rotates as arm accelerates forward; fist makes impact with target",
+    "objects": [
+      "punch",
+      "fist",
+      "arm"
+    ],
+    "state_change": [
+      "arm draws back with fist clenched",
+      "torso rotates as arm accelerates forward",
+      "fist makes impact with target"
+    ]
+  },
+  "push": {
+    "global_description": "A person extends arms to move an object away from their body.",
+    "local_description": "Objects: push, hands, arms Cues: forward motion, contact maintained, arms extended, body leaning State change: arms bend close to body; hands make contact with object; arms extend pushing object forward",
+    "objects": [
+      "push",
+      "hands",
+      "arms"
+    ],
+    "state_change": [
+      "arms bend close to body",
+      "hands make contact with object",
+      "arms extend pushing object forward"
+    ]
+  },
+  "ride_bike": {
+    "global_description": "A person sits on a bicycle seat, pedaling with both feet while holding handlebars.",
+    "local_description": "Objects: ride, bike, bicycle Cues: mounted posture, forward motion, upright posture, feet on pedals State change: mounting bicycle and placing feet on pedals; pedaling with alternating leg motion; steering with handlebars while maintaining balance",
+    "objects": [
+      "ride",
+      "bike",
+      "bicycle"
+    ],
+    "state_change": [
+      "mounting bicycle and placing feet on pedals",
+      "pedaling with alternating leg motion",
+      "steering with handlebars while maintaining balance"
+    ]
+  },
+  "ride horse": {
+    "global_description": "A person sits on a horse, holding reins while moving.",
+    "local_description": "Objects: ride, horse, saddle Cues: mounted posture, upright posture, forward motion, legs gripping State change: mounting horse from side; riding with steady gait; dismounting by swinging leg over",
+    "objects": [
+      "ride",
+      "horse",
+      "saddle"
+    ],
+    "state_change": [
+      "mounting horse from side",
+      "riding with steady gait",
+      "dismounting by swinging leg over"
+    ]
+  },
+  "shake_hands": {
+    "global_description": "Two people grasp each other's right hands and move them up and down.",
+    "local_description": "Objects: shake, hands, hand Cues: two-person contact, right hand dominant, reciprocal motion, brief contact State change: arms extend forward with palms open; hands clasp with firm grip; hands pump up and down 1-3 times",
+    "objects": [
+      "shake",
+      "hands",
+      "hand"
+    ],
+    "state_change": [
+      "arms extend forward with palms open",
+      "hands clasp with firm grip",
+      "hands pump up and down 1-3 times"
+    ]
+  },
+  "shoot_bow": {
+    "global_description": "A person draws and releases a bowstring to propel an arrow.",
+    "local_description": "Objects: shoot, bow, arrow Cues: two-handed grip, arm extended forward, eye alignment, string tension State change: nocking arrow on string; drawing bowstring back; releasing arrow forward",
+    "objects": [
+      "shoot",
+      "bow",
+      "arrow"
+    ],
+    "state_change": [
+      "nocking arrow on string",
+      "drawing bowstring back",
+      "releasing arrow forward"
+    ]
+  },
+  "situp": {
+    "global_description": "A person lies on their back and raises their torso to a seated position.",
+    "local_description": "Objects: situp, floor, mat Cues: ground contact, back on ground, torso vertical, hands near head State change: lying supine with knees bent; curling torso upward using abdominal muscles; reaching seated position with torso upright",
+    "objects": [
+      "situp",
+      "floor",
+      "mat"
+    ],
+    "state_change": [
+      "lying supine with knees bent",
+      "curling torso upward using abdominal muscles",
+      "reaching seated position with torso upright"
+    ]
+  },
+  "stand": {
+    "global_description": "A person's body is vertical with feet on the ground and no other support.",
+    "local_description": "Objects: stand, feet, ground Cues: vertical posture, feet contact, stable balance, upright orientation State change: feet planted on surface; body rises to vertical; maintains upright stillness",
+    "objects": [
+      "stand",
+      "feet",
+      "ground"
+    ],
+    "state_change": [
+      "feet planted on surface",
+      "body rises to vertical",
+      "maintains upright stillness"
+    ]
+  },
+  "sword": {
+    "global_description": "A person swings a sword through the air.",
+    "local_description": "Objects: sword, hand, arm Cues: body rotation, object contact, two-handed grip, forward thrust State change: raising sword above shoulder; swinging blade in arc; following through with momentum",
+    "objects": [
+      "sword",
+      "hand",
+      "arm"
+    ],
+    "state_change": [
+      "raising sword above shoulder",
+      "swinging blade in arc",
+      "following through with momentum"
+    ]
+  },
+  "sword exercise": {
+    "global_description": "A person swings a sword through deliberate, controlled motions.",
+    "local_description": "Objects: sword, exercise, training uniform Cues: body rotation, object contact, two-handed grip, forward stance State change: starting stance with sword raised; executing a downward or horizontal cut; returning to guard position",
+    "objects": [
+      "sword",
+      "exercise",
+      "training uniform"
+    ],
+    "state_change": [
+      "starting stance with sword raised",
+      "executing a downward or horizontal cut",
+      "returning to guard position"
+    ]
+  },
+  "throw": {
+    "global_description": "Arm swings back then forward, releasing object into air.",
+    "local_description": "Objects: throw, ball, rock Cues: overhand motion, forward trajectory, hand release, arm extension State change: arm draws back behind body; arm accelerates forward; object releases from hand",
+    "objects": [
+      "throw",
+      "ball",
+      "rock"
+    ],
+    "state_change": [
+      "arm draws back behind body",
+      "arm accelerates forward",
+      "object releases from hand"
+    ]
+  },
+  "turn": {
+    "global_description": "A person rotates their torso and shoulders to change facing direction.",
+    "local_description": "Objects: turn, torso, shoulders Cues: rotational motion, upper body twist, weight shift, direction change State change: initial facing forward stance; torso rotation with shoulder alignment; complete facing new direction",
+    "objects": [
+      "turn",
+      "torso",
+      "shoulders"
+    ],
+    "state_change": [
+      "initial facing forward stance",
+      "torso rotation with shoulder alignment",
+      "complete facing new direction"
+    ]
+  },
+  "walk": {
+    "global_description": "A person moves forward by alternating leg strides.",
+    "local_description": "Objects: walk, legs, feet Cues: forward motion, upright posture, arm swing, foot contact State change: leg lifts off ground; leg swings forward; foot lands ahead",
+    "objects": [
+      "walk",
+      "legs",
+      "feet"
+    ],
+    "state_change": [
+      "leg lifts off ground",
+      "leg swings forward",
+      "foot lands ahead"
+    ]
+  },
+  "wave": {
+    "global_description": "A person moves their hand side-to-side with palm facing outward.",
+    "local_description": "Objects: wave, hand, arm Cues: side-to-side motion, palm outward, arm extended, repetitive State change: arm raises with hand open; hand sweeps horizontally; arm lowers to rest",
+    "objects": [
+      "wave",
+      "hand",
+      "arm"
+    ],
+    "state_change": [
+      "arm raises with hand open",
+      "hand sweeps horizontally",
+      "arm lowers to rest"
+    ]
+  },
+  "fencing": {
+    "global_description": "Two opponents lunge and parry with thin swords while wearing protective gear.",
+    "local_description": "Objects: fencer, foil sword, mask Cues: forward lunge, blade contact, en garde stance, rapid footwork State change: en garde stance with sword raised; lunge forward with arm extended; parry opponent's blade with circular motion",
+    "objects": [
+      "fencer",
+      "foil sword",
+      "mask"
+    ],
+    "state_change": [
+      "en garde stance with sword raised",
+      "lunge forward with arm extended",
+      "parry opponent's blade with circular motion"
+    ]
+  },
+  "kick": {
+    "global_description": "A person swings their leg forward to strike an object with their foot.",
+    "local_description": "Objects: kick, foot, ball Cues: kick motion, forward swing, foot contact, leg extension State change: Leg lifts backward with knee bent; Leg swings forward rapidly toward object; Foot makes contact, propelling object away",
+    "objects": [
+      "kick",
+      "foot",
+      "ball"
+    ],
+    "state_change": [
+      "Leg lifts backward with knee bent",
+      "Leg swings forward rapidly toward object",
+      "Foot makes contact, propelling object away"
+    ]
+  },
+  "kick ball": {
+    "global_description": "A person swings their leg to strike a ball with their foot.",
+    "local_description": "Objects: kick, ball, foot Cues: kick motion, forward swing, foot contact, ball propulsion State change: leg draws back in preparation; foot makes contact with ball; leg follows through after impact",
+    "objects": [
+      "kick",
+      "ball",
+      "foot"
+    ],
+    "state_change": [
+      "leg draws back in preparation",
+      "foot makes contact with ball",
+      "leg follows through after impact"
+    ]
+  },
+  "pick": {
+    "global_description": "A hand reaches toward and grasps an object, lifting it from a surface.",
+    "local_description": "Objects: pick, hand, fingers Cues: downward reach, grip contact, upward lift, object separation State change: hand extends toward object; fingers close around object; object lifts from surface",
+    "objects": [
+      "pick",
+      "hand",
+      "fingers"
+    ],
+    "state_change": [
+      "hand extends toward object",
+      "fingers close around object",
+      "object lifts from surface"
+    ]
+  },
+  "pour": {
+    "global_description": "A person tilts a container to transfer liquid into another vessel.",
+    "local_description": "Objects: pour, hand, container Cues: tilting motion, liquid flow, hand grip State change: hand grasps container; container tilts and liquid pours; container returns upright",
+    "objects": [
+      "pour",
+      "hand",
+      "container"
+    ],
+    "state_change": [
+      "hand grasps container",
+      "container tilts and liquid pours",
+      "container returns upright"
+    ]
+  },
+  "pushup": {
+    "global_description": "A person lowers and raises their body using their arms while keeping their body.",
+    "local_description": "Objects: pushup, floor, hands Cues: ground contact, body straight, elbows bending, chest lowering State change: starting in plank position with arms extended; lowering body until chest nears the floor; pushing back up to starting position",
+    "objects": [
+      "pushup",
+      "floor",
+      "hands"
+    ],
+    "state_change": [
+      "starting in plank position with arms extended",
+      "lowering body until chest nears the floor",
+      "pushing back up to starting position"
+    ]
+  },
+  "run": {
+    "global_description": "A person moves rapidly with alternating leg strides and arm swings.",
+    "local_description": "Objects: run, athlete, runner Cues: forward motion, bouncing gait, rapid pace, body leaning State change: legs push off ground; mid-air stride with opposite leg forward; foot lands and prepares next push",
+    "objects": [
+      "run",
+      "athlete",
+      "runner"
+    ],
+    "state_change": [
+      "legs push off ground",
+      "mid-air stride with opposite leg forward",
+      "foot lands and prepares next push"
+    ]
+  },
+  "sit": {
+    "global_description": "A person bends their knees and lowers their torso onto a surface.",
+    "local_description": "Objects: sit, chair, bench Cues: downward motion, bent knees, torso contact, upright posture State change: person standing upright; person bending knees and leaning back; person's torso resting on surface with legs",
+    "objects": [
+      "sit",
+      "chair",
+      "bench"
+    ],
+    "state_change": [
+      "person standing upright",
+      "person bending knees and leaning back",
+      "person's torso resting on surface with legs"
+    ]
+  },
+  "smoke": {
+    "global_description": "A person holds a cigarette to their mouth and inhales smoke.",
+    "local_description": "Objects: smoke, cigarette, lighter Cues: hand to mouth, inhaling motion, smoke exhale, holding cigarette State change: hand brings cigarette to mouth; inhales with lips on cigarette; exhales smoke cloud from mouth",
+    "objects": [
+      "smoke",
+      "cigarette",
+      "lighter"
+    ],
+    "state_change": [
+      "hand brings cigarette to mouth",
+      "inhales with lips on cigarette",
+      "exhales smoke cloud from mouth"
+    ]
+  },
+  "talk": {
+    "global_description": "A person faces another with mouth moving and gestures.",
+    "local_description": "Objects: talk, mouth, hands Cues: facing forward, mouth open, hand gestures, eye contact State change: person turns toward another; mouth moves with speech sounds; hands gesture while speaking",
+    "objects": [
+      "talk",
+      "mouth",
+      "hands"
+    ],
+    "state_change": [
+      "person turns toward another",
+      "mouth moves with speech sounds",
+      "hands gesture while speaking"
+    ]
+  }
+}

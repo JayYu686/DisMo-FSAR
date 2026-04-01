@@ -1,0 +1,23 @@
+Return one JSON object for the UCF101 action "{class_name}".
+
+Schema:
+{{
+  "action_anchor": "one short sentence",
+  "key_entities": ["entity 1", "entity 2"],
+  "motion_phases": [
+    "phase 1",
+    "phase 2",
+    "phase 3"
+  ],
+  "disambiguation": ["cue 1", "cue 2"]
+}}
+
+Rules:
+1) JSON only.
+2) English only.
+3) Use only observable visual evidence.
+4) action_anchor must be one short sentence.
+5) key_entities must contain at most 6 short noun phrases.
+6) motion_phases must contain exactly {num_phases} short cues in time order.
+7) disambiguation must contain at most 2 short cues for visually similar actions.
+8) Keep every field concise.

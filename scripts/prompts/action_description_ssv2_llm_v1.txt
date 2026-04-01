@@ -1,0 +1,10 @@
+Write one detailed visual paragraph for the action class: "{class_name}".
+
+Requirements:
+1) English only, one paragraph, 90-150 words.
+2) Keep placeholders exactly as-is if present: [something], [part], [number of].
+3) Describe observable motion only: body part movement, object trajectory, direction, speed, contact change, and temporal order (start -> middle -> end).
+4) Include at least two discriminative cues that separate this action from similar actions.
+5) If direction/state matters (left/right, up/down, in/out, on/off, open/close), state it explicitly.
+6) No generic opening like "A video showing..." or "someone doing...".
+7) No dataset/model names, no bullet points, no markdown, no quotes.

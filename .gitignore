@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environments and caches
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# Training outputs and checkpoints
+output_*/
+*.log
+*.pyth
+*.pth
+*.pt
+*.ckpt
+
+# Large or external reference assets not part of this repo deliverable
+paper/
+projects/
+data/pretrained/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

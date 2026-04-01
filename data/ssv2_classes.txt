@@ -1,0 +1,30 @@
+pushing something from left to right
+pushing something from right to left
+moving something up
+moving something down
+pulling something from left to right
+pulling something from right to left
+putting something into something
+taking something out of something
+opening something
+closing something
+turning something upside down
+putting something on a surface
+picking something up
+dropping something
+throwing something
+catching something
+rolling something
+folding something
+unfolding something
+covering something with something
+uncovering something
+stacking something
+unstacking something
+tearing something
+bending something
+squeezing something
+poking something
+spinning something
+tilting something
+shaking something

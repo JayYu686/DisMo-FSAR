@@ -1,0 +1,101 @@
+Generate one JSON object for the action class "{class_name}".
+
+Return JSON only. No markdown fences. No extra prose.
+
+Schema:
+{
+  "label_text": "canonical short class phrase",
+  "action_anchor": "one short visual sentence",
+  "entity_priors": ["entity 1", "entity 2"],
+  "scene_priors": ["scene cue 1"],
+  "attribute_cues": ["attribute cue 1", "attribute cue 2"],
+  "phase_cues": [
+    "phase 1 short visual cue",
+    "phase 2 short visual cue",
+    "phase 3 short visual cue"
+  ],
+  "confusion_cues": ["easy confusion 1", "easy confusion 2"]
+}
+
+Hard rules:
+1) English only.
+2) Preserve placeholders like [something], [part], [number of], [somewhere] exactly.
+3) SSV2 is not about rich background descriptions. Do not mention kitchen, room, indoor, dining area, counter, tabletop, home, or office.
+4) Make attribute_cues and phase_cues the priority. They matter more than scene_priors.
+5) scene_priors should usually be [].
+6) entity_priors should contain at most 2 essential entities, usually hand, object, container, surface, camera, or stack.
+7) attribute_cues must be 2-4 short canonical cues from these types:
+   direction, spatial relation, contact, support, containment, state change, motion property, pretend/fail.
+8) phase_cues must be exactly {num_phases} short cues:
+   initial state -> main change -> final state.
+9) phase_cues must be short phrases, not long captions.
+10) For pretend classes, the last phase must show that no real result happens.
+11) For fail classes, the last phase must show the target state is not reached.
+
+Good examples:
+
+Class: "Pretending to poke [something]"
+{
+  "label_text": "pretend poke object",
+  "action_anchor": "A hand moves near [something] without truly poking it.",
+  "entity_priors": ["hand", "[something]"],
+  "scene_priors": [],
+  "attribute_cues": ["pretend", "no contact", "towards"],
+  "phase_cues": ["hand approaches [something]", "finger stops near target", "no contact made"],
+  "confusion_cues": ["actual poke", "contact made"]
+}
+
+Class: "Failing to put [something] into [something] because [something] does not fit"
+{
+  "label_text": "fail put object into object",
+  "action_anchor": "A hand tries to insert [something] into [something] but it stays outside.",
+  "entity_priors": ["hand", "[something]"],
+  "scene_priors": [],
+  "attribute_cues": ["fail", "into", "not contained"],
+  "phase_cues": ["hand aligns [something]", "[something] presses at opening", "[something] stays outside"],
+  "confusion_cues": ["successful insertion", "contained"]
+}
+
+Class: "Pouring [something] into [something]"
+{
+  "label_text": "pour object into object",
+  "action_anchor": "A source object tilts and directs its contents into a target object.",
+  "entity_priors": ["[something]", "[something]"],
+  "scene_priors": [],
+  "attribute_cues": ["into", "contained", "tilted"],
+  "phase_cues": ["source above target", "source tilts into target", "content inside target"],
+  "confusion_cues": ["out of", "spill outside"]
+}
+
+Class: "Moving away from [something] with your camera"
+{
+  "label_text": "camera moves away object",
+  "action_anchor": "The camera moves farther from [something] during the action.",
+  "entity_priors": ["camera", "[something]"],
+  "scene_priors": [],
+  "attribute_cues": ["away", "revealed"],
+  "phase_cues": ["camera near [something]", "camera moves away", "[something] farther in view"],
+  "confusion_cues": ["towards", "camera approaches object"]
+}
+
+Class: "Poking a stack of [something] without the stack collapsing"
+{
+  "label_text": "poke stack without collapse",
+  "action_anchor": "A finger pokes a stack while the stack remains upright.",
+  "entity_priors": ["hand", "stack"],
+  "scene_priors": [],
+  "attribute_cues": ["contact", "balanced", "supported"],
+  "phase_cues": ["finger approaches stack", "finger contacts stack", "stack stays upright"],
+  "confusion_cues": ["stack collapses", "unsupported"]
+}
+
+Class: "Putting [something] upright on the table"
+{
+  "label_text": "put object upright table",
+  "action_anchor": "A hand places [something] on a surface and leaves it upright.",
+  "entity_priors": ["hand", "[something]"],
+  "scene_priors": ["flat surface"],
+  "attribute_cues": ["contact", "supported", "upright"],
+  "phase_cues": ["[something] off table", "base contacts table", "[something] remains upright"],
+  "confusion_cues": ["sideways placement", "falls over"]
+}
