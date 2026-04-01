@@ -60,6 +60,7 @@ DATA:
   MINUS_INTERVAL: false
 MODEL:
   NAME: 
+  VARIANT: legacy
   EMA:
     ENABLE: false
     DECAY: 0.99996
@@ -84,11 +85,28 @@ VIDEO:
       STAGES: [5]
       MASK_ENABLE: false
     INITIALIZATION: 
+    RETURN_PATCHES: false
+    RETURN_CLS: true
+    ADAPTER_ENABLE: false
+    ADAPTER_LAYERS: 2
+    ADAPTER_DIM: 256
+    ADAPTER_NUM_HEADS: 4
+    ADAPTER_DROPOUT: 0.1
+    ADAPTER_SCALE: 0.5
+    ADAPTER_FUSE_CLS: false
   HEAD:
     NAME: BaseHead
     ACTIVATION: softmax
     DROPOUT_RATE: 0
     NUM_CLASSES:
+MATCHING:
+  ENABLE_LOCAL_TOKEN: false
+  POOL_STRIDE: 1
+  TOPK_PATCH: 0
+  DISTANCE: bidirectional_cosine
+  TEMPORAL_AGG: mean
+  USE_CLS_RESIDUAL: false
+  CLS_RESIDUAL_WEIGHT: 0.2
 OPTIMIZER:
   ADJUST_LR: false
   BASE_LR: 0.002

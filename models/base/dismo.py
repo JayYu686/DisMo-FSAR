@@ -446,6 +446,161 @@ class _CLIPVideoBackbone(nn.Module):
         return self
 
 
+class _CNN_DiSMo_D2STLiteBase(nn.Module):
+    """V1 clean baseline: DINOv2 patch tokens + temporal adapter + local matching."""
+
+    def __init__(self, cfg):
+        super().__init__()
+        self.args = cfg
+        self.num_frames = int(cfg.DATA.NUM_INPUT_FRAMES)
+        self.backbone = DINOv2Backbone(cfg)
+        self.feature_dim = int(self.backbone.output_dim)
+
+        matching_cfg = getattr(cfg, "MATCHING", cfg)
+        self.pool_stride = int(getattr(matching_cfg, "POOL_STRIDE", 1))
+        self.topk_patch = int(getattr(matching_cfg, "TOPK_PATCH", 0))
+        self.distance_type = str(getattr(matching_cfg, "DISTANCE", "bidirectional_cosine")).lower()
+        self.temporal_agg = str(getattr(matching_cfg, "TEMPORAL_AGG", "mean")).lower()
+        self.use_cls_residual = bool(getattr(matching_cfg, "USE_CLS_RESIDUAL", False))
+        self.cls_residual_weight = float(getattr(matching_cfg, "CLS_RESIDUAL_WEIGHT", 0.2))
+
+        if self.distance_type != "bidirectional_cosine":
+            raise ValueError(
+                "CNN_DiSMo_D2STLite currently supports MATCHING.DISTANCE='bidirectional_cosine' only."
+            )
+        if self.temporal_agg not in {"mean"}:
+            raise ValueError("CNN_DiSMo_D2STLite currently supports MATCHING.TEMPORAL_AGG='mean' only.")
+
+        print(
+            "[DiSMo] Initialized D2ST-lite V1 "
+            f"(dim={self.feature_dim}, pool_stride={self.pool_stride}, "
+            f"topk_patch={self.topk_patch}, cls_residual={self.use_cls_residual})"
+        )
+
+    def _reshape_episode_video(self, images):
+        if images.dim() == 4:
+            if images.shape[0] % self.num_frames != 0:
+                raise ValueError(
+                    f"Frame tensor length {images.shape[0]} is not divisible by NUM_INPUT_FRAMES={self.num_frames}."
+                )
+            return rearrange(images, "(b t) c h w -> b c t h w", t=self.num_frames)
+        if images.dim() == 5 and images.shape[1] == self.num_frames:
+            return rearrange(images, "b t c h w -> b c t h w")
+        return images
+
+    @staticmethod
+    def _spatial_pool_patch_tokens(patch_tokens, pool_stride):
+        if pool_stride <= 1:
+            return patch_tokens
+        batch_size, num_frames, num_patches, dim = patch_tokens.shape
+        grid_size = int(round(float(num_patches) ** 0.5))
+        if grid_size * grid_size != num_patches:
+            return patch_tokens
+
+        pooled = rearrange(
+            patch_tokens,
+            "b t (h w) d -> (b t) d h w",
+            h=grid_size,
+            w=grid_size,
+        )
+        pooled = F.avg_pool2d(pooled, kernel_size=pool_stride, stride=pool_stride)
+        pooled = rearrange(pooled, "(b t) d h w -> b t (h w) d", b=batch_size, t=num_frames)
+        return pooled
+
+    def _encode_episode_tokens(self, support_images, query_images):
+        support_videos = self._reshape_episode_video(support_images)
+        query_videos = self._reshape_episode_video(query_images)
+
+        support_tokens = self.backbone.forward_tokens(support_videos, apply_adapter=True)
+        query_tokens = self.backbone.forward_tokens(query_videos, apply_adapter=True)
+
+        support_patch = support_tokens["patch_tokens"]
+        query_patch = query_tokens["patch_tokens"]
+        if support_patch is None or query_patch is None:
+            raise RuntimeError("D2ST-lite V1 requires DINOv2 patch-token outputs.")
+
+        support_patch = self._spatial_pool_patch_tokens(support_patch, self.pool_stride)
+        query_patch = self._spatial_pool_patch_tokens(query_patch, self.pool_stride)
+        support_cls = support_tokens["cls_tokens"]
+        query_cls = query_tokens["cls_tokens"]
+        return support_patch, query_patch, support_cls, query_cls
+
+    @staticmethod
+    def _reduce_patch_scores(values, topk_patch):
+        if topk_patch > 0 and topk_patch < values.shape[-1]:
+            return values.topk(k=topk_patch, dim=-1).values.mean(dim=-1)
+        return values.mean(dim=-1)
+
+    def _local_patch_distance(self, query_patch_tokens, class_patch_proto):
+        """
+        Args:
+            query_patch_tokens: [Q, T, Nq, D]
+            class_patch_proto: [T, Np, D]
+        Returns:
+            [Q]
+        """
+        query_norm = F.normalize(query_patch_tokens, dim=-1)
+        proto_norm = F.normalize(class_patch_proto, dim=-1)
+        sim = torch.einsum("qtnd,tmd->qtnm", query_norm, proto_norm)
+
+        query_to_proto = sim.max(dim=-1).values
+        proto_to_query = sim.max(dim=-2).values
+
+        query_score = self._reduce_patch_scores(query_to_proto, self.topk_patch)
+        proto_score = self._reduce_patch_scores(proto_to_query, self.topk_patch)
+        frame_score = 0.5 * (query_score + proto_score)
+
+        if self.temporal_agg == "mean":
+            return 1.0 - frame_score.mean(dim=-1)
+        raise ValueError(f"Unsupported MATCHING.TEMPORAL_AGG: {self.temporal_agg}")
+
+    @staticmethod
+    def _cls_residual_distance(query_cls_tokens, class_cls_proto):
+        query_norm = F.normalize(query_cls_tokens, dim=-1)
+        proto_norm = F.normalize(class_cls_proto, dim=-1)
+        return 1.0 - F.cosine_similarity(query_norm, proto_norm.unsqueeze(0), dim=-1).mean(dim=-1)
+
+    def forward(self, inputs):
+        support_images = inputs["support_set"]
+        support_labels = inputs["support_labels"]
+        query_images = inputs["target_set"]
+
+        if torch.is_tensor(support_images) and support_images.dim() > 4:
+            support_images = support_images[0]
+        if torch.is_tensor(query_images) and query_images.dim() > 4:
+            query_images = query_images[0]
+        if torch.is_tensor(support_labels) and support_labels.dim() > 1:
+            support_labels = support_labels[0]
+        support_labels = support_labels.long()
+
+        support_patch, query_patch, support_cls, query_cls = self._encode_episode_tokens(
+            support_images, query_images
+        )
+
+        unique_labels = torch.unique(support_labels)
+        class_dists = []
+        for label in unique_labels:
+            class_mask = extract_class_indices(support_labels, label)
+            class_patch_proto = torch.index_select(support_patch, 0, class_mask).mean(dim=0)
+            class_dist = self._local_patch_distance(query_patch, class_patch_proto)
+
+            if self.use_cls_residual and support_cls is not None and query_cls is not None:
+                class_cls_proto = torch.index_select(support_cls, 0, class_mask).mean(dim=0)
+                class_dist = class_dist + self.cls_residual_weight * self._cls_residual_distance(
+                    query_cls, class_cls_proto
+                )
+
+            class_dists.append(class_dist)
+
+        class_dists = torch.stack(class_dists, dim=1)
+        return {"logits": -class_dists, "aux_losses": {}}
+
+
+@HEAD_REGISTRY.register()
+class CNN_DiSMo_D2STLite(_CNN_DiSMo_D2STLiteBase):
+    """Explicit V1 head for D2ST-lite ablations."""
+
+
 @HEAD_REGISTRY.register()
 class CNN_DiSMo(nn.Module):
     """
@@ -464,6 +619,10 @@ class CNN_DiSMo(nn.Module):
     def __init__(self, cfg):
         super().__init__()
         self.args = cfg
+        self.variant_model = None
+        if str(getattr(cfg.MODEL, "VARIANT", "legacy")).lower() == "d2st_lite_v1":
+            self.variant_model = _CNN_DiSMo_D2STLiteBase(cfg)
+            return
         
         # ===== 1. Backbone (configurable) =====
         self.backbone, self.mid_dim = self._build_backbone(cfg)
@@ -971,6 +1130,9 @@ class CNN_DiSMo(nn.Module):
                 - class_logits: [B, num_classes] auxiliary classification
                 - aux_losses: dict of auxiliary losses
         """
+        if self.variant_model is not None:
+            return self.variant_model(inputs)
+
         support_images = inputs['support_set']
         support_labels = inputs['support_labels']
         target_images = inputs['target_set']
@@ -1216,6 +1378,12 @@ class CNN_DiSMo(nn.Module):
         Returns:
             total_loss: scalar loss value
         """
+        if self.variant_model is not None:
+            return F.cross_entropy(
+                model_dict["logits"],
+                task_dict["target_labels"].long(),
+            )
+
         # Main few-shot loss
         main_loss = F.cross_entropy(
             model_dict['logits'],

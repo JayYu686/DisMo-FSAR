@@ -1,0 +1,50 @@
+TASK_TYPE: few_shot_action
+
+MODEL:
+  VARIANT: d2st_lite_v1
+
+TRAIN:
+  ENABLE: true
+  DATASET: Ssv2_few_shot
+  DATASET_FEW: Ssv2_few_shot
+  FEW_SHOT: true
+  META_BATCH: true
+  WAY: 5
+  SHOT: 1
+  QUERY_PER_CLASS: 5
+  QUERY_PER_CLASS_TEST: 5
+  USE_CLASSIFICATION: false
+
+TEST:
+  ENABLE: false
+  DATASET: Ssv2_few_shot
+
+VIDEO:
+  BACKBONE:
+    DINO_MODEL: dinov2_vitl14
+    FREEZE: true
+    RETURN_PATCHES: true
+    ADAPTER_ENABLE: true
+    ADAPTER_LAYERS: 2
+    ADAPTER_DIM: 256
+    ADAPTER_NUM_HEADS: 4
+    ADAPTER_DROPOUT: 0.1
+    ADAPTER_SCALE: 0.5
+  HEAD:
+    NAME: CNN_DiSMo
+    BACKBONE_NAME: dinov2
+
+MATCHING:
+  ENABLE_LOCAL_TOKEN: true
+  POOL_STRIDE: 2
+  TOPK_PATCH: 8
+  DISTANCE: bidirectional_cosine
+  TEMPORAL_AGG: mean
+  USE_CLS_RESIDUAL: false
+  CLS_RESIDUAL_WEIGHT: 0.2
+
+SEMANTIC:
+  ENABLE: false
+
+MOTION:
+  ENABLE: false

@@ -1,0 +1,122 @@
+_BASE: ./d2st_lite_v1_template.yaml
+
+# E1 diff vs E0:
+# - keep legacy DiSMo head
+# - enable D2ST-lite temporal adapter in the DINOv2 backbone
+# - keep local token matching disabled
+
+MODEL:
+  VARIANT: legacy
+
+TRAIN:
+  ENABLE: true
+  DATASET: Ssv2_few_shot
+  DATASET_FEW: Ssv2_few_shot
+  BATCH_SIZE: 1
+  EVAL_PERIOD: 1
+  NUM_FOLDS: 1
+  ACCUMULATION_STYLE: standard
+  GRAD_ACCUM_STEPS: 1
+  BATCH_SIZE_PER_TASK: 1
+  AMP_ENABLE: false
+  NUM_TRAIN_TASKS: 10000
+  NUM_TEST_TASKS: 2000
+  VAL_FRE_ITER: 1000
+  SAVE_BEST_ONLY: true
+  BEST_METRIC: top1_acc
+  BEST_MODE: max
+  BEST_CHECKPOINT_NAME: checkpoint_best.pyth
+  USE_CLASSIFICATION: false
+  DISTANCE_TYPE: hausdorff
+
+TEST:
+  ENABLE: false
+  DATASET: Ssv2_few_shot
+  BATCH_SIZE: 1
+  ZERO_SHOT: false
+  LOG_FILE: test.log
+  AUTOMATIC_MULTI_SCALE_TEST: false
+
+DATA:
+  DATA_ROOT_DIR: /data/nvme1/yujielun_dataset/SSv2/ssv2_mp4_h264
+  ANNO_DIR: splits/ssv2_small
+  NUM_INPUT_FRAMES: 16
+  SAMPLING_RATE: 4
+  TRAIN_CROP_SIZE: 112
+  TEST_SCALE: 224
+  TEST_CROP_SIZE: 112
+
+VIDEO:
+  BACKBONE:
+    META_ARCH: ""
+    FREEZE: true
+    RETURN_PATCHES: false
+    RETURN_CLS: true
+    ADAPTER_ENABLE: true
+    ADAPTER_LAYERS: 2
+    ADAPTER_DIM: 256
+    ADAPTER_NUM_HEADS: 4
+    ADAPTER_DROPOUT: 0.1
+    ADAPTER_SCALE: 0.5
+    ADAPTER_FUSE_CLS: false
+  HEAD:
+    NAME: CNN_DiSMo
+    BACKBONE_NAME: dinov2
+
+MATCHING:
+  ENABLE_LOCAL_TOKEN: false
+  POOL_STRIDE: 1
+  TOPK_PATCH: 0
+  DISTANCE: bidirectional_cosine
+  TEMPORAL_AGG: mean
+  USE_CLS_RESIDUAL: false
+  CLS_RESIDUAL_WEIGHT: 0.2
+
+SEMANTIC:
+  ENABLE: false
+
+MOTION:
+  ENABLE: false
+
+AUGMENTATION:
+  COLOR_AUG: true
+  SUPPORT_QUERY_DIFF: false
+  SUPPORT_QUERY_DIFF_SUPPORT: false
+
+OPTIMIZER:
+  ADJUST_LR: false
+  BASE_LR: 0.0005
+  LR_POLICY: cosine
+  MAX_EPOCH: 1
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0001
+  WARMUP_EPOCHS: 0.1
+  WARMUP_START_LR: 0.00005
+  OPTIM_METHOD: adamw
+  DAMPENING: 0.0
+  NESTEROV: true
+
+SOLVER:
+  ADJUST_LR: false
+  BASE_LR: 0.0005
+  LR_POLICY: cosine
+  MAX_EPOCH: 1
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0001
+  WARMUP_EPOCHS: 0.1
+  WARMUP_START_LR: 0.00005
+  OPTIM_METHOD: adamw
+  DAMPENING: 0.0
+  NESTEROV: true
+  STEPS_ITER: 10000
+
+TENSORBOARD:
+  ENABLE: false
+
+DATA_LOADER:
+  NUM_WORKERS: 4
+  PIN_MEMORY: false
+  ENABLE_MULTI_THREAD_DECODE: true
+
+NUM_GPUS: 1
+OUTPUT_DIR: output/experiments/E1_adapter_only_ssv2_small_5w1s

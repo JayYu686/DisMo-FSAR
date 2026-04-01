@@ -226,7 +226,11 @@ def _compute_few_shot_loss(task_dict, model_dict, cfg):
     target_labels = _get_task_query_labels(task_dict)
     main_loss = F.cross_entropy(model_dict["logits"], target_labels)
 
-    if hasattr(cfg.TRAIN, "USE_CLASSIFICATION") and cfg.TRAIN.USE_CLASSIFICATION and "class_logits" in model_dict:
+    if (
+        hasattr(cfg.TRAIN, "USE_CLASSIFICATION")
+        and cfg.TRAIN.USE_CLASSIFICATION
+        and model_dict.get("class_logits") is not None
+    ):
         real_labels = torch.cat(
             [
                 _flatten_task_tensor(task_dict["real_support_labels"]),

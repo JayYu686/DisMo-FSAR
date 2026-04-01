@@ -11,11 +11,14 @@ frame-level ViT input (B*T, C, H, W).
 
 import os
 import sys
+from contextlib import nullcontext
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from einops import rearrange
 from utils.registry import Registry
+from models.base.d2st_lite_adapter import TemporalPatchAdapter
 
 # 尝试导入现有的 BACKBONE_REGISTRY，如果失败则创建新的
 try:
@@ -92,6 +95,25 @@ class DINOv2Backbone(nn.Module):
         
         # 是否返回 patch tokens (用于空间细粒度任务)
         self.return_patches = getattr(backbone_cfg, 'RETURN_PATCHES', False)
+        self.return_cls = getattr(backbone_cfg, 'RETURN_CLS', True)
+
+        self.adapter_enable = bool(getattr(backbone_cfg, 'ADAPTER_ENABLE', False))
+        self.adapter_layers = int(getattr(backbone_cfg, 'ADAPTER_LAYERS', 2))
+        self.adapter_dim = int(getattr(backbone_cfg, 'ADAPTER_DIM', min(self.embed_dim, 256)))
+        self.adapter_num_heads = int(getattr(backbone_cfg, 'ADAPTER_NUM_HEADS', 4))
+        self.adapter_dropout = float(getattr(backbone_cfg, 'ADAPTER_DROPOUT', 0.1))
+        self.adapter_scale = float(getattr(backbone_cfg, 'ADAPTER_SCALE', 0.5))
+        self.adapter_fuse_cls = bool(getattr(backbone_cfg, 'ADAPTER_FUSE_CLS', False))
+        self.patch_adapter = None
+        if self.adapter_enable:
+            self.patch_adapter = TemporalPatchAdapter(
+                dim=self.embed_dim,
+                depth=self.adapter_layers,
+                adapter_dim=self.adapter_dim,
+                num_heads=self.adapter_num_heads,
+                dropout=self.adapter_dropout,
+                init_scale=self.adapter_scale,
+            )
         
         # 是否使用混合精度
         self.use_amp = getattr(cfg.TRAIN, 'AMP_ENABLE', False) if hasattr(cfg, 'TRAIN') else False
@@ -189,7 +211,112 @@ class DINOv2Backbone(nn.Module):
             return out
         else:
             return self.backbone(x)
-    
+
+    def _reshape_video_input(self, x):
+        """Canonicalize 4D/5D inputs into frame batches."""
+        if isinstance(x, dict):
+            x = x['video']
+
+        if x.dim() == 4:
+            batch_frames, _, _, _ = x.shape
+            B = batch_frames
+            T = 1
+            need_reshape = False
+        elif x.dim() == 5:
+            B, _, T, _, _ = x.shape
+            need_reshape = True
+        else:
+            raise ValueError(f"Expected 4D or 5D input, got {x.dim()}D")
+
+        if need_reshape:
+            x = rearrange(x, 'b c t h w -> (b t) c h w')
+        return x, B, T
+
+    def _extract_feature_dict(self, x):
+        """Return cls/patch token dict from DINOv2."""
+        def _first_tensor(mapping, keys):
+            for key in keys:
+                value = mapping.get(key)
+                if value is not None:
+                    return value
+            return None
+
+        context = torch.no_grad() if self.freeze else nullcontext()
+        with context:
+            if hasattr(self.backbone, "forward_features"):
+                out = self.backbone.forward_features(x)
+            else:
+                out = self.backbone(x)
+
+        cls_token = None
+        patch_tokens = None
+        if isinstance(out, dict):
+            cls_token = _first_tensor(
+                out,
+                ["x_norm_clstoken", "x_clstoken", "cls_token"],
+            )
+            patch_tokens = _first_tensor(
+                out,
+                ["x_norm_patchtokens", "x_patchtokens", "patch_tokens"],
+            )
+        elif torch.is_tensor(out):
+            cls_token = out
+
+        if cls_token is None and torch.is_tensor(patch_tokens):
+            cls_token = patch_tokens.mean(dim=1)
+
+        return {
+            "cls_tokens": cls_token.float() if torch.is_tensor(cls_token) else None,
+            "patch_tokens": patch_tokens.float() if torch.is_tensor(patch_tokens) else None,
+        }
+
+    def forward_tokens(self, x, apply_adapter=None):
+        """
+        Extract structured frame tokens.
+
+        Returns:
+            dict with:
+                cls_tokens: [B, T, D] or None
+                patch_tokens: [B, T, N, D] or None
+                frame_tokens: [B, T, N(+1), D] or None
+                global_video_token: [B, D] or None
+        """
+        if apply_adapter is None:
+            apply_adapter = self.adapter_enable
+
+        x, B, T = self._reshape_video_input(x)
+        feature_dict = self._extract_feature_dict(x)
+
+        cls_tokens = feature_dict["cls_tokens"]
+        patch_tokens = feature_dict["patch_tokens"]
+
+        if cls_tokens is not None:
+            cls_tokens = rearrange(cls_tokens, "(b t) d -> b t d", b=B, t=T)
+
+        if patch_tokens is not None:
+            patch_tokens = rearrange(patch_tokens, "(b t) n d -> b t n d", b=B, t=T)
+            if apply_adapter and self.patch_adapter is not None:
+                patch_tokens = self.patch_adapter(patch_tokens)
+                if self.adapter_fuse_cls and cls_tokens is not None:
+                    cls_tokens = cls_tokens + patch_tokens.mean(dim=2)
+
+        frame_tokens = None
+        if patch_tokens is not None and cls_tokens is not None and self.return_cls:
+            frame_tokens = torch.cat([cls_tokens.unsqueeze(2), patch_tokens], dim=2)
+        elif patch_tokens is not None:
+            frame_tokens = patch_tokens
+
+        global_video_token = None
+        if cls_tokens is not None:
+            global_video_token = F.normalize(cls_tokens.mean(dim=1), dim=-1)
+
+        return {
+            "cls_tokens": cls_tokens,
+            "patch_tokens": patch_tokens,
+            "frame_tokens": frame_tokens,
+            "global_video_token": global_video_token,
+        }
+
     def forward(self, x):
         """
         Forward pass for video input.
@@ -201,42 +328,21 @@ class DINOv2Backbone(nn.Module):
             features: [B, D, T, 1, 1] to match CNN backbone output format
                       If return_patches=True: [B, D, T, N] where N is num patches
         """
-        # 处理 dict 输入
-        if isinstance(x, dict):
-            x = x['video']
-        
-        # 验证输入维度
-        if x.dim() == 4:
-            # 已经是 [B*T, C, H, W] 格式
-            B, C, H, W = x.shape
-            T = 1
-            need_reshape = False
-        elif x.dim() == 5:
-            B, C, T, H, W = x.shape
-            need_reshape = True
-        else:
-            raise ValueError(f"Expected 4D or 5D input, got {x.dim()}D")
-        
-        # 展平时间维度: [B, C, T, H, W] -> [B*T, C, H, W]
-        if need_reshape:
-            x = rearrange(x, 'b c t h w -> (b t) c h w')
-        
-        # 提取特征
-        if self.freeze:
-            features = self._extract_features_frozen(x)
-        else:
-            features = self._extract_features(x)
-        
-        # 恢复时间维度
+        tokens = self.forward_tokens(x)
         if self.return_patches:
-            # features: [B*T, N, D] -> [B, T, N, D] -> [B, D, T, N]
-            features = rearrange(features, '(b t) n d -> b d t n', b=B, t=T)
-        else:
-            # features: [B*T, D] -> [B, D, T] -> [B, D, T, 1, 1]
-            features = rearrange(features, '(b t) d -> b d t', b=B, t=T)
-            features = features.unsqueeze(-1).unsqueeze(-1)
-        
-        return features
+            patch_tokens = tokens["patch_tokens"]
+            if patch_tokens is None:
+                raise RuntimeError(
+                    "DINOv2Backbone was asked to return patch tokens but "
+                    "forward_features did not expose them."
+                )
+            return rearrange(patch_tokens, 'b t n d -> b d t n')
+
+        cls_tokens = tokens["cls_tokens"]
+        if cls_tokens is None:
+            raise RuntimeError("DINOv2Backbone could not produce cls tokens.")
+        features = rearrange(cls_tokens, 'b t d -> b d t')
+        return features.unsqueeze(-1).unsqueeze(-1)
     
     def train(self, mode=True):
         """Override train to keep backbone frozen if needed."""
